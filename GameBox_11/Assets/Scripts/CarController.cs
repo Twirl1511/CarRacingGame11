@@ -30,7 +30,11 @@ public class CarController : MonoBehaviour
             Debug.Log("нажата Brakes");
             rb.AddForce(transform.up * -speed/5);
         }
+
+        //transform.Rotate(Input.GetAxis("Left") * new Vector3(0, 0, 1) * Time.deltaTime * torqueForce);
+
         rb.AddTorque(Input.GetAxis("Left") * torqueForce);
+
 
         rb.velocity = Vector2.Dot(rb.velocity, transform.up) * transform.up;
     }
