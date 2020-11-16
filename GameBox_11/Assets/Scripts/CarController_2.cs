@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarController : MonoBehaviour
+public class CarController_2 : MonoBehaviour
 {
     private Rigidbody2D rb;
     
@@ -19,22 +19,18 @@ public class CarController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetButton("Accelerate"))
+        if (Input.GetButton("P2_forward"))
         {
-            Debug.Log("нажата Accelerate");
-            //rb.AddRelativeForce(Vector2.up * speed);
+            Debug.Log("нажата P2_forward");
             rb.AddForce(transform.up * speed);
         }
-        if (Input.GetButton("Brakes"))
+        if (Input.GetButton("P2_back"))
         {
-            Debug.Log("нажата Brakes");
+            Debug.Log("нажата P2_back");
             rb.AddForce(transform.up * -speed/5);
         }
 
-        //transform.Rotate(Input.GetAxis("Left") * new Vector3(0, 0, 1) * Time.deltaTime * torqueForce);
-
-        rb.AddTorque(Input.GetAxis("Left") * torqueForce);
-        Debug.Log("!!");
+        rb.AddTorque(Input.GetAxis("P2_horizontal") * torqueForce);
 
         rb.velocity = Vector2.Dot(rb.velocity, transform.up) * transform.up;
     }
