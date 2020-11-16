@@ -437,6 +437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 80
   torqueForce: 20
+  slowDown: 5
   driftFactor: 0.5
 --- !u!50 &58046774
 Rigidbody2D:
@@ -2126,8 +2127,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f756151a11bcb48bc4e2e76e94990b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 80
+  speed: 90
   torqueForce: 20
+  slowDown: 5
   driftFactor: 0.5
 --- !u!50 &1112665197
 Rigidbody2D:
