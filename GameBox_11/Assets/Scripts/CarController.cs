@@ -34,7 +34,7 @@ public class CarController : MonoBehaviour
         //transform.Rotate(Input.GetAxis("Left") * new Vector3(0, 0, 1) * Time.deltaTime * torqueForce);
 
         rb.AddTorque(Input.GetAxis("Left") * torqueForce);
-
+        Debug.Log("!!");
 
         rb.velocity = Vector2.Dot(rb.velocity, transform.up) * transform.up;
     }
