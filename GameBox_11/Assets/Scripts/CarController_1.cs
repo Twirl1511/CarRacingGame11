@@ -8,6 +8,7 @@ public class CarController_1 : MonoBehaviour
     
     [SerializeField] float speed = 10f;
     [SerializeField] float torqueForce = 10f;
+    [SerializeField] int slowDown = 5;
     [SerializeField] float driftFactor = 0.5f;
     
 
@@ -27,7 +28,7 @@ public class CarController_1 : MonoBehaviour
         if (Input.GetButton("P1_back"))
         {
             Debug.Log("нажата P1_back");
-            rb.AddForce(transform.up * -speed/5);
+            rb.AddForce(transform.up * -speed/slowDown);
         }
 
         rb.AddTorque(Input.GetAxis("P1_horizontal") * torqueForce);
