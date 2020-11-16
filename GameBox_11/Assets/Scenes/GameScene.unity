@@ -435,9 +435,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a85cc6b07af88642a2e8f00791f9576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 80
-  torqueForce: 20
-  slowDown: 5
+  speed: 110
+  torqueForce: 45
+  slowDown: 4
   driftFactor: 0.5
 --- !u!50 &58046774
 Rigidbody2D:
@@ -451,9 +451,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
-  m_LinearDrag: 3
-  m_AngularDrag: 2
+  m_Mass: 2.4
+  m_LinearDrag: 1
+  m_AngularDrag: 3
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -2127,9 +2127,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f756151a11bcb48bc4e2e76e94990b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 80
-  torqueForce: 20
-  slowDown: 5
+  speed: 110
+  torqueForce: 45
+  slowDown: 4
   driftFactor: 0.5
 --- !u!50 &1112665197
 Rigidbody2D:
@@ -2143,9 +2143,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
-  m_LinearDrag: 3
-  m_AngularDrag: 2
+  m_Mass: 2.4
+  m_LinearDrag: 1
+  m_AngularDrag: 3
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
