@@ -2161,6 +2161,7 @@ GameObject:
   - component: {fileID: 1112665198}
   - component: {fileID: 1112665197}
   - component: {fileID: 1112665195}
+  - component: {fileID: 1112665196}
   m_Layer: 0
   m_Name: Player_1_moto
   m_TagString: Player
@@ -2194,6 +2195,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3490565, y: 5.111412}
   m_EdgeRadius: 0
+--- !u!95 &1112665196
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112665194}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fa9fd1d241c464b77a20f0cd1485ad7e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &1112665197
 Rigidbody2D:
   serializedVersion: 4
@@ -2206,7 +2226,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1.2
+  m_Mass: 1.7
   m_LinearDrag: 0.8
   m_AngularDrag: 5
   m_GravityScale: 0
@@ -3540,7 +3560,7 @@ MonoBehaviour:
   p1Speed: 55
   p1TorqueForce: 35
   p1SlowDown: 5
-  p2Speed: 110
+  p2Speed: 80
   p2TorqueForce: 45
   p2SlowDown: 5
   p1DriftFactor: 0.8
@@ -4304,7 +4324,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 85067e717383a463db8a63a1d2104f1d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed5dc0640713e46a6a0f6ad9fe00bbb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4324,7 +4344,7 @@ Transform:
   m_GameObject: {fileID: 1891905031}
   m_LocalRotation: {x: -0, y: -0, z: 0.70710707, w: 0.70710653}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.56308, y: 0.56308, z: 0.56308}
+  m_LocalScale: {x: 2.1717327, y: 2.1717327, z: 2.1717327}
   m_Children: []
   m_Father: {fileID: 1112665198}
   m_RootOrder: 0
@@ -4830,7 +4850,7 @@ PrefabInstance:
     - target: {fileID: 7939161523158550992, guid: c83a8570e3b35bb43b28f614423c9646,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.7
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 7939161523158550992, guid: c83a8570e3b35bb43b28f614423c9646,
         type: 3}
