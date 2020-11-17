@@ -15,7 +15,8 @@ public class CarController : MonoBehaviour
     [SerializeField] float p2Speed = 110f;
     [SerializeField] float p2TorqueForce = 45f;
     [SerializeField] int p2SlowDown = 5;
-    //[SerializeField] float driftFactor = 0.5f;
+    [SerializeField] float p1DriftFactor = 0.93f;
+    [SerializeField] float p2DriftFactor = 0.93f;
 
 
     void Start()
@@ -41,7 +42,8 @@ public class CarController : MonoBehaviour
 
         rb1.AddTorque(Input.GetAxis("P1_horizontal") * p1TorqueForce);
 
-        rb1.velocity = Vector2.Dot(rb1.velocity, tr1.up) * tr1.up;
+        rb1.velocity = ForwardVelocity(tr1, rb1) + RightVelocity(tr1, rb1) * p1DriftFactor;
+
         #endregion
 
         #region [Player_2]
@@ -57,20 +59,24 @@ public class CarController : MonoBehaviour
             rb2.AddForce(tr2.up * -p2Speed / p2SlowDown);
         }
 
+        
+        // math.lerp
         rb2.AddTorque(Input.GetAxis("P2_horizontal") * p2TorqueForce);
 
-        rb2.velocity = Vector2.Dot(rb2.velocity, tr2.up) * tr2.up;
+        rb2.velocity = ForwardVelocity(tr2, rb2) + RightVelocity(tr2, rb2) * p1DriftFactor;
+
+        
         #endregion
 
     }
 
-    private Vector2 RightVelocity()
+    private Vector2 RightVelocity(Transform tr, Rigidbody2D rb)
     {
-        return transform.right * Vector2.Dot(rb1.velocity, transform.right);
+        return tr.right * Vector2.Dot(rb.velocity, tr.right);
     }
-    private Vector2 ForwardVelocity()
+    private Vector2 ForwardVelocity(Transform tr, Rigidbody2D rb)
     {
-        return  transform.up * Vector2.Dot(rb1.velocity, transform.up);
+        return  tr.up * Vector2.Dot(rb.velocity, tr.up);
     }
 
    
