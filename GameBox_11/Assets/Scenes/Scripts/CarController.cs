@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    [SerializeField] Rigidbody2D rb1;
-    [SerializeField] Rigidbody2D rb2;
-    [SerializeField] Transform tr1;
-    [SerializeField] Transform tr2;
+    public CarController[] players;
+    [SerializeField] private Rigidbody2D rb1;
+    [SerializeField] private Rigidbody2D rb2;
+    [SerializeField] private Transform tr1;
+    [SerializeField] private Transform tr2;
 
-    [SerializeField] float p1Speed = 110f;
-    [SerializeField] float p1TorqueForce = 45f;
-    [SerializeField] int p1SlowDown = 5;
-    [SerializeField] float p2Speed = 110f;
-    [SerializeField] float p2TorqueForce = 45f;
-    [SerializeField] int p2SlowDown = 5;
-    [SerializeField] float p1DriftFactor = 0.93f;
-    [SerializeField] float p2DriftFactor = 0.93f;
+    [SerializeField] private float p1Speed = 110f;
+    [SerializeField] private float p1TorqueForce = 45f;
+    [SerializeField] private int p1SlowDown = 5;
+    [SerializeField] private float p2Speed = 110f;
+    [SerializeField] private float p2TorqueForce = 45f;
+    [SerializeField] private int p2SlowDown = 5;
+    [SerializeField] private float p1DriftFactor = 0.93f;
+    [SerializeField] private float p2DriftFactor = 0.93f;
+    
 
 
     void Start()

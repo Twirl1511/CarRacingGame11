@@ -91,7 +91,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7939161523158550992}
   - component: {fileID: 4327026929131961174}
-  - component: {fileID: 7815326878434002070}
   m_Layer: 0
   m_Name: Puddle
   m_TagString: Untagged
@@ -152,17 +151,3 @@ EdgeCollider2D:
   - {x: -41.22225, y: -28.650555}
   - {x: -41.17608, y: -30.138002}
   - {x: -39.848618, y: -31.164297}
---- !u!114 &7815326878434002070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8698926157362173323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cf887b894459284caa88b2571e35ea9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tickTimer: 2
-  dragFactor: 1

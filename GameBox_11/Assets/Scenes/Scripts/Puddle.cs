@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Puddle : MonoBehaviour
 {
-    [SerializeField] int tickTimer = 2;
-    [SerializeField] float dragFactor = 1;
+    [SerializeField] private int tickTimer = 2;
+    [SerializeField] private float dragFactor = 1;
     private float defaultDragFactor;
-    private bool flag = true;
+    public bool flag = true;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,8 +15,9 @@ public class Puddle : MonoBehaviour
         {
             defaultDragFactor = collision.gameObject.GetComponent<Rigidbody2D>().angularDrag;
             Debug.Log("defaultDragFactor = " + defaultDragFactor);
+            flag = false;
         }
-        flag = false;
+        
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -32,17 +33,17 @@ public class Puddle : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("вышел из коллизии");
+            Debug.Log("поворот = "+ collision.gameObject.GetComponent<Rigidbody2D>().angularDrag);
             StartCoroutine(SetDefaultForPlayer(collision));
         }
     }
-   
 
 
     private IEnumerator SetDefaultForPlayer(Collider2D collision)
     {
         yield return new WaitForSeconds(tickTimer);
         collision.gameObject.GetComponent<Rigidbody2D>().angularDrag = defaultDragFactor;
-        Debug.Log("отработал метод сетфедаулт");
+        Debug.Log("отработал метод сетфедаулт = " + defaultDragFactor);
         flag = true;
     }
 
