@@ -17,7 +17,6 @@ public class CarController_1 : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (Input.GetButton("P1_forward"))
