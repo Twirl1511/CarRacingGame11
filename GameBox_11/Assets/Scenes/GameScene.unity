@@ -477,8 +477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cf887b894459284caa88b2571e35ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tickTimer: 2
-  dragFactor: 1
+  tickTimer: 1
+  dragFactor: 1.5
   flag: 1
 --- !u!1 &187140747
 GameObject:
@@ -2864,8 +2864,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cf887b894459284caa88b2571e35ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tickTimer: 2
-  dragFactor: 1
+  tickTimer: 1
+  dragFactor: 1.5
   flag: 1
 --- !u!1 &1402262898
 GameObject:
@@ -3532,18 +3532,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b59b3c4a6624434598e8b894589134c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  players: []
   rb1: {fileID: 1112665197}
   rb2: {fileID: 58046774}
   tr1: {fileID: 1112665198}
   tr2: {fileID: 58046775}
-  p1Speed: 110
-  p1TorqueForce: 45
+  p1Speed: 55
+  p1TorqueForce: 35
   p1SlowDown: 5
   p2Speed: 110
   p2TorqueForce: 45
   p2SlowDown: 5
-  p1DriftFactor: 0.93
-  p2DriftFactor: 0.93
+  p1DriftFactor: 0.8
+  p2DriftFactor: 0.95
 --- !u!1 &1715005662
 GameObject:
   m_ObjectHideFlags: 0
