@@ -656,8 +656,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 2.4
-  m_LinearDrag: 1
-  m_AngularDrag: 3
+  m_LinearDrag: 1.1
+  m_AngularDrag: 4
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -3175,9 +3175,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1.2
-  m_LinearDrag: 0.8
-  m_AngularDrag: 5
+  m_Mass: 1.4
+  m_LinearDrag: 1
+  m_AngularDrag: 2.5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -4638,13 +4638,13 @@ MonoBehaviour:
   Player2_Rigidbody: {fileID: 58046774}
   Player1_Transform: {fileID: 1112665198}
   Player2_Transform: {fileID: 58046775}
-  Player1_Speed: 110
-  Player1_SorgueForce: 45
+  Player1_Speed: 50
+  Player1_SorgueForce: 60
   Player1_SlowDown: 5
-  Player2_Speed: 110
-  Player2_TorqueForce: 45
+  Player2_Speed: 80
+  Player2_TorqueForce: 55
   Player2_SlowDown: 5
-  Player1_DriftFactor: 0.93
+  Player1_DriftFactor: 0
   Player2_DriftFactor: 0.93
 --- !u!1 &1715005662
 GameObject:
@@ -5510,7 +5510,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 85067e717383a463db8a63a1d2104f1d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed5dc0640713e46a6a0f6ad9fe00bbb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5530,7 +5530,7 @@ Transform:
   m_GameObject: {fileID: 1891905031}
   m_LocalRotation: {x: -0, y: -0, z: 0.70710707, w: 0.70710653}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.56308, y: 0.56308, z: 0.56308}
+  m_LocalScale: {x: 1.7306263, y: 1.7306263, z: 1.7306263}
   m_Children: []
   m_Father: {fileID: 966017316}
   m_RootOrder: 0
