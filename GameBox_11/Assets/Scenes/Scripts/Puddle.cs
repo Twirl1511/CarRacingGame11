@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Puddle : MonoBehaviour
 {
-    [SerializeField] private int tickTimer = 2;
-    [SerializeField] private float dragFactor = 1;
-    private float defaultDragFactor;
-    public bool flag = true;
+    [SerializeField] private int TickTimer = 2;
+    [SerializeField] private float DragFactor = 1;
+    private float DefaultDragFactor;
+    public bool Flag = true;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (flag)
+        if (Flag)
         {
-            defaultDragFactor = collision.gameObject.GetComponent<Rigidbody2D>().angularDrag;
-            Debug.Log("defaultDragFactor = " + defaultDragFactor);
-            flag = false;
+            DefaultDragFactor = collision.gameObject.GetComponent<Rigidbody2D>().angularDrag;
+            Debug.Log("defaultDragFactor = " + DefaultDragFactor);
+            Flag = false;
         }
         
     }
@@ -23,8 +23,8 @@ public class Puddle : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Rigidbody2D>().angularDrag = dragFactor;
-            Debug.Log("dragFactor = " + dragFactor);
+            collision.gameObject.GetComponent<Rigidbody2D>().angularDrag = DragFactor;
+            Debug.Log("dragFactor = " + DragFactor);
         }
     }
 
@@ -41,10 +41,10 @@ public class Puddle : MonoBehaviour
 
     private IEnumerator SetDefaultForPlayer(Collider2D collision)
     {
-        yield return new WaitForSeconds(tickTimer);
-        collision.gameObject.GetComponent<Rigidbody2D>().angularDrag = defaultDragFactor;
-        Debug.Log("отработал метод сетфедаулт = " + defaultDragFactor);
-        flag = true;
+        yield return new WaitForSeconds(TickTimer);
+        collision.gameObject.GetComponent<Rigidbody2D>().angularDrag = DefaultDragFactor;
+        Debug.Log("отработал метод сетфедаулт = " + DefaultDragFactor);
+        Flag = true;
     }
 
 

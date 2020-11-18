@@ -11,10 +11,10 @@ public class Player2_CircleCounter : MonoBehaviour
     public Collider2D Box3_Collider;
     public Collider2D Box4_Collider;
 
-    public bool Player2_Box1_Flag;
-    public bool Player2_Box2_Flag;
-    public bool Player2_Box3_Flag;
-    public bool Player2_Box4_Flag;
+    private bool Player2_Box1_Flag;
+    private bool Player2_Box2_Flag;
+    private bool Player2_Box3_Flag;
+    private bool Player2_Box4_Flag;
 
     public int PlayerCircleCounter = 0;
 
