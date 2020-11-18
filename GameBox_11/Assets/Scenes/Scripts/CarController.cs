@@ -4,29 +4,20 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    [SerializeField] Rigidbody2D rb1;
-    [SerializeField] Rigidbody2D rb2;
-    [SerializeField] Transform tr1;
-    [SerializeField] Transform tr2;
+    [SerializeField] private Rigidbody2D Player1_Rigidbody;
+    [SerializeField] private Rigidbody2D Player2_Rigidbody;
+    [SerializeField] private Transform Player1_Transform;
+    [SerializeField] private Transform Player2_Transform;
 
-    [SerializeField] float p1Speed = 110f;
-    [SerializeField] float p1TorqueForce = 45f;
-    [SerializeField] int p1SlowDown = 5;
-    [SerializeField] float p2Speed = 110f;
-    [SerializeField] float p2TorqueForce = 45f;
-    [SerializeField] int p2SlowDown = 5;
-    [SerializeField] float p1DriftFactor = 0.93f;
-    [SerializeField] float p2DriftFactor = 0.93f;
+    [SerializeField] private float Player1_Speed = 110f;
+    [SerializeField] private float Player1_SorgueForce = 45f;
+    [SerializeField] private int Player1_SlowDown = 5;
+    [SerializeField] private float Player2_Speed = 110f;
+    [SerializeField] private float Player2_TorqueForce = 45f;
+    [SerializeField] private int Player2_SlowDown = 5;
+    [SerializeField] private float Player1_DriftFactor = 0.93f;
+    [SerializeField] private float Player2_DriftFactor = 0.93f;
 
-    public int p1CircleCounter = 0;
-    public int p2CircleCounter = 0;
-
-
-
-    void Start()
-    {
-        
-    }
 
     void FixedUpdate()
     {
@@ -36,17 +27,17 @@ public class CarController : MonoBehaviour
         if (Input.GetButton("P1_forward"))
         {
             Debug.Log("нажата P1_forward");
-            rb1.AddForce(tr1.up * p1Speed);
+            Player1_Rigidbody.AddForce(Player1_Transform.up * Player1_Speed);
         }
         if (Input.GetButton("P1_back"))
         {
             Debug.Log("нажата P1_back");
-            rb1.AddForce(tr1.up * -p1Speed / p1SlowDown);
+            Player1_Rigidbody.AddForce(Player1_Transform.up * -Player1_Speed / Player1_SlowDown);
         }
 
-        rb1.AddTorque(Input.GetAxis("P1_horizontal") * p1TorqueForce);
+        Player1_Rigidbody.AddTorque(Input.GetAxis("P1_horizontal") * Player1_SorgueForce);
 
-        rb1.velocity = ForwardVelocity(tr1, rb1) + RightVelocity(tr1, rb1) * p1DriftFactor;
+        Player1_Rigidbody.velocity = ForwardVelocity(Player1_Transform, Player1_Rigidbody) + RightVelocity(Player1_Transform, Player1_Rigidbody) * Player1_DriftFactor;
 
         #endregion
 
@@ -55,19 +46,19 @@ public class CarController : MonoBehaviour
         if (Input.GetButton("P2_forward"))
         {
             Debug.Log("нажата P2_forward");
-            rb2.AddForce(tr2.up * p2Speed);
+            Player2_Rigidbody.AddForce(Player2_Transform.up * Player2_Speed);
         }
         if (Input.GetButton("P2_back"))
         {
             Debug.Log("нажата P2_back");
-            rb2.AddForce(tr2.up * -p2Speed / p2SlowDown);
+            Player2_Rigidbody.AddForce(Player2_Transform.up * -Player2_Speed / Player2_SlowDown);
         }
 
         
         // math.lerp
-        rb2.AddTorque(Input.GetAxis("P2_horizontal") * p2TorqueForce);
+        Player2_Rigidbody.AddTorque(Input.GetAxis("P2_horizontal") * Player2_TorqueForce);
 
-        rb2.velocity = ForwardVelocity(tr2, rb2) + RightVelocity(tr2, rb2) * p1DriftFactor;
+        Player2_Rigidbody.velocity = ForwardVelocity(Player2_Transform, Player2_Rigidbody) + RightVelocity(Player2_Transform, Player2_Rigidbody) * Player1_DriftFactor;
 
         
         #endregion
