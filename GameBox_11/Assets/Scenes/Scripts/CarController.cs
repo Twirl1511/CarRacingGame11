@@ -38,11 +38,9 @@ public class CarController : MonoBehaviour
             Player1_Rigidbody.AddForce(Player1_Transform.up * -Player1_Speed / Player1_SlowDown);
         }
 
-        Debug.Log(Player1_Rigidbody.velocity.magnitude);
-        if (Player1_Rigidbody.velocity.magnitude > Player1_Speed_for_torgue)
-        {
-            Player1_Rigidbody.AddTorque(Input.GetAxis("P1_horizontal") * Player1_SorgueForce);
-        }
+        
+        Player1_Rigidbody.AddTorque(Input.GetAxis("P1_horizontal") * Player1_SorgueForce);
+        
             
         
         
@@ -65,10 +63,9 @@ public class CarController : MonoBehaviour
         }
 
 
-        if (Player2_Rigidbody.velocity.magnitude > Player2_Speed_for_torgue)
-        {
-            Player2_Rigidbody.AddTorque(Input.GetAxis("P2_horizontal") * Player2_TorqueForce);
-        }
+        
+        Player2_Rigidbody.AddTorque(Input.GetAxis("P2_horizontal") * Player2_TorqueForce);
+        
 
         Player2_Rigidbody.velocity = ForwardVelocity(Player2_Transform, Player2_Rigidbody) + RightVelocity(Player2_Transform, Player2_Rigidbody) * Player1_DriftFactor;
 

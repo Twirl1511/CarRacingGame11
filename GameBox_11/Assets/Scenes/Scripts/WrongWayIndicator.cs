@@ -5,50 +5,103 @@ using UnityEngine;
 public class WrongWayIndicator : MonoBehaviour
 {
     private Rigidbody2D PlayerRigidbody;
-    public GameObject CarSprite;
-    public GameObject Arrow;
+    public GameObject WrongWaySign;
 
-    [SerializeField] private float TimeBeforeArrowShowedUp = 1.5f;
+    [SerializeField] private float TimeBeforeSignShowedUp = 1.5f;
 
     public Collider2D WayBox1_Collider;
     public Collider2D WayBox2_Collider;
     public Collider2D WayBox3_Collider;
     public Collider2D WayBox4_Collider;
 
-    public Transform box;
-    private bool Flag = false;
+    private bool WrongWayFlag = true;
+
     private void Start()
     {
         PlayerRigidbody = GetComponent<Rigidbody2D>();
-
-        
     }
-
-    
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        #region [WayBox1]
         if (collision.Equals(WayBox1_Collider))
         {
             if (Vector2.Dot(PlayerRigidbody.velocity, Vector2.left) < 0)
             {
-
-                    StartCoroutine(ShowArrow());
-
+                if (WrongWayFlag)
+                {
+                    WrongWayFlag = false;
+                    StartCoroutine(ShowSign());
+                }
             }
             else
             {
-                Arrow.SetActive(false);
+                WrongWayFlag = true;
+                WrongWaySign.SetActive(false);
             }
         }
+        #endregion
+        #region [WayBox2]
+        if (collision.Equals(WayBox2_Collider))
+        {
+            if (Vector2.Dot(PlayerRigidbody.velocity, Vector2.up) < 0)
+            {
+                if (WrongWayFlag)
+                {
+                    WrongWayFlag = false;
+                    StartCoroutine(ShowSign());
+                }
+            }
+            else
+            {
+                WrongWaySign.SetActive(false);
+            }
+        }
+        #endregion
+        #region [WayBox3]
+        if (collision.Equals(WayBox3_Collider))
+        {
+            if (Vector2.Dot(PlayerRigidbody.velocity, Vector2.right) < 0)
+            {
+                if (WrongWayFlag)
+                {
+                    WrongWayFlag = false;
+                    StartCoroutine(ShowSign());
+                }
+            }
+            else
+            {
+                WrongWaySign.SetActive(false);
+            }
+        }
+        #endregion
+        #region [WayBox4]
+        if (collision.Equals(WayBox4_Collider))
+        {
+            if (Vector2.Dot(PlayerRigidbody.velocity, Vector2.down) < 0)
+            {
+                if (WrongWayFlag)
+                {
+                    WrongWayFlag = false;
+                    StartCoroutine(ShowSign());
+                }
+            }
+            else
+            {
+                WrongWaySign.SetActive(false);
+            }
+        }
+        #endregion
     }
 
-    private IEnumerator ShowArrow()
+    private IEnumerator ShowSign()
     {
-        yield return new WaitForSeconds(TimeBeforeArrowShowedUp);
-        Debug.Log("Wrong WAY!!!!");
-        Arrow.SetActive(true);
-        //Flag = true;
+        yield return new WaitForSeconds(TimeBeforeSignShowedUp);
+        if (!WrongWayFlag)
+        {
+            WrongWaySign.SetActive(true);
+        }
+        WrongWayFlag = true;
     }
 
 
