@@ -51,7 +51,7 @@ public class CarController : MonoBehaviour
 
     void FixedUpdate()
     {
-        #region [Player_1]
+        #region [Player_1_MOTO]
 
         #region[Основное управление]
         if (Input.GetButton("P1_forward"))
@@ -64,6 +64,7 @@ public class CarController : MonoBehaviour
             Debug.Log("нажата P1_back");
             Player1_Rigidbody.AddForce(Player1_Transform.up * -Player1_Speed / Player1_SlowDown);
         }
+
         Player1_Rigidbody.AddTorque(Input.GetAxis("P1_horizontal") * Player1_TorgueForce);
         #endregion
 
@@ -91,7 +92,7 @@ public class CarController : MonoBehaviour
 
         #endregion
 
-        #region [Player_2]
+        #region [Player_2_CAR]
 
         #region[Основное управление машинки]
         if (Input.GetButton("P2_forward"))
