@@ -5004,18 +5004,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player1_Rigidbody: {fileID: 1112665197}
   Player1_Transform: {fileID: 1112665198}
-  Player1_Speed: 30
-  Player1_FirstSpeed: 50
-  Player1_SecondSpeed: 80
-  Player1_ThirdSpeed: 100
-  Player1_FirstSpeedLimit: 8
-  Player1_SecondSpeedLimit: 13
-  Player1_ThirdSpeedLimit: 22
+  Player1_Speed: 20
+  Player1_FirstSpeed: 20
+  Player1_SecondSpeed: 60
+  Player1_ThirdSpeed: 60
+  Player1_FirstSpeedLimit: 4
+  Player1_SecondSpeedLimit: 11
+  Player1_ThirdSpeedLimit: 15
   Player1_TorgueForce: 45
   Player1_SlowDown: 5
   Player1_DriftFactor: 0.95
   Player1_Speed_for_torgue: 3
-  Player1_CenterOfMass: 0
+  Player1_CenterOfMass: -0.4
   Player2_Rigidbody: {fileID: 58046774}
   Player2_Transform: {fileID: 58046775}
   Player2_Speed: 20
