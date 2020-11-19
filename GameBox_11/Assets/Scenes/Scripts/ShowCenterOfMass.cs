@@ -9,8 +9,8 @@ public class ShowCenterOfMass : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawSphere(GetComponent<Rigidbody2D>().centerOfMass, 1f);
+        //Gizmos.color = Color.red;
+        //Gizmos.DrawSphere(GetComponent<Rigidbody2D>().centerOfMass, 0.5f);
     }
 
     // Update is called once per frame
