@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class Debug_panel : MonoBehaviour
 {
-    public GameObject CarController;
-    public Text CarSpeedLimit;
-    public Text MotoSpeedLimit;
+    public GameObject Player1_Controller;
+    public GameObject Player2_Controller;
+    public Text Player1_Speed;
+    public Text Player2_Speed;
+
     void Start()
     {
         
@@ -16,7 +18,7 @@ public class Debug_panel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CarSpeedLimit.text = CarController.GetComponent<CarController>().Player2_SpeedLimit;
-        MotoSpeedLimit.text = CarController.GetComponent<CarController>().Player1_SpeedLimit;
+        Player1_Speed.text = Player1_Controller.GetComponent<Player1_Controller>().Player1_SpeedLimit;
+        //Player2_Speed.text = Player2_Controller.GetComponent<Player2_Controller>().Player2_SpeedLimit;
     }
 }

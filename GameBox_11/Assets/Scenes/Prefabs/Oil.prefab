@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6457483009302669819}
   - component: {fileID: 8602402279531583112}
   m_Layer: 0
-  m_Name: puddle
+  m_Name: Oil_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,10 +25,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454922551597478581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37, y: -27.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.6869, y: 1.6869, z: 1.6869}
   m_Children: []
-  m_Father: {fileID: 7939161523158550992}
+  m_Father: {fileID: 539488737058959662}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8602402279531583112
@@ -89,31 +89,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7939161523158550992}
-  - component: {fileID: 4327026929131961174}
+  - component: {fileID: 539488737058959662}
+  - component: {fileID: 2473250136956491304}
+  - component: {fileID: 1333957036318506712}
   m_Layer: 0
-  m_Name: Puddle
+  m_Name: Oil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7939161523158550992
-Transform:
+--- !u!224 &539488737058959662
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8698926157362173323}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.9, y: 4.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6457483009302669819}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &4327026929131961174
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2473250136956491304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698926157362173323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf887b894459284caa88b2571e35ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeToCleanUpFromOil: 2
+  DragFactor: 1
+  Flag: 1
+  TimeToDisappear: 7
+--- !u!68 &1333957036318506712
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,25 +151,17 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -39.79902, y: -31.121195}
-  - {x: -37.574768, y: -31.458532}
-  - {x: -35.50492, y: -31.459194}
-  - {x: -34.43152, y: -31.91483}
-  - {x: -33.037918, y: -31.309887}
-  - {x: -31.943308, y: -30.533184}
-  - {x: -31.818289, y: -29.91998}
-  - {x: -32.084816, y: -29.179243}
-  - {x: -34.104103, y: -28.338972}
-  - {x: -34.571205, y: -27.522636}
-  - {x: -34.144684, y: -26.46125}
-  - {x: -33.900696, y: -25.565964}
-  - {x: -33.57113, y: -24.465384}
-  - {x: -34.924828, y: -23.33838}
-  - {x: -37.63788, y: -23.329165}
-  - {x: -38.781593, y: -23.533691}
-  - {x: -39.384018, y: -24.127117}
-  - {x: -40.353462, y: -24.934526}
-  - {x: -40.243935, y: -26.90214}
-  - {x: -41.22225, y: -28.650555}
-  - {x: -41.17608, y: -30.138002}
-  - {x: -39.848618, y: -31.164297}
+  - {x: 5.4983387, y: -2.4699059}
+  - {x: 2.4966302, y: -4.6737022}
+  - {x: 1.9424727, y: -4.0668654}
+  - {x: 0.26627076, y: -4.007112}
+  - {x: -3.8540783, y: -3.2390323}
+  - {x: -4.308256, y: -1.9039102}
+  - {x: -3.1587424, y: 0.9087805}
+  - {x: -3.3055115, y: 2.6094952}
+  - {x: -2.2979255, y: 3.8564222}
+  - {x: 2.2976465, y: 4.1182175}
+  - {x: 3.376273, y: 2.6942866}
+  - {x: 2.7552395, y: 0.7388403}
+  - {x: 2.5626898, y: -0.5155327}
+  - {x: 5.5910273, y: -2.4194965}
