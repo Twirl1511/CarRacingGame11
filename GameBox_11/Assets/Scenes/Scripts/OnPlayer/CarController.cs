@@ -56,22 +56,19 @@ public class CarController : MonoBehaviour
         #region[Основное управление]
         if (Input.GetButton("P1_forward"))
         {
-            Debug.Log("нажата P1_forward");
             Player1_Rigidbody.AddForce(Player1_Transform.up * Player1_Speed);
         }
         if (Input.GetButton("P1_back"))
         {
-            Debug.Log("нажата P1_back");
             Player1_Rigidbody.AddForce(Player1_Transform.up * -Player1_Speed / Player1_SlowDown);
         }
 
         Player1_Rigidbody.AddTorque(Input.GetAxis("P1_horizontal") * Player1_TorgueForce);
+
         #endregion
 
         // чтобы регулировать занос
         Player1_Rigidbody.velocity = ForwardVelocity(Player1_Transform, Player1_Rigidbody) + RightVelocity(Player1_Transform, Player1_Rigidbody) * Player1_DriftFactor;
-
-        Debug.Log("Moto SpeedLimit = " + Player1_Rigidbody.velocity.magnitude.ToString("0.0"));
 
         #region[Логика разгона и ускорения мотоцикла]
         if (Player1_Rigidbody.velocity.magnitude > Player1_FirstSpeedLimit)
@@ -97,12 +94,10 @@ public class CarController : MonoBehaviour
         #region[Основное управление машинки]
         if (Input.GetButton("P2_forward"))
         {
-            Debug.Log("нажата P2_forward");
             Player2_Rigidbody.AddForce(Player2_Transform.up * Player2_Speed);
         }
         if (Input.GetButton("P2_back"))
         {
-            Debug.Log("нажата P2_back");
             Player2_Rigidbody.AddForce(Player2_Transform.up * -Player2_Speed / Player2_SlowDown);
         }
         Player2_Rigidbody.AddTorque(Input.GetAxis("P2_horizontal") * Player2_TorqueForce);
@@ -111,7 +106,6 @@ public class CarController : MonoBehaviour
         // контроль заноса
         Player2_Rigidbody.velocity = ForwardVelocity(Player2_Transform, Player2_Rigidbody) + RightVelocity(Player2_Transform, Player2_Rigidbody) * Player1_DriftFactor;
 
-        Debug.Log("Car SpeedLimit = " + Player2_Rigidbody.velocity.magnitude.ToString("0.0"));
 
         #region[Логика разгона и ускорения машинки]
         if (Player2_Rigidbody.velocity.magnitude > Player2_FirstSpeedLimit)
