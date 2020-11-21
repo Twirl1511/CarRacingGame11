@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 2597048024287976356}
   - component: {fileID: 2597048024287976357}
   - component: {fileID: 2597048024287976359}
-  - component: {fileID: 2597048024287976358}
+  - component: {fileID: 4191599247941032009}
   - component: {fileID: 2597048024287976363}
   - component: {fileID: 2597048024287976362}
   - component: {fileID: 2597048024287976361}
   m_Layer: 0
-  m_Name: CAR
+  m_Name: Player_car
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2597048024287976352}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071065, w: 0.7071071}
-  m_LocalPosition: {x: -46.1, y: 29.9, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2597048025946507692}
@@ -72,7 +72,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12931347, y: 0.05290413}
+  m_Offset: {x: 1.4663534, y: 0.5623188}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -83,9 +83,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0457935, y: 6.110363}
+  m_Size: {x: 27.876932, y: 59.847507}
   m_EdgeRadius: 0
---- !u!114 &2597048024287976358
+--- !u!114 &4191599247941032009
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,10 +94,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2597048024287976352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e04c291ef20ebf34d94be6a8fb0aedcc, type: 3}
+  m_Script: {fileID: 11500000, guid: b6761f8f8f1dce9488d8bf91ab46fda4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player2_Collider: {fileID: 2597048024287976359}
   Box1_Collider: {fileID: 0}
   Box2_Collider: {fileID: 0}
   Box3_Collider: {fileID: 0}
@@ -117,10 +116,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WrongWaySign: {fileID: 0}
   TimeBeforeSignShowedUp: 1.5
-  WayBox1_Collider: {fileID: 0}
-  WayBox2_Collider: {fileID: 0}
-  WayBox3_Collider: {fileID: 0}
-  WayBox4_Collider: {fileID: 0}
+  LeftWayBoxCollider: {fileID: 0}
+  UpWayBoxCollider: {fileID: 0}
+  RightWayBoxCollider: {fileID: 0}
+  DownWayBoxCollider: {fileID: 0}
 --- !u!114 &2597048024287976362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,9 +162,9 @@ MonoBehaviour:
     type: 3}
   SpeedToCollectBarrel: 15
   OilDropPlaceFrom: {fileID: 2597048024603332773}
-  PlayerForwardButton: 1
-  PlayerHorizontalButton: 3
-  PlayerDropOilButton: 5
+  PlayerForwardButton: 0
+  PlayerHorizontalButton: 2
+  PlayerDropOilButton: 4
   RaceMap: {fileID: 8658889496290970938, guid: 122d2cd790b39bc43bb1014af0d568ec, type: 3}
 --- !u!1 &2597048024603332773
 GameObject:
@@ -177,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2597048024603332772}
   m_Layer: 0
-  m_Name: Player2_drop_oil_pace
+  m_Name: Player_drop_oil_pace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,7 +190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2597048024603332773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -7.5, z: 0}
+  m_LocalPosition: {x: 0, y: -100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2597048024287976356}
@@ -208,7 +207,7 @@ GameObject:
   - component: {fileID: 2597048025946507692}
   - component: {fileID: 2597048025946507731}
   m_Layer: 0
-  m_Name: Player_2_car_image
+  m_Name: Player_car_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,7 +222,7 @@ Transform:
   m_GameObject: {fileID: 2597048025946507693}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.70710677}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49600327, y: 0.49600327, z: 0.4960032}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2597048024287976356}
   m_RootOrder: 0
@@ -271,8 +270,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_DrawMode: 1
+  m_Size: {x: 100, y: 50}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player1_CircleCounter : MonoBehaviour
+public class CircleCounter : MonoBehaviour
 {
     [SerializeField] private Collider2D Box1_Collider;
     [SerializeField] private Collider2D Box2_Collider;
     [SerializeField] private Collider2D Box3_Collider;
     [SerializeField] private Collider2D Box4_Collider;
 
-    private bool Playe1_Box1_Flag;
-    private bool Playe1_Box2_Flag;
-    private bool Playe1_Box3_Flag;
-    private bool Playe1_Box4_Flag;
+    private bool Box1_Flag;
+    private bool Box2_Flag;
+    private bool Box3_Flag;
+    private bool Box4_Flag;
 
     [HideInInspector] public int PlayerCircleCounter = 0;
 
@@ -21,34 +21,34 @@ public class Player1_CircleCounter : MonoBehaviour
         if (collision.Equals(Box1_Collider))
         {
             CircleComplete();
-            Playe1_Box1_Flag = true;
+            Box1_Flag = true;
         }
         if (collision.Equals(Box2_Collider))
         {
-            Playe1_Box2_Flag = true;
+            Box2_Flag = true;
         }
         if (collision.Equals(Box3_Collider))
         {
-            Playe1_Box3_Flag = true;
+            Box3_Flag = true;
         }
         if (collision.Equals(Box4_Collider))
         {
-            Playe1_Box4_Flag = true;
+            Box4_Flag = true;
         }
     }
 
     public void CircleComplete()
     {
-        if(Playe1_Box1_Flag &&
-           Playe1_Box2_Flag &&
-           Playe1_Box3_Flag &&
-           Playe1_Box4_Flag)
+        if(Box1_Flag &&
+           Box2_Flag &&
+           Box3_Flag &&
+           Box4_Flag)
         {
             PlayerCircleCounter++;
-            Playe1_Box1_Flag = false;
-            Playe1_Box2_Flag = false;
-            Playe1_Box3_Flag = false;
-            Playe1_Box4_Flag = false;
+            Box1_Flag = false;
+            Box2_Flag = false;
+            Box3_Flag = false;
+            Box4_Flag = false;
         }
         
     }

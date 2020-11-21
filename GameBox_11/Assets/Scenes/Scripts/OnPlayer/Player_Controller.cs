@@ -15,9 +15,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private float ThirdSpeedLimit = 22;
 
     [SerializeField] private float PlayerTorgueForce = 45f;
-    [SerializeField] private int PlayerSlowDown = 5;
     [SerializeField] private float PlayerDriftFactor = 0.93f;
-    [SerializeField] private float PlayerSpeed_for_torgue = 3f;
     [SerializeField] private float PlayerCenterOfMass = 1f;
 
     [HideInInspector] public string PlayerSpeedLimit;

@@ -32,7 +32,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: -7.5}
+  m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6923105467974307251
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 6923105468406161659}
   - component: {fileID: 6923105468406161633}
   m_Layer: 0
-  m_Name: Player2_moto
+  m_Name: Player_moto
   m_TagString: Player_1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +114,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 30.2, y: -16.6}
-  m_SizeDelta: {x: 7.6819925, y: 9.688904}
+  m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!50 &6923105468406161661
 Rigidbody2D:
@@ -149,7 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6761f8f8f1dce9488d8bf91ab46fda4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1_Collider: {fileID: 0}
   Box1_Collider: {fileID: 0}
   Box2_Collider: {fileID: 0}
   Box3_Collider: {fileID: 0}
@@ -169,10 +168,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WrongWaySign: {fileID: 0}
   TimeBeforeSignShowedUp: 1.5
-  WayBox1_Collider: {fileID: 0}
-  WayBox2_Collider: {fileID: 0}
-  WayBox3_Collider: {fileID: 0}
-  WayBox4_Collider: {fileID: 0}
+  LeftWayBoxCollider: {fileID: 0}
+  UpWayBoxCollider: {fileID: 0}
+  RightWayBoxCollider: {fileID: 0}
+  DownWayBoxCollider: {fileID: 0}
 --- !u!114 &6923105468406161632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,8 +198,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.046312448, y: -0.01239872}
-  m_Size: {x: 1.3751324, y: 6.181686}
+  m_Offset: {x: -1.0300863, y: -1.2413785}
+  m_Size: {x: 22.033566, y: 97.1776}
   m_Direction: 0
 --- !u!114 &6923105468406161633
 MonoBehaviour:
@@ -231,9 +230,9 @@ MonoBehaviour:
     type: 3}
   SpeedToCollectBarrel: 15
   OilDropPlaceFrom: {fileID: 6923105467877225806}
-  PlayerForwardButton: 1
-  PlayerHorizontalButton: 3
-  PlayerDropOilButton: 5
+  PlayerForwardButton: 0
+  PlayerHorizontalButton: 2
+  PlayerDropOilButton: 4
   RaceMap: {fileID: 8658889496290970938, guid: 122d2cd790b39bc43bb1014af0d568ec, type: 3}
 --- !u!1 &6923105468462318114
 GameObject:
@@ -515,7 +514,7 @@ Transform:
   m_GameObject: {fileID: 6923105469170721431}
   m_LocalRotation: {x: -0, y: -0, z: 0.70710707, w: 0.70710653}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.7306263, y: 1.7306263, z: 1.7306263}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6923105468406161662}
   m_RootOrder: 0
@@ -563,8 +562,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 5.12, y: 5.12}
+  m_DrawMode: 1
+  m_Size: {x: 100, y: 50}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

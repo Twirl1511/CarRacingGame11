@@ -5,14 +5,14 @@ using UnityEngine;
 public class WrongWayIndicator : MonoBehaviour
 {
     private Rigidbody2D PlayerRigidbody;
-    public GameObject WrongWaySign;
+    [SerializeField] private GameObject WrongWaySign;
 
     [SerializeField] private float TimeBeforeSignShowedUp = 1.5f;
 
-    public Collider2D WayBox1_Collider;
-    public Collider2D WayBox2_Collider;
-    public Collider2D WayBox3_Collider;
-    public Collider2D WayBox4_Collider;
+    public Collider2D LeftWayBoxCollider;
+    public Collider2D UpWayBoxCollider;
+    public Collider2D RightWayBoxCollider;
+    public Collider2D DownWayBoxCollider;
 
     private bool WrongWayFlag = true;
 
@@ -24,7 +24,7 @@ public class WrongWayIndicator : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         #region [WayBox1]
-        if (collision.Equals(WayBox1_Collider))
+        if (collision.Equals(LeftWayBoxCollider))
         {
             if (Vector2.Dot(PlayerRigidbody.velocity, Vector2.left) < 0)
             {
@@ -42,7 +42,7 @@ public class WrongWayIndicator : MonoBehaviour
         }
         #endregion
         #region [WayBox2]
-        if (collision.Equals(WayBox2_Collider))
+        if (collision.Equals(UpWayBoxCollider))
         {
             if (Vector2.Dot(PlayerRigidbody.velocity, Vector2.up) < 0)
             {
@@ -59,7 +59,7 @@ public class WrongWayIndicator : MonoBehaviour
         }
         #endregion
         #region [WayBox3]
-        if (collision.Equals(WayBox3_Collider))
+        if (collision.Equals(RightWayBoxCollider))
         {
             if (Vector2.Dot(PlayerRigidbody.velocity, Vector2.right) < 0)
             {
@@ -76,7 +76,7 @@ public class WrongWayIndicator : MonoBehaviour
         }
         #endregion
         #region [WayBox4]
-        if (collision.Equals(WayBox4_Collider))
+        if (collision.Equals(DownWayBoxCollider))
         {
             if (Vector2.Dot(PlayerRigidbody.velocity, Vector2.down) < 0)
             {
