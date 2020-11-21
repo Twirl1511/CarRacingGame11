@@ -2985,7 +2985,7 @@ PrefabInstance:
     - target: {fileID: 2597048024287976352, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976356, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
@@ -4919,7 +4919,7 @@ PrefabInstance:
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerHorizontalButton
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -5897,7 +5897,7 @@ PrefabInstance:
     - target: {fileID: 2597048024287976352, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976356, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
