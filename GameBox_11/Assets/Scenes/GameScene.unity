@@ -442,10 +442,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6f13d1dc4c4d34e991cf584269441a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeBeforeSpawn: 15
+  TimeBeforeSpawn: 1
   BarrelPrefab: {fileID: 6205861842887885182, guid: 866252cf79bd47640893328049ad40d2,
     type: 3}
-  Player_Speed: 25
+  CurrentBarrelsOnMap: 2
 --- !u!1 &43487380
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,6 +610,7 @@ GameObject:
   - component: {fileID: 58046773}
   - component: {fileID: 58046776}
   - component: {fileID: 58046777}
+  - component: {fileID: 58046778}
   m_Layer: 0
   m_Name: Player_2_car_red
   m_TagString: Player
@@ -693,7 +694,8 @@ Transform:
   m_LocalPosition: {x: -46.1, y: 29.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1761584010}
+  - {fileID: 1611590463}
+  - {fileID: 809087543}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.00001}
@@ -728,6 +730,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CenterOfMass: {x: 0, y: 0}
+--- !u!114 &58046778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58046771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404918e1153b1a64e9bd8af3b04df57f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerSpeed: 30
+  PlayerFirstSpeed: 50
+  FirstSpeedLimit: 8
+  PlayerSecondSpeed: 80
+  SecondSpeedLimit: 13
+  PlayerThirdSpeed: 100
+  ThirdSpeedLimit: 22
+  PlayerTorgueForce: 45
+  PlayerSlowDown: 5
+  PlayerDriftFactor: 0.93
+  PlayerSpeed_for_torgue: 3
+  PlayerCenterOfMass: 1
+  PlayerSpeedLimit: 
+  OilPrefab: {fileID: 8698926157362173323, guid: c83a8570e3b35bb43b28f614423c9646,
+    type: 3}
+  SpeedToCollectBarrel: 15
+  OilDropPlaceFrom: {fileID: 809087542}
+  PlayerForwardButton: 1
+  PlayerHorizontalButton: 3
+  PlayerDropOilButton: 5
+  RaceMap: {fileID: 38035887}
 --- !u!1 &70730195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2983,6 +3018,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766137021}
   m_CullTransparentMesh: 0
+--- !u!1 &809087542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 809087543}
+  m_Layer: 0
+  m_Name: Player2_drop_oil_pace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &809087543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809087542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -7.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 58046775}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &843960493
 GameObject:
   m_ObjectHideFlags: 0
@@ -3610,7 +3675,7 @@ GameObject:
   - component: {fileID: 1112665201}
   m_Layer: 0
   m_Name: Player_1_Motocircle
-  m_TagString: Player
+  m_TagString: Player_1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3737,22 +3802,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 404918e1153b1a64e9bd8af3b04df57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1_Speed: 30
-  Player1_FirstSpeed: 60
-  Player1_SecondSpeed: 70
-  Player1_ThirdSpeed: 80
-  Player1_FirstSpeedLimit: 7
-  Player1_SecondSpeedLimit: 13
-  Player1_ThirdSpeedLimit: 16
-  Player1_TorgueForce: 40
-  Player1_SlowDown: 5
-  Player1_DriftFactor: 0.97
-  Player1_Speed_for_torgue: 3
-  Player1_CenterOfMass: -0.4
-  Player1_SpeedLimit: 
-  Oil: {fileID: 8698926157362173323, guid: c83a8570e3b35bb43b28f614423c9646, type: 3}
-  SpeedToCollectOil: 10
-  OilDropPlace: {fileID: 601553374}
+  PlayerSpeed: 30
+  PlayerFirstSpeed: 50
+  FirstSpeedLimit: 7
+  PlayerSecondSpeed: 80
+  SecondSpeedLimit: 12
+  PlayerThirdSpeed: 100
+  ThirdSpeedLimit: 20
+  PlayerTorgueForce: 45
+  PlayerSlowDown: 5
+  PlayerDriftFactor: 0.93
+  PlayerSpeed_for_torgue: 3
+  PlayerCenterOfMass: 1
+  PlayerSpeedLimit: 
+  OilPrefab: {fileID: 8698926157362173323, guid: c83a8570e3b35bb43b28f614423c9646,
+    type: 3}
+  SpeedToCollectBarrel: 15
+  OilDropPlaceFrom: {fileID: 601553374}
+  PlayerForwardButton: 0
+  PlayerHorizontalButton: 2
+  PlayerDropOilButton: 4
+  RaceMap: {fileID: 38035887}
 --- !u!1 &1124855269
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,7 +5069,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.49600327, y: 0.49600327, z: 0.4960032}
   m_Children: []
-  m_Father: {fileID: 1761584010}
+  m_Father: {fileID: 58046775}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &1611590464
@@ -5550,37 +5620,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719508525}
   m_CullTransparentMesh: 0
---- !u!1 &1761584009
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1761584010}
-  m_Layer: 0
-  m_Name: Player_2_car_parrentObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1761584010
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761584009}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1611590463}
-  m_Father: {fileID: 58046775}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1771406384
 GameObject:
   m_ObjectHideFlags: 0

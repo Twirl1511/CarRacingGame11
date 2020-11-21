@@ -18,7 +18,7 @@ public class Debug_panel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Player1_Speed.text = Player1_Controller.GetComponent<Player1_Controller>().Player1_SpeedLimit;
+        Player1_Speed.text = Player1_Controller.GetComponent<Player_Controller>().PlayerSpeedLimit;
         //Player2_Speed.text = Player2_Controller.GetComponent<Player2_Controller>().Player2_SpeedLimit;
     }
 }

@@ -6,8 +6,10 @@ public class Barrel_controller : MonoBehaviour
 {
     [SerializeField] private float TimeBeforeSpawn = 2f;
     [SerializeField] private GameObject BarrelPrefab;
-    private bool Flag = true;
-    public float Player_Speed = 10;
+    private bool BarrelDelayFlag = true;
+    private const int MAX_BARRELS_ON_MAP = 2;
+    public int CurrentBarrelsOnMap = 2;
+
 
     private void Start()
     {
@@ -15,10 +17,11 @@ public class Barrel_controller : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (Flag)
+        if (BarrelDelayFlag && CurrentBarrelsOnMap < MAX_BARRELS_ON_MAP)
         {
             StartCoroutine(SpawnBarrel());
-            Flag = false;
+            CurrentBarrelsOnMap++;
+            BarrelDelayFlag = false;
         }
         
     }
@@ -40,7 +43,7 @@ public class Barrel_controller : MonoBehaviour
     {
         yield return new WaitForSeconds(TimeBeforeSpawn);
         Instantiate(BarrelPrefab, FindPosition(), Quaternion.identity);
-        Flag = true;
+        BarrelDelayFlag = true;
     }
 
 
