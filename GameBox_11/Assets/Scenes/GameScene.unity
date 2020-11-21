@@ -284,14 +284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a644133045a9364d805c40b39a0ca9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1_CircleCounterText: {fileID: 1431878075}
-  Player2_CircleCounterText: {fileID: 535212439}
-  Player1_SpeedText: {fileID: 1425068277}
-  Player2_SpeedText: {fileID: 389071912}
-  Player1_car: {fileID: 1824254905}
-  Player1_moto: {fileID: 1184299469}
-  Player2_car: {fileID: 896659517}
-  Player2_moto: {fileID: 1488744660}
 --- !u!1 &35282826
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,7 +923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: 0, y: -500}
+  BounceDicertion: {x: 0, y: -20000}
 --- !u!1 &182315071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,7 +994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: 0, y: 500}
+  BounceDicertion: {x: 0, y: 20000}
 --- !u!1 &187140747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,7 +1806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: -500, y: 0}
+  BounceDicertion: {x: -20000, y: 0}
 --- !u!1 &331406664
 GameObject:
   m_ObjectHideFlags: 0
@@ -3129,12 +3121,6 @@ PrefabInstance:
       objectReference: {fileID: 378102247}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b, type: 3}
---- !u!1 &896659517 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2597048024287976352, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
-    type: 3}
-  m_PrefabInstance: {fileID: 896659516}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &934266601
 GameObject:
   m_ObjectHideFlags: 0
@@ -3702,7 +3688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: 500, y: 0}
+  BounceDicertion: {x: 20000, y: 0}
 --- !u!1001 &1184299468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3729,6 +3715,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player1_moto
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161658, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161660, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -3882,12 +3873,6 @@ PrefabInstance:
       objectReference: {fileID: 293852063}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f298ada6d54dfa74095c0fe2077e0545, type: 3}
---- !u!1 &1184299469 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6923105468406161658, guid: f298ada6d54dfa74095c0fe2077e0545,
-    type: 3}
-  m_PrefabInstance: {fileID: 1184299468}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1198461689
 GameObject:
   m_ObjectHideFlags: 0
@@ -4267,7 +4252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: 500, y: 0}
+  BounceDicertion: {x: 20000, y: 0}
 --- !u!61 &1276417891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4338,7 +4323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: 0, y: 500}
+  BounceDicertion: {x: 0, y: 20000}
 --- !u!61 &1280613811
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4919,7 +4904,7 @@ PrefabInstance:
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerHorizontalButton
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -4934,12 +4919,42 @@ PrefabInstance:
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerSpeed
-      value: 800
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerTorgueForce
-      value: 300
+      value: 5200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerFirstSpeed
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerSecondSpeed
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerThirdSpeed
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: FirstSpeedLimit
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: SecondSpeedLimit
+      value: 190
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: ThirdSpeedLimit
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161658, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -4966,6 +4981,11 @@ PrefabInstance:
       propertyPath: Box4_Collider
       value: 
       objectReference: {fileID: 378102247}
+    - target: {fileID: 6923105468406161661, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1.15
+      objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161662, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5098,12 +5118,6 @@ PrefabInstance:
       objectReference: {fileID: 216075194}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f298ada6d54dfa74095c0fe2077e0545, type: 3}
---- !u!1 &1488744660 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6923105468406161658, guid: f298ada6d54dfa74095c0fe2077e0545,
-    type: 3}
-  m_PrefabInstance: {fileID: 1488744659}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1546052986
 GameObject:
   m_ObjectHideFlags: 0
@@ -5229,7 +5243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: -500, y: 0}
+  BounceDicertion: {x: -20000, y: 0}
 --- !u!61 &1611950442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5897,7 +5911,7 @@ PrefabInstance:
     - target: {fileID: 2597048024287976352, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976356, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
@@ -5954,11 +5968,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
       objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976357, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976357, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: RaceMap
       value: 
       objectReference: {fileID: 38035887}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: PlayerSpeed
+      value: 620
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: PlayerFirstSpeed
+      value: 620
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: PlayerSecondSpeed
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: PlayerThirdSpeed
+      value: 940
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: PlayerTorgueForce
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: FirstSpeedLimit
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: SecondSpeedLimit
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: SpeedToCollectBarrel
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: ThirdSpeedLimit
+      value: 210
+      objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976363, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: LeftWayBoxCollider
@@ -6006,12 +6075,6 @@ PrefabInstance:
       objectReference: {fileID: 35282827}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b, type: 3}
---- !u!1 &1824254905 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2597048024287976352, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1824254904}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1828710821
 GameObject:
   m_ObjectHideFlags: 0
@@ -6130,7 +6193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: 0, y: -500}
+  BounceDicertion: {x: 0, y: -20000}
 --- !u!61 &1841729742
 BoxCollider2D:
   m_ObjectHideFlags: 0
