@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class Player2_CircleCounter : MonoBehaviour
 {
-    public Collider2D Player2_Collider;
 
-    public Collider2D Box1_Collider;
-    public Collider2D Box2_Collider;
-    public Collider2D Box3_Collider;
-    public Collider2D Box4_Collider;
+    [SerializeField] private Collider2D Box1_Collider;
+    [SerializeField] private Collider2D Box2_Collider;
+    [SerializeField] private Collider2D Box3_Collider;
+    [SerializeField] private Collider2D Box4_Collider;
 
     private bool Player2_Box1_Flag;
     private bool Player2_Box2_Flag;
     private bool Player2_Box3_Flag;
     private bool Player2_Box4_Flag;
 
-    public int PlayerCircleCounter = 0;
+    [HideInInspector] public int PlayerCircleCounter = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

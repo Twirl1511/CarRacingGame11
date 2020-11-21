@@ -20,7 +20,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private float PlayerSpeed_for_torgue = 3f;
     [SerializeField] private float PlayerCenterOfMass = 1f;
 
-    public string PlayerSpeedLimit;
+    [HideInInspector] public string PlayerSpeedLimit;
     [SerializeField] private GameObject OilPrefab;
 
     private bool PlayerHasGotAnOil = true;
@@ -32,7 +32,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private Buttons PlayerDropOilButton;
 
     [SerializeField] private GameObject RaceMap;
-    public enum Buttons
+    private enum Buttons
     {
         P1_forward,
         P2_forward,
@@ -121,7 +121,7 @@ public class Player_Controller : MonoBehaviour
         }
     }
 
-
+    #region[Контроль заноса]
     private Vector2 RightVelocity(Transform transform, Rigidbody2D rigidbody)
     {
         return transform.right * Vector2.Dot(rigidbody.velocity, transform.right);
@@ -130,5 +130,5 @@ public class Player_Controller : MonoBehaviour
     {
         return transform.up * Vector2.Dot(rigidbody.velocity, transform.up);
     }
-
+    #endregion
 }
