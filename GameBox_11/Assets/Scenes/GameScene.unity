@@ -4680,6 +4680,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1_moto
       objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161660, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: Box1_Collider
+      value: 
+      objectReference: {fileID: 107496474}
+    - target: {fileID: 6923105468406161660, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: Box2_Collider
+      value: 
+      objectReference: {fileID: 378102247}
+    - target: {fileID: 6923105468406161660, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: Box3_Collider
+      value: 
+      objectReference: {fileID: 2125007393}
+    - target: {fileID: 6923105468406161660, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: Box4_Collider
+      value: 
+      objectReference: {fileID: 35282827}
     - target: {fileID: 6923105468406161662, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_LocalPosition.x
