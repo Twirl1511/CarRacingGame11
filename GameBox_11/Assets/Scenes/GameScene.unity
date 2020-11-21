@@ -442,10 +442,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6f13d1dc4c4d34e991cf584269441a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeBeforeSpawn: 1
+  TimeBeforeSpawn: 15
   BarrelPrefab: {fileID: 6205861842887885182, guid: 866252cf79bd47640893328049ad40d2,
     type: 3}
-  Player_Speed: 10
+  Player_Speed: 25
 --- !u!1 &43487380
 GameObject:
   m_ObjectHideFlags: 0
@@ -3662,8 +3662,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1.3
-  m_LinearDrag: 2.7
-  m_AngularDrag: 2.5
+  m_LinearDrag: 3
+  m_AngularDrag: 3
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -3738,17 +3738,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player1_Speed: 30
-  Player1_FirstSpeed: 50
-  Player1_SecondSpeed: 80
-  Player1_ThirdSpeed: 100
-  Player1_FirstSpeedLimit: 8
+  Player1_FirstSpeed: 60
+  Player1_SecondSpeed: 70
+  Player1_ThirdSpeed: 80
+  Player1_FirstSpeedLimit: 7
   Player1_SecondSpeedLimit: 13
-  Player1_ThirdSpeedLimit: 22
-  Player1_TorgueForce: 45
+  Player1_ThirdSpeedLimit: 16
+  Player1_TorgueForce: 40
   Player1_SlowDown: 5
-  Player1_DriftFactor: 0.93
+  Player1_DriftFactor: 0.97
   Player1_Speed_for_torgue: 3
-  Player1_CenterOfMass: 1
+  Player1_CenterOfMass: -0.4
   Player1_SpeedLimit: 
   Oil: {fileID: 8698926157362173323, guid: c83a8570e3b35bb43b28f614423c9646, type: 3}
   SpeedToCollectOil: 10
