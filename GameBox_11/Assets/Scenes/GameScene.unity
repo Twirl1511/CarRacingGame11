@@ -2977,7 +2977,7 @@ PrefabInstance:
     - target: {fileID: 2597048024287976352, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976356, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
@@ -3034,6 +3034,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90.00001
       objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976357, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976357, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976359, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_Offset.y
@@ -3073,6 +3083,51 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerDropOilButton
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: PlayerSpeed
+      value: 620
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: PlayerFirstSpeed
+      value: 620
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: FirstSpeedLimit
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: PlayerSecondSpeed
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: SecondSpeedLimit
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: PlayerThirdSpeed
+      value: 950
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: ThirdSpeedLimit
+      value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: PlayerTorgueForce
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: SpeedToCollectBarrel
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976363, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
@@ -3704,12 +3759,57 @@ PrefabInstance:
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerSpeed
-      value: 300
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerTorgueForce
-      value: 300
+      value: 5200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerFirstSpeed
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: FirstSpeedLimit
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerSecondSpeed
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: SecondSpeedLimit
+      value: 190
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerThirdSpeed
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: ThirdSpeedLimit
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: SpeedToCollectBarrel
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerCenterOfMass
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerDriftFactor
+      value: 0.92
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161658, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -3741,6 +3841,11 @@ PrefabInstance:
       propertyPath: Box4_Collider
       value: 
       objectReference: {fileID: 35282827}
+    - target: {fileID: 6923105468406161661, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1.15
+      objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161662, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4956,6 +5061,21 @@ PrefabInstance:
       propertyPath: ThirdSpeedLimit
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: SpeedToCollectBarrel
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerCenterOfMass
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerDriftFactor
+      value: 0.92
+      objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161658, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_Name
@@ -6001,7 +6121,7 @@ PrefabInstance:
     - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: PlayerThirdSpeed
-      value: 940
+      value: 950
       objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
