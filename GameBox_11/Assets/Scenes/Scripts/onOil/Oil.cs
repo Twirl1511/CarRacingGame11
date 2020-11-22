@@ -5,10 +5,12 @@ using UnityEngine;
 public class Oil : MonoBehaviour
 {
     [SerializeField] private int TimeToCleanUpFromOil = 2;
-    [SerializeField] private float DragFactor = 1;
-    private float DefaultDragFactor;
+    [SerializeField] private float AngularDragFactor = 1;
+    [SerializeField] private float LinerDragFactor = 1;
+    private float DefaultAngularDragFactor;
+    private float DefaultLinerDragFactor;
     public bool Flag = true;
-    public float TimeToDisappear = 2;
+    [SerializeField] private float TimeToDisappear = 2;
 
     private void Awake()
     {
@@ -18,8 +20,8 @@ public class Oil : MonoBehaviour
     {
         if (Flag)
         {
-            DefaultDragFactor = collision.gameObject.GetComponent<Rigidbody2D>().angularDrag;
-            Debug.Log("defaultDragFactor = " + DefaultDragFactor);
+            DefaultAngularDragFactor = collision.gameObject.GetComponent<Rigidbody2D>().angularDrag;
+            DefaultLinerDragFactor = collision.gameObject.GetComponent<Rigidbody2D>().drag;
             Flag = false;
         }
         
@@ -28,8 +30,8 @@ public class Oil : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Rigidbody2D>().angularDrag = DragFactor;
-            Debug.Log("dragFactor = " + DragFactor);
+            collision.gameObject.GetComponent<Rigidbody2D>().angularDrag = AngularDragFactor;
+            collision.gameObject.GetComponent<Rigidbody2D>().drag = LinerDragFactor;
         }
     }
 
@@ -37,8 +39,6 @@ public class Oil : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("вышел из коллизии");
-            Debug.Log("поворот = "+ collision.gameObject.GetComponent<Rigidbody2D>().angularDrag);
             StartCoroutine(SetDefaultForPlayer(collision));
         }
     }
@@ -47,8 +47,8 @@ public class Oil : MonoBehaviour
     private IEnumerator SetDefaultForPlayer(Collider2D collision)
     {
         yield return new WaitForSeconds(TimeToCleanUpFromOil);
-        collision.gameObject.GetComponent<Rigidbody2D>().angularDrag = DefaultDragFactor;
-        Debug.Log("отработал метод сетфедаулт = " + DefaultDragFactor);
+        collision.gameObject.GetComponent<Rigidbody2D>().angularDrag = DefaultAngularDragFactor;
+        collision.gameObject.GetComponent<Rigidbody2D>().drag = DefaultLinerDragFactor;
         Flag = true;
     }
 
@@ -56,7 +56,7 @@ public class Oil : MonoBehaviour
     {
         yield return new WaitForSeconds(TimeToDisappear);
         Debug.Log("выключить лужу");
-        this.gameObject.SetActive(false);
+        Destroy(this);
 
     }
 
