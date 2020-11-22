@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6205861841949348677}
   - component: {fileID: 6205861841949348676}
+  - component: {fileID: 4136240728822075807}
   m_Layer: 0
   m_Name: Canister
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 6205861841949348674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.63544, y: 0.63544, z: 0.63544}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6205861842887885168}
   m_RootOrder: 0
@@ -75,12 +76,31 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 100, y: 100}
+  m_Size: {x: 40, y: 50}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4136240728822075807
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6205861841949348674}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c4ce2ca4263dc4e818ecd6707ffc1143, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6205861842887885182
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,7 +170,7 @@ Animator:
   m_GameObject: {fileID: 6205861842887885182}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c4ce2ca4263dc4e818ecd6707ffc1143, type: 2}
+  m_Controller: {fileID: 9100000, guid: ff034c865851742818a5eca9926aab9a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
