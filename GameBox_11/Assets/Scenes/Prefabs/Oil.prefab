@@ -153,9 +153,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToCleanUpFromOil: 1
   AngularDragFactor: 1
-  LinerDragFactor: 2
+  LinerDragFactor: 1
   Flag: 1
   TimeToDisappear: 10
+  OilDrugSound: {fileID: 0}
 --- !u!68 &1333957036318506712
 EdgeCollider2D:
   m_ObjectHideFlags: 0
