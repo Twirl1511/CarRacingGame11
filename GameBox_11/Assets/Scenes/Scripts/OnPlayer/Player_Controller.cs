@@ -6,6 +6,7 @@ public class Player_Controller : MonoBehaviour
 {
     private Rigidbody2D PlayerRigidbody;
     private Transform PlayerTransform;
+    
     [SerializeField] private float CurrentPlayerSpeed = 30f;
     [SerializeField] private float PlayerFirstSpeed = 50f;
     [SerializeField] private float FirstSpeedLimit = 8;
@@ -33,6 +34,15 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private GameObject RaceMap;
     [SerializeField] private float TimeBeforeNextDamageFromPlayers;
     [SerializeField] private int HowManyCrushesBeforeTakeDamage;
+
+    [SerializeField] private AudioSource DropOlidSound;
+    [SerializeField] private AudioSource PickUpBarrelSound;
+
+    [SerializeField] private AudioSource CrushSound;
+    [SerializeField] private AudioSource DamageSound;
+
+
+
     private enum Buttons
     {
         P1_forward,
@@ -105,8 +115,8 @@ public class Player_Controller : MonoBehaviour
     {
         if (Input.GetButton(PlayerDropOilButton.ToString()) && PlayerHasGotAnOil)
         {
+            DropOlidSound.Play();
             PlayerHasGotAnOil = false;
-            
             Vector3 oilPosition = new Vector3(OilDropPlaceFrom.transform.position.x, OilDropPlaceFrom.transform.position.y, 0);
             Instantiate(Oil, oilPosition, Quaternion.Euler(0,0,0));
             RaceMap.GetComponent<Barrel_controller>().CurrentBarrelsOnMap--;
@@ -122,7 +132,7 @@ public class Player_Controller : MonoBehaviour
             && !PlayerHasGotAnOil)
         {
             PlayerHasGotAnOil = true;
-            
+            PickUpBarrelSound.Play();
             Destroy(collision.gameObject);
         }
     }
@@ -152,11 +162,13 @@ public class Player_Controller : MonoBehaviour
             else if(!collision.gameObject.CompareTag("Player"))
             {
                 crushesCounter++;
-                if (crushesCounter >= HowManyCrushesBeforeTakeDamage)
+                CrushSound.Play();
+            if (crushesCounter >= HowManyCrushesBeforeTakeDamage)
                 {
                     if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
                     if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
                     crushesCounter = 0;
+                    DamageSound.Play();
                 }
             }
             
@@ -191,4 +203,6 @@ public class Player_Controller : MonoBehaviour
         return transform.up * Vector2.Dot(rigidbody.velocity, transform.up);
     }
     #endregion
+
+    
 }
