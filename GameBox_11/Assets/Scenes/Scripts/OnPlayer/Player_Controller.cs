@@ -31,6 +31,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private Buttons PlayerDropOilButton;
 
     [SerializeField] private GameObject RaceMap;
+    [SerializeField] private float TimeBeforeNextDemageFromPlayers;
     private enum Buttons
     {
         P1_forward,
@@ -124,16 +125,45 @@ public class Player_Controller : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
+    private bool flagToControlDemageFromPlayers = true;
+    /// <summary>
+    /// демаг и уменьшение третьей скорости от столкновений
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (Racer == TypeOfRacer.Moto)
         {
-            PlayerThirdSpeed -= 50;
+            if (collision.gameObject.CompareTag("Player") && flagToControlDemageFromPlayers == true)
+            {
+                flagToControlDemageFromPlayers = false;
+                PlayerThirdSpeed -= 50;
+                StartCoroutine(DelayBeforeNextDemageFromPlayers());
+            }
+            else if(!collision.gameObject.CompareTag("Player"))
+            {
+                PlayerThirdSpeed -= 50;
+            }
+            
         }
         if (Racer == TypeOfRacer.Car)
         {
-            PlayerThirdSpeed -= 30;
+            if (collision.gameObject.CompareTag("Player") && flagToControlDemageFromPlayers == true)
+            {
+                flagToControlDemageFromPlayers = false;
+                PlayerThirdSpeed -= 30;
+                StartCoroutine(DelayBeforeNextDemageFromPlayers());
+            }
+            else if (!collision.gameObject.CompareTag("Player"))
+            {
+                PlayerThirdSpeed -= 30;
+            }
         }
+    }
+    private IEnumerator DelayBeforeNextDemageFromPlayers()
+    {
+        yield return new WaitForSeconds(TimeBeforeNextDemageFromPlayers);
+        flagToControlDemageFromPlayers = true;
     }
 
     #region[Контроль заноса]

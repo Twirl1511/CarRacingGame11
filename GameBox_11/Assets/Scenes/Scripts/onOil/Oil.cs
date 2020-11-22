@@ -55,7 +55,6 @@ public class Oil : MonoBehaviour
     private IEnumerator DisappearOil()
     {
         yield return new WaitForSeconds(TimeToDisappear);
-        Debug.Log("выключить лужу");
         Destroy(this);
 
     }
