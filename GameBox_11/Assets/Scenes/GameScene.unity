@@ -3976,7 +3976,7 @@ PrefabInstance:
     - target: {fileID: 2597048024287976357, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_AngularDrag
-      value: 3.6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976357, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
@@ -4061,7 +4061,7 @@ PrefabInstance:
     - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: PlayerTorgueForce
-      value: 5000
+      value: 7500
       objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
@@ -4983,7 +4983,7 @@ PrefabInstance:
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerTorgueForce
-      value: 5200
+      value: 4400
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -5023,12 +5023,12 @@ PrefabInstance:
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerCenterOfMass
-      value: -0.4
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerDriftFactor
-      value: 0.92
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -5159,6 +5159,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161661, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161662, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -6702,7 +6707,7 @@ PrefabInstance:
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerTorgueForce
-      value: 5200
+      value: 4400
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -6742,12 +6747,12 @@ PrefabInstance:
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerCenterOfMass
-      value: -0.4
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerDriftFactor
-      value: 0.92
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -6878,6 +6883,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161661, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161662, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -8189,7 +8199,7 @@ PrefabInstance:
     - target: {fileID: 2597048024287976357, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_AngularDrag
-      value: 3.6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976357, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
@@ -8244,7 +8254,7 @@ PrefabInstance:
     - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: PlayerTorgueForce
-      value: 5000
+      value: 7500
       objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
@@ -9105,7 +9115,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087582928}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 902c27ea03c89475cb189165d6f50ebb, type: 3}
