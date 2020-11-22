@@ -31,7 +31,8 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private Buttons PlayerDropOilButton;
 
     [SerializeField] private GameObject RaceMap;
-    [SerializeField] private float TimeBeforeNextDemageFromPlayers;
+    [SerializeField] private float TimeBeforeNextDamageFromPlayers;
+    [SerializeField] private int HowManyCrushesBeforeTakeDamage;
     private enum Buttons
     {
         P1_forward,
@@ -125,45 +126,59 @@ public class Player_Controller : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-    private bool flagToControlDemageFromPlayers = true;
+    private bool flagToControlDamageFromPlayers = true;
+    private int crushesCounter = 0;
+    
     /// <summary>
     /// демаг и уменьшение третьей скорости от столкновений
     /// </summary>
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Racer == TypeOfRacer.Moto)
-        {
-            if (collision.gameObject.CompareTag("Player") && flagToControlDemageFromPlayers == true)
+ 
+            if (collision.gameObject.CompareTag("Player") && flagToControlDamageFromPlayers == true)
             {
-                flagToControlDemageFromPlayers = false;
-                PlayerThirdSpeed -= 50;
+                crushesCounter++;
+                flagToControlDamageFromPlayers = false;
+                if(crushesCounter >= HowManyCrushesBeforeTakeDamage)
+                {
+                    if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
+                    if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
+                    crushesCounter = 0;
+                }
+                
                 StartCoroutine(DelayBeforeNextDemageFromPlayers());
             }
             else if(!collision.gameObject.CompareTag("Player"))
             {
-                PlayerThirdSpeed -= 50;
+                crushesCounter++;
+                if (crushesCounter >= HowManyCrushesBeforeTakeDamage)
+                {
+                    if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
+                    if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
+                    crushesCounter = 0;
+                }
             }
             
-        }
-        if (Racer == TypeOfRacer.Car)
-        {
-            if (collision.gameObject.CompareTag("Player") && flagToControlDemageFromPlayers == true)
-            {
-                flagToControlDemageFromPlayers = false;
-                PlayerThirdSpeed -= 30;
-                StartCoroutine(DelayBeforeNextDemageFromPlayers());
-            }
-            else if (!collision.gameObject.CompareTag("Player"))
-            {
-                PlayerThirdSpeed -= 30;
-            }
-        }
+        
+        //if (Racer == TypeOfRacer.Car)
+        //{
+        //    if (collision.gameObject.CompareTag("Player") && flagToControlDamageFromPlayers == true)
+        //    {
+        //        flagToControlDamageFromPlayers = false;
+        //        PlayerThirdSpeed -= 30;
+        //        StartCoroutine(DelayBeforeNextDemageFromPlayers());
+        //    }
+        //    else if (!collision.gameObject.CompareTag("Player"))
+        //    {
+        //        PlayerThirdSpeed -= 30;
+        //    }
+        //}
     }
     private IEnumerator DelayBeforeNextDemageFromPlayers()
     {
-        yield return new WaitForSeconds(TimeBeforeNextDemageFromPlayers);
-        flagToControlDemageFromPlayers = true;
+        yield return new WaitForSeconds(TimeBeforeNextDamageFromPlayers);
+        flagToControlDamageFromPlayers = true;
     }
 
     #region[Контроль заноса]
