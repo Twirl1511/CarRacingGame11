@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Score_panel : MonoBehaviour
+public class ScorePanel : MonoBehaviour
 {
     [SerializeField] private Text Player1_CircleCounterText;
     [SerializeField] private Text Player2_CircleCounterText;
