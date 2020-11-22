@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Barrel_controller : MonoBehaviour
 {
-    [SerializeField] private float TimeBeforeSpawn = 2f;
+    [SerializeField] private float TimeBeforeSpawnFrom = 2f;
+    [SerializeField] private float TimeBeforeSpawnTo = 2f;
     [SerializeField] private GameObject BarrelPrefab;
     private bool BarrelDelayFlag = true;
     private const int MAX_BARRELS_ON_MAP = 2;
@@ -69,7 +70,7 @@ public class Barrel_controller : MonoBehaviour
 
     private IEnumerator SpawnBarrel()
     {
-        yield return new WaitForSeconds(TimeBeforeSpawn);
+        yield return new WaitForSeconds(Random.Range(TimeBeforeSpawnFrom, TimeBeforeSpawnTo));
         Instantiate(BarrelPrefab, FindPosition(), Quaternion.identity);
         BarrelDelayFlag = true;
     }

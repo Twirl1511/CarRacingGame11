@@ -447,7 +447,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6f13d1dc4c4d34e991cf584269441a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeBeforeSpawn: 15
+  TimeBeforeSpawnFrom: 15
+  TimeBeforeSpawnTo: 25
   BarrelPrefab: {fileID: 6205861842887885182, guid: 866252cf79bd47640893328049ad40d2,
     type: 3}
   CurrentBarrelsOnMap: 2
