@@ -6,7 +6,7 @@ public class Player_Controller : MonoBehaviour
 {
     private Rigidbody2D PlayerRigidbody;
     private Transform PlayerTransform;
-    [SerializeField] private float PlayerSpeed = 30f;
+    [SerializeField] private float CurrentPlayerSpeed = 30f;
     [SerializeField] private float PlayerFirstSpeed = 50f;
     [SerializeField] private float FirstSpeedLimit = 8;
     [SerializeField] private float PlayerSecondSpeed = 80f;
@@ -25,6 +25,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] float SpeedToCollectBarrel = 10;
     [SerializeField] GameObject OilDropPlaceFrom;
 
+    [SerializeField] private TypeOfRacer Racer;
     [SerializeField] private Buttons PlayerForwardButton;
     [SerializeField] private Buttons PlayerHorizontalButton;
     [SerializeField] private Buttons PlayerDropOilButton;
@@ -38,6 +39,11 @@ public class Player_Controller : MonoBehaviour
         P2_horizontal,
         P1_back,
         P2_back
+    }
+    private enum TypeOfRacer
+    {
+        Moto,
+        Car
     }
 
 
@@ -60,7 +66,7 @@ public class Player_Controller : MonoBehaviour
         #region[Основное управление]
         if (Input.GetButton(PlayerForwardButton.ToString()))
         {
-            PlayerRigidbody.AddForce(PlayerTransform.up * PlayerSpeed);
+            PlayerRigidbody.AddForce(PlayerTransform.up * CurrentPlayerSpeed);
         }
 
         PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * PlayerTorgueForce);
@@ -73,15 +79,15 @@ public class Player_Controller : MonoBehaviour
         #region[Логика разгона и ускорения]
         if (PlayerRigidbody.velocity.magnitude > FirstSpeedLimit)
         {
-            PlayerSpeed = PlayerFirstSpeed;
+            CurrentPlayerSpeed = PlayerFirstSpeed;
         }
         if (PlayerRigidbody.velocity.magnitude > SecondSpeedLimit)
         {
-            PlayerSpeed = PlayerSecondSpeed;
+            CurrentPlayerSpeed = PlayerSecondSpeed;
         }
         if (PlayerRigidbody.velocity.magnitude > ThirdSpeedLimit)
         {
-            PlayerSpeed = PlayerThirdSpeed;
+            CurrentPlayerSpeed = PlayerThirdSpeed;
         }
         #endregion
 
@@ -116,6 +122,17 @@ public class Player_Controller : MonoBehaviour
             PlayerHasGotAnOil = true;
             
             Destroy(collision.gameObject);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (Racer == TypeOfRacer.Moto)
+        {
+            PlayerThirdSpeed -= 50;
+        }
+        if (Racer == TypeOfRacer.Car)
+        {
+            PlayerThirdSpeed -= 30;
         }
     }
 
