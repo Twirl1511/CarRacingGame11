@@ -37,7 +37,7 @@ public class Player_Controller : MonoBehaviour
 
     [SerializeField] private AudioSource DropOlidSound;
     [SerializeField] private AudioSource PickUpBarrelSound;
-
+    [SerializeField] private AudioSource OilDriftSound;
     [SerializeField] private AudioSource CrushSound;
     [SerializeField] private AudioSource DamageSound;
 
@@ -135,6 +135,10 @@ public class Player_Controller : MonoBehaviour
             PickUpBarrelSound.Play();
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.CompareTag("Oil"))
+        {
+            OilDriftSound.Play();
+        }
     }
     private bool flagToControlDamageFromPlayers = true;
     private int crushesCounter = 0;
@@ -145,9 +149,10 @@ public class Player_Controller : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
- 
+            // эффект при коллизии с плеером, можно удариться не чаще определенного времени
             if (collision.gameObject.CompareTag("Player") && flagToControlDamageFromPlayers == true)
             {
+                CrushSound.Play();
                 crushesCounter++;
                 flagToControlDamageFromPlayers = false;
                 if(crushesCounter >= HowManyCrushesBeforeTakeDamage)
@@ -157,8 +162,8 @@ public class Player_Controller : MonoBehaviour
                     crushesCounter = 0;
                 }
                 
-                StartCoroutine(DelayBeforeNextDemageFromPlayers());
-            }
+                StartCoroutine(DelayBeforeNextDemageFromPlayers(TimeBeforeNextDamageFromPlayers));
+            } // если с любым другим объектом
             else if(!collision.gameObject.CompareTag("Player"))
             {
                 crushesCounter++;
@@ -171,26 +176,16 @@ public class Player_Controller : MonoBehaviour
                     DamageSound.Play();
                 }
             }
-            
-        
-        //if (Racer == TypeOfRacer.Car)
-        //{
-        //    if (collision.gameObject.CompareTag("Player") && flagToControlDamageFromPlayers == true)
-        //    {
-        //        flagToControlDamageFromPlayers = false;
-        //        PlayerThirdSpeed -= 30;
-        //        StartCoroutine(DelayBeforeNextDemageFromPlayers());
-        //    }
-        //    else if (!collision.gameObject.CompareTag("Player"))
-        //    {
-        //        PlayerThirdSpeed -= 30;
-        //    }
-        //}
     }
-    private IEnumerator DelayBeforeNextDemageFromPlayers()
+    private IEnumerator DelayBeforeNextDemageFromPlayers(float TimeBeforeNextDamageFromPlayers)
     {
         yield return new WaitForSeconds(TimeBeforeNextDamageFromPlayers);
         flagToControlDamageFromPlayers = true;
+    }
+   
+    private void PlayOildDriftSound()
+    {
+        OilDriftSound.Play();
     }
 
     #region[Контроль заноса]

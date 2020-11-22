@@ -48,15 +48,16 @@ public class CircleCounter : MonoBehaviour
            Box4_Flag)
         {
             PlayerCircleCounter++;
-            if(PlayerCircleCounter == HOW_MANY_CIRCLES_TO_WIN)
+            if(PlayerCircleCounter >= HOW_MANY_CIRCLES_TO_WIN)
             {
-                CircleCompleteSound.Play();
+                VictorySound.Play();
             }
             
             Box1_Flag = false;
             Box2_Flag = false;
             Box3_Flag = false;
             Box4_Flag = false;
+            CircleCompleteSound.Play();
         }
         
     }

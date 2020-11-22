@@ -11,7 +11,6 @@ public class Oil : MonoBehaviour
     private float DefaultLinerDragFactor;
     public bool Flag = true;
     [SerializeField] private float TimeToDisappear = 2;
-    [SerializeField] private AudioSource OilDrugSound;
 
     private void Awake()
     {
@@ -24,7 +23,6 @@ public class Oil : MonoBehaviour
             DefaultAngularDragFactor = collision.gameObject.GetComponent<Rigidbody2D>().angularDrag;
             DefaultLinerDragFactor = collision.gameObject.GetComponent<Rigidbody2D>().drag;
             Flag = false;
-            OilDrugSound.Play();
         }
         
     }
@@ -57,7 +55,7 @@ public class Oil : MonoBehaviour
     private IEnumerator DisappearOil()
     {
         yield return new WaitForSeconds(TimeToDisappear);
-        Destroy(this);
+        Destroy(gameObject);
 
     }
 

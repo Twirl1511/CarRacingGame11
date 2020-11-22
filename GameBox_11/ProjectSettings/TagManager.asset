@@ -8,6 +8,7 @@ TagManager:
   - '!'
   - Barrel_Oil
   - Player_1
+  - Oil
   layers:
   - Default
   - TransparentFX
