@@ -8,6 +8,9 @@ public class CircleCounter : MonoBehaviour
     [SerializeField] private Collider2D Box2_Collider;
     [SerializeField] private Collider2D Box3_Collider;
     [SerializeField] private Collider2D Box4_Collider;
+    [SerializeField] private AudioSource CircleCompleteSound;
+    private const int HOW_MANY_CIRCLES_TO_WIN = 10;
+    [SerializeField] private AudioSource VictorySound;
 
     private bool Box1_Flag;
     private bool Box2_Flag;
@@ -45,6 +48,11 @@ public class CircleCounter : MonoBehaviour
            Box4_Flag)
         {
             PlayerCircleCounter++;
+            if(PlayerCircleCounter == HOW_MANY_CIRCLES_TO_WIN)
+            {
+                CircleCompleteSound.Play();
+            }
+            
             Box1_Flag = false;
             Box2_Flag = false;
             Box3_Flag = false;
