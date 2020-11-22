@@ -3423,6 +3423,16 @@ PrefabInstance:
       propertyPath: SpeedToCollectBarrel
       value: 2000
       objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: CurrentPlayerSpeed
+      value: 620
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: Racer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976363, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: LeftWayBoxCollider
@@ -4146,6 +4156,11 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerDriftFactor
       value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: CurrentPlayerSpeed
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161658, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -5516,6 +5531,11 @@ PrefabInstance:
       propertyPath: PlayerDriftFactor
       value: 0.92
       objectReference: {fileID: 0}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: CurrentPlayerSpeed
+      value: 700
+      objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161658, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_Name
@@ -6784,6 +6804,16 @@ PrefabInstance:
         type: 3}
       propertyPath: ThirdSpeedLimit
       value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: CurrentPlayerSpeed
+      value: 620
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: Racer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976363, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
