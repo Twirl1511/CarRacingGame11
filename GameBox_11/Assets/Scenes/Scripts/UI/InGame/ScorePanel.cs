@@ -62,7 +62,7 @@ public class ScorePanel : MonoBehaviour
             Player1_CircleCounterText.text = Player1_moto.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
             Player1_SpeedText.text = Player1_moto.GetComponent<Player_Controller>().PlayerSpeedLimit;
         }
-        //blue
+        //blue car2
         if (Player2_car.gameObject.activeSelf)
         {
             Player2_CircleCounterText.text = Player2_car.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
