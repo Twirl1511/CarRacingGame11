@@ -29,7 +29,10 @@ public class ScorePanel : MonoBehaviour
     [SerializeField] private GameObject Player1_moto;
     [SerializeField] private GameObject Player2_car;
     [SerializeField] private GameObject Player2_moto;
-    
+
+    [SerializeField] private GameObject[] ArrowsPlayer1;
+    [SerializeField] private GameObject[] ArrowsPlayer2;
+
     void Update()
     {
         DamageDone();
@@ -153,6 +156,22 @@ public class ScorePanel : MonoBehaviour
         #region[red car 1]
         if (Player1_car.gameObject.activeSelf)
         {
+            int numberOfCircle;
+            for(int i = 0; i < ArrowsPlayer1.Length; i++)
+            {
+                numberOfCircle = Player1_car.GetComponent<CircleCounter>().PlayerCircleCounter - 1;
+
+                for(int j = 0; j < ArrowsPlayer1.Length; j++)
+                {
+                    ArrowsPlayer1[j].SetActive(false);
+                }
+                if(numberOfCircle >= 0 && numberOfCircle < 10)
+                {
+                    ArrowsPlayer1[numberOfCircle].SetActive(true);
+                }
+                
+            }
+
             Player1_CircleCounterText.text = Player1_car.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
             Player1_SpeedText.text = Player1_car.GetComponent<Player_Controller>().PlayerSpeedLimit;
 
