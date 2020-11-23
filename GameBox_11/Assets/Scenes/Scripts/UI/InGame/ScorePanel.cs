@@ -68,11 +68,11 @@ public class ScorePanel : MonoBehaviour
                 }
                 if (numberOfCircle >= 0 && numberOfCircle < 10)
                 {
-                    ArrowsPlayer2[numberOfCircle].SetActive(true);
+                    ArrowsPlayer1[numberOfCircle].SetActive(true);
                     if (numberOfCircle == 9)
                     {
                         VictoryPanel.SetActive(true);
-                        Player1_WinPanel.SetActive(true);
+                        Player2_WinPanel.SetActive(true);
                     }
                         
                 }
@@ -144,7 +144,7 @@ public class ScorePanel : MonoBehaviour
                     if (numberOfCircle == 9)
                     {
                         VictoryPanel.SetActive(true);
-                        Player1_WinPanel.SetActive(true);
+                        Player2_WinPanel.SetActive(true);
                     }
                 }
             }
@@ -216,7 +216,7 @@ public class ScorePanel : MonoBehaviour
                     if (numberOfCircle == 9)
                     {
                         VictoryPanel.SetActive(true);
-                        Player2_WinPanel.SetActive(true);
+                        Player1_WinPanel.SetActive(true);
                     }
                 }
             }
@@ -287,7 +287,7 @@ public class ScorePanel : MonoBehaviour
                     if (numberOfCircle == 9)
                     {
                         VictoryPanel.SetActive(true);
-                        Player2_WinPanel.SetActive(true);
+                        Player1_WinPanel.SetActive(true);
                     }
                 }
             }
