@@ -448,8 +448,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6f13d1dc4c4d34e991cf584269441a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeBeforeSpawnFrom: 5
-  TimeBeforeSpawnTo: 12
+  TimeBeforeSpawnFrom: 2
+  TimeBeforeSpawnTo: 10
   BarrelPrefab: {fileID: 6205861842887885182, guid: 866252cf79bd47640893328049ad40d2,
     type: 3}
   CurrentBarrelsOnMap: 2
@@ -8016,7 +8016,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e202c2d4ea86441d09bc9a323d63c7c4,
+      objectReference: {fileID: 21300000, guid: 3e316ccc2911243089672384c44afddf,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f298ada6d54dfa74095c0fe2077e0545, type: 3}
@@ -9279,7 +9279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1791930312
 MonoBehaviour:
   m_ObjectHideFlags: 0
