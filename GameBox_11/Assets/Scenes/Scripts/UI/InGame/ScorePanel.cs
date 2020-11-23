@@ -37,17 +37,17 @@ public class ScorePanel : MonoBehaviour
     // потом уберать говнокод с ифами
     private void DamageDone()
     {
-        if (Player1_car.gameObject.activeSelf)
-        {
-            Player1_CircleCounterText.text = Player1_car.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
-            Player1_SpeedText.text = Player1_car.GetComponent<Player_Controller>().PlayerSpeedLimit;
-        }
-        if (Player1_moto.gameObject.activeSelf)
-        {
-            Player1_CircleCounterText.text = Player1_moto.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
-            Player1_SpeedText.text = Player1_moto.GetComponent<Player_Controller>().PlayerSpeedLimit;
-        }
-        //blue car2
+        //if (Player1_car.gameObject.activeSelf)
+        //{
+        //    Player1_CircleCounterText.text = Player1_car.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
+        //    Player1_SpeedText.text = Player1_car.GetComponent<Player_Controller>().PlayerSpeedLimit;
+        //}
+        //if (Player1_moto.gameObject.activeSelf)
+        //{
+        //    Player1_CircleCounterText.text = Player1_moto.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
+        //    Player1_SpeedText.text = Player1_moto.GetComponent<Player_Controller>().PlayerSpeedLimit;
+        //}
+        #region[blue car 2]
         if (Player2_car.gameObject.activeSelf)
         {
             Player2_CircleCounterText.text = Player2_car.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
@@ -97,6 +97,8 @@ public class ScorePanel : MonoBehaviour
             }
 
         }
+        #endregion
+        #region[blue moto 2]
         if (Player2_moto.gameObject.activeSelf)
         {
             Player2_CircleCounterText.text = Player2_moto.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
@@ -147,5 +149,109 @@ public class ScorePanel : MonoBehaviour
                 BarrelPlayer2_Moto_FULL.SetActive(false);
             }
         }
+        #endregion
+        #region[red car 1]
+        if (Player1_car.gameObject.activeSelf)
+        {
+            Player1_CircleCounterText.text = Player1_car.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
+            Player1_SpeedText.text = Player1_car.GetComponent<Player_Controller>().PlayerSpeedLimit;
+
+            switch (Player1_car.GetComponent<Player_Controller>().HowManyDamagePlayerHas)
+            {
+                case 1:
+                    SpeedSticksPlayer1_Car[0].SetActive(false);
+                    break;
+                case 2:
+                    SpeedSticksPlayer1_Car[1].SetActive(false);
+                    break;
+                case 3:
+                    SpeedSticksPlayer1_Car[2].SetActive(false);
+                    break;
+                case 4:
+                    SpeedSticksPlayer1_Car[3].SetActive(false);
+                    break;
+                case 5:
+                    SpeedSticksPlayer1_Car[4].SetActive(false);
+                    break;
+                default:
+                    break;
+            }
+            switch (Player1_car.GetComponent<Player_Controller>().crushesCounter)
+            {
+                case 1:
+                    DurabilitySticksPlayer1_Car[0].SetActive(false);
+                    break;
+                case 2:
+                    DurabilitySticksPlayer1_Car[1].SetActive(false);
+                    break;
+                default:
+                    DurabilitySticksPlayer1_Car[0].SetActive(true);
+                    DurabilitySticksPlayer1_Car[1].SetActive(true);
+                    break;
+
+            }
+            if (Player1_car.GetComponent<Player_Controller>().PlayerHasGotAnOil)
+            {
+                BarrelPlayer1_Car_FULL.SetActive(true);
+            }
+            else
+            {
+                BarrelPlayer1_Car_FULL.SetActive(false);
+            }
+
+        }
+        #endregion
+        #region[red moto 1]
+        if (Player1_moto.gameObject.activeSelf)
+        {
+            Player1_CircleCounterText.text = Player1_moto.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
+            Player1_SpeedText.text = Player1_moto.GetComponent<Player_Controller>().PlayerSpeedLimit;
+
+            switch (Player1_moto.GetComponent<Player_Controller>().HowManyDamagePlayerHas)
+            {
+                case 1:
+                    SpeedSticksPlayer1_Moto[0].SetActive(false);
+                    break;
+                case 2:
+                    SpeedSticksPlayer1_Moto[1].SetActive(false);
+                    break;
+                case 3:
+                    SpeedSticksPlayer1_Moto[2].SetActive(false);
+                    break;
+                case 4:
+                    SpeedSticksPlayer1_Moto[3].SetActive(false);
+                    break;
+                case 5:
+                    SpeedSticksPlayer1_Moto[4].SetActive(false);
+                    break;
+                case 6:
+                    SpeedSticksPlayer1_Moto[5].SetActive(false);
+                    break;
+                case 7:
+                    SpeedSticksPlayer1_Moto[6].SetActive(false);
+                    break;
+                default:
+                    break;
+            }
+            switch (Player1_moto.GetComponent<Player_Controller>().crushesCounter)
+            {
+                case 1:
+                    DurabilitySticksPlayer1_Moto[0].SetActive(false);
+                    break;
+                default:
+                    DurabilitySticksPlayer1_Moto[0].SetActive(true);
+                    break;
+
+            }
+            if (Player1_moto.GetComponent<Player_Controller>().PlayerHasGotAnOil)
+            {
+                BarrelPlayer1_Moto_FULL.SetActive(true);
+            }
+            else
+            {
+                BarrelPlayer1_Moto_FULL.SetActive(false);
+            }
+        }
+        #endregion
     }
 }

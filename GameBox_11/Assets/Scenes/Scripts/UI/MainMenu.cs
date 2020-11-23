@@ -46,8 +46,18 @@ public class MainMenu : MonoBehaviour
 
     public void OnStartButtonClick()
     {
-        if (Player1_CarRed.gameObject.activeSelf == true) Player1_CarRedGameobject.SetActive(true);
-        if (Player1_MotoRed.gameObject.activeSelf == true) Player1_MotoRedGameobject.SetActive(true);
+        if (Player1_CarRed.gameObject.activeSelf == true)
+        {
+            Player1_CarRedGameobject.SetActive(true);
+            Player1_CarRedPanel.SetActive(true);
+        }
+            
+        if (Player1_MotoRed.gameObject.activeSelf == true)
+        {
+            Player1_MotoRedGameobject.SetActive(true);
+            Player1_MotoRedPanel.SetActive(true);
+        }
+            
         if (Player2_CarBlue.gameObject.activeSelf == true)
         {
             Player2_CarBlueGameobject.SetActive(true);
