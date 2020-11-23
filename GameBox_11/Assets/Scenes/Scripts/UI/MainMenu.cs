@@ -57,8 +57,8 @@ public class MainMenu : MonoBehaviour
     public void OnSoundClick()
     {
         SoundSwitch = !SoundSwitch;
-        MusicOn.gameObject.SetActive(!SoundSwitch);
-        MusicOff.gameObject.SetActive(SoundSwitch);
+        //MusicOn.gameObject.SetActive(!SoundSwitch);
+        //MusicOff.gameObject.SetActive(SoundSwitch);
         AudioListener.pause = SoundSwitch;
 
     }
