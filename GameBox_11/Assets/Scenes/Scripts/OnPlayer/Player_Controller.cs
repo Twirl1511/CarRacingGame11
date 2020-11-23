@@ -22,7 +22,7 @@ public class Player_Controller : MonoBehaviour
     [HideInInspector] public string PlayerSpeedLimit;
     [SerializeField] private GameObject OilPrefab;
 
-    private bool PlayerHasGotAnOil = true;
+    public bool PlayerHasGotAnOil = true;
     [SerializeField] float SpeedToCollectBarrel = 10;
     [SerializeField] GameObject OilDropPlaceFrom;
 

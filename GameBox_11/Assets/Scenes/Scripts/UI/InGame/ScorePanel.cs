@@ -15,6 +15,16 @@ public class ScorePanel : MonoBehaviour
     [SerializeField] private GameObject[] SpeedSticksPlayer2_Moto;
     [SerializeField] private GameObject[] DurabilitySticksPlayer2_Moto;
 
+    [SerializeField] private GameObject BarrelPlayer1_Car_FULL;
+    [SerializeField] private GameObject BarrelPlayer1_Car_EMPTY;
+    [SerializeField] private GameObject BarrelPlayer1_Moto_FULL;
+    [SerializeField] private GameObject BarrelPlayer1_Moto_EMPTY;
+
+    [SerializeField] private GameObject BarrelPlayer2_Car_FULL;
+    [SerializeField] private GameObject BarrelPlayer2_Car_EMPTY;
+    [SerializeField] private GameObject BarrelPlayer2_Moto_FULL;
+    [SerializeField] private GameObject BarrelPlayer2_Moto_EMPTY;
+
     [SerializeField] private Text Player1_CircleCounterText;
     [SerializeField] private Text Player2_CircleCounterText;
     [SerializeField] private Text Player1_SpeedText;
@@ -101,6 +111,14 @@ public class ScorePanel : MonoBehaviour
                     DurabilitySticksPlayer2_Car[1].SetActive(true);
                     break;
 
+            }
+            if (Player2_car.GetComponent<Player_Controller>().PlayerHasGotAnOil)
+            {
+                BarrelPlayer2_Car_FULL.SetActive(true);
+            }
+            else
+            {
+                BarrelPlayer2_Car_FULL.SetActive(false);
             }
 
         }
