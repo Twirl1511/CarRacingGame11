@@ -5160,6 +5160,11 @@ PrefabInstance:
       propertyPath: VictorySound
       value: 
       objectReference: {fileID: 889557292}
+    - target: {fileID: 4191599247941032009, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: HearBeatingSound
+      value: 
+      objectReference: {fileID: 253527878}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b, type: 3}
 --- !u!1 &934266601
@@ -6095,6 +6100,11 @@ PrefabInstance:
       propertyPath: VictorySound
       value: 
       objectReference: {fileID: 889557292}
+    - target: {fileID: 6923105468406161660, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: HearBeatingSound
+      value: 
+      objectReference: {fileID: 253527878}
     - target: {fileID: 6923105468406161661, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_Mass
@@ -7887,6 +7897,11 @@ PrefabInstance:
       propertyPath: VictorySound
       value: 
       objectReference: {fileID: 889557292}
+    - target: {fileID: 6923105468406161660, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: HearBeatingSound
+      value: 
+      objectReference: {fileID: 253527878}
     - target: {fileID: 6923105468406161661, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_Mass
@@ -9289,6 +9304,7 @@ GameObject:
   - component: {fileID: 1791930313}
   - component: {fileID: 1791930312}
   - component: {fileID: 1791930316}
+  - component: {fileID: 1791930317}
   m_Layer: 5
   m_Name: MainCanvas
   m_TagString: Untagged
@@ -9396,6 +9412,19 @@ MonoBehaviour:
   Player1_Moto: {fileID: 1289832475}
   Player2_Car: {fileID: 1048691837}
   Player2_Moto: {fileID: 1878274595}
+--- !u!114 &1791930317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791930311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19aabed2257b6c141977792cbc1749e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentState: 0
 --- !u!1 &1792810118 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2597048024287976352, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
@@ -9848,6 +9877,11 @@ PrefabInstance:
       propertyPath: VictorySound
       value: 
       objectReference: {fileID: 889557292}
+    - target: {fileID: 4191599247941032009, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: HearBeatingSound
+      value: 
+      objectReference: {fileID: 253527878}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b, type: 3}
 --- !u!1 &1828710821

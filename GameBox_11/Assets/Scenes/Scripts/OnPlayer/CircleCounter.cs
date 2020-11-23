@@ -11,6 +11,7 @@ public class CircleCounter : MonoBehaviour
     [SerializeField] private AudioSource CircleCompleteSound;
     private const int HOW_MANY_CIRCLES_TO_WIN = 10;
     [SerializeField] private AudioSource VictorySound;
+    [SerializeField] private AudioSource HearBeatingSound;
 
     private bool Box1_Flag;
     private bool Box2_Flag;
@@ -48,7 +49,11 @@ public class CircleCounter : MonoBehaviour
            Box4_Flag)
         {
             PlayerCircleCounter++;
-            if(PlayerCircleCounter >= HOW_MANY_CIRCLES_TO_WIN)
+            if (PlayerCircleCounter >= HOW_MANY_CIRCLES_TO_WIN - 1)
+            {
+                HearBeatingSound.Play();
+            }
+            if (PlayerCircleCounter >= HOW_MANY_CIRCLES_TO_WIN)
             {
                 VictorySound.Play();
             }
