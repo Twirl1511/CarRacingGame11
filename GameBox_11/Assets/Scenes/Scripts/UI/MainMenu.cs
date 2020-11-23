@@ -50,7 +50,7 @@ public class MainMenu : MonoBehaviour
     }
     public void OnExitClick()
     {
-        
+        Debug.Log("!!!!!!!!!!");
         Application.Quit();
         
     }
