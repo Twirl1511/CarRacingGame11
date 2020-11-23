@@ -1967,10 +1967,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e8716505c643e4656a162d43426262a7, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.442
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5059,6 +5059,11 @@ PrefabInstance:
       propertyPath: OilDriftSound
       value: 
       objectReference: {fileID: 2093214475}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976363, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: LeftWayBoxCollider
@@ -6020,6 +6025,11 @@ PrefabInstance:
       propertyPath: OilDriftSound
       value: 
       objectReference: {fileID: 2093214475}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161658, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_Name
@@ -7655,36 +7665,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1487744964
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1487744965}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1487744965
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487744964}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 625.0057, y: 515.1832, z: -1398.1914}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1488744659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7837,6 +7817,11 @@ PrefabInstance:
       propertyPath: OilDriftSound
       value: 
       objectReference: {fileID: 2093214475}
+    - target: {fileID: 6923105468406161633, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161658, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_Name
@@ -7850,7 +7835,7 @@ PrefabInstance:
     - target: {fileID: 6923105468406161658, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6923105468406161659, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -8961,7 +8946,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 902c27ea03c89475cb189165d6f50ebb, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.522
   m_Pitch: 1
   Loop: 1
@@ -9303,6 +9288,7 @@ GameObject:
   - component: {fileID: 1791930314}
   - component: {fileID: 1791930313}
   - component: {fileID: 1791930312}
+  - component: {fileID: 1791930316}
   m_Layer: 5
   m_Name: MainCanvas
   m_TagString: Untagged
@@ -9391,6 +9377,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1791930316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791930311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf985614bac1fd46bc5002520f57583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CountdownSound: {fileID: 39327820}
+  GameSound: {fileID: 1739297409}
+  MenuSound: {fileID: 1444323662}
+  Player1_Car: {fileID: 1792810118}
+  Player1_Moto: {fileID: 1289832475}
+  Player2_Car: {fileID: 1048691837}
+  Player2_Moto: {fileID: 1878274595}
 --- !u!1 &1792810118 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2597048024287976352, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
@@ -9560,7 +9565,7 @@ PrefabInstance:
     - target: {fileID: 2597048024287976352, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976356, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
@@ -9767,6 +9772,11 @@ PrefabInstance:
       propertyPath: OilDriftSound
       value: 
       objectReference: {fileID: 2093214475}
+    - target: {fileID: 2597048024287976361, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2597048024287976363, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: LeftWayBoxCollider
@@ -11214,7 +11224,7 @@ PrefabInstance:
     - target: {fileID: 5341814509069983230, guid: e3433eebec5ea554dbafb4784d5c1983,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5341814509069983230, guid: e3433eebec5ea554dbafb4784d5c1983,
         type: 3}
@@ -11285,6 +11295,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Interactable
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341814509069983230, guid: e3433eebec5ea554dbafb4784d5c1983,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341814509069983230, guid: e3433eebec5ea554dbafb4784d5c1983,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341814509069983230, guid: e3433eebec5ea554dbafb4784d5c1983,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1791930316}
+    - target: {fileID: 5341814509069983230, guid: e3433eebec5ea554dbafb4784d5c1983,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnClickStartButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341814509069983230, guid: e3433eebec5ea554dbafb4784d5c1983,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5341814509069983231, guid: e3433eebec5ea554dbafb4784d5c1983,
         type: 3}
