@@ -32,6 +32,10 @@ public class ScorePanel : MonoBehaviour
 
     [SerializeField] private GameObject[] ArrowsPlayer1;
     [SerializeField] private GameObject[] ArrowsPlayer2;
+    [SerializeField] private GameObject Player1_WinPanel;
+    [SerializeField] private GameObject Player2_WinPanel;
+    [SerializeField] private GameObject VictoryPanel;
+
 
     void Update()
     {
@@ -50,7 +54,7 @@ public class ScorePanel : MonoBehaviour
         //    Player1_CircleCounterText.text = Player1_moto.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
         //    Player1_SpeedText.text = Player1_moto.GetComponent<Player_Controller>().PlayerSpeedLimit;
         //}
-        #region[blue car 2]
+        #region[blue car 1]
         if (Player2_car.gameObject.activeSelf)
         {
             int numberOfCircle;
@@ -65,6 +69,12 @@ public class ScorePanel : MonoBehaviour
                 if (numberOfCircle >= 0 && numberOfCircle < 10)
                 {
                     ArrowsPlayer2[numberOfCircle].SetActive(true);
+                    if (numberOfCircle == 9)
+                    {
+                        VictoryPanel.SetActive(true);
+                        Player1_WinPanel.SetActive(true);
+                    }
+                        
                 }
             }
 
@@ -116,7 +126,7 @@ public class ScorePanel : MonoBehaviour
 
         }
         #endregion
-        #region[blue moto 2]
+        #region[blue moto 1]
         if (Player2_moto.gameObject.activeSelf)
         {
             int numberOfCircle;
@@ -131,6 +141,11 @@ public class ScorePanel : MonoBehaviour
                 if (numberOfCircle >= 0 && numberOfCircle < 10)
                 {
                     ArrowsPlayer2[numberOfCircle].SetActive(true);
+                    if (numberOfCircle == 9)
+                    {
+                        VictoryPanel.SetActive(true);
+                        Player1_WinPanel.SetActive(true);
+                    }
                 }
             }
 
@@ -183,7 +198,7 @@ public class ScorePanel : MonoBehaviour
             }
         }
         #endregion
-        #region[red car 1]
+        #region[red car 2]
         if (Player1_car.gameObject.activeSelf)
         {
             int numberOfCircle;
@@ -198,6 +213,11 @@ public class ScorePanel : MonoBehaviour
                 if(numberOfCircle >= 0 && numberOfCircle < 10)
                 {
                     ArrowsPlayer1[numberOfCircle].SetActive(true);
+                    if (numberOfCircle == 9)
+                    {
+                        VictoryPanel.SetActive(true);
+                        Player2_WinPanel.SetActive(true);
+                    }
                 }
             }
 
@@ -249,7 +269,7 @@ public class ScorePanel : MonoBehaviour
 
         }
         #endregion
-        #region[red moto 1]
+        #region[red moto 2]
         if (Player1_moto.gameObject.activeSelf)
         {
             int numberOfCircle;
@@ -264,6 +284,11 @@ public class ScorePanel : MonoBehaviour
                 if (numberOfCircle >= 0 && numberOfCircle < 10)
                 {
                     ArrowsPlayer1[numberOfCircle].SetActive(true);
+                    if (numberOfCircle == 9)
+                    {
+                        VictoryPanel.SetActive(true);
+                        Player2_WinPanel.SetActive(true);
+                    }
                 }
             }
 

@@ -12,6 +12,7 @@ public class CircleCounter : MonoBehaviour
     private const int HOW_MANY_CIRCLES_TO_WIN = 10;
     [SerializeField] private AudioSource VictorySound;
     [SerializeField] private AudioSource HearBeatingSound;
+    
 
     private bool Box1_Flag;
     private bool Box2_Flag;

@@ -43,8 +43,12 @@ public class Player_Controller : MonoBehaviour
 
     public int HowManyDamagePlayerHas = 0;
 
-
-
+    public Players Player;
+    public enum Players
+    {
+        Player1,
+        Playe2
+    }
     private enum Buttons
     {
         P1_forward,
@@ -54,7 +58,7 @@ public class Player_Controller : MonoBehaviour
         P1_back,
         P2_back
     }
-    private enum TypeOfRacer
+    public enum TypeOfRacer
     {
         Moto,
         Car
