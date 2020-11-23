@@ -16,14 +16,9 @@ public class ScorePanel : MonoBehaviour
     [SerializeField] private GameObject[] DurabilitySticksPlayer2_Moto;
 
     [SerializeField] private GameObject BarrelPlayer1_Car_FULL;
-    [SerializeField] private GameObject BarrelPlayer1_Car_EMPTY;
     [SerializeField] private GameObject BarrelPlayer1_Moto_FULL;
-    [SerializeField] private GameObject BarrelPlayer1_Moto_EMPTY;
-
     [SerializeField] private GameObject BarrelPlayer2_Car_FULL;
-    [SerializeField] private GameObject BarrelPlayer2_Car_EMPTY;
     [SerializeField] private GameObject BarrelPlayer2_Moto_FULL;
-    [SerializeField] private GameObject BarrelPlayer2_Moto_EMPTY;
 
     [SerializeField] private Text Player1_CircleCounterText;
     [SerializeField] private Text Player2_CircleCounterText;
@@ -38,26 +33,6 @@ public class ScorePanel : MonoBehaviour
     void Update()
     {
         DamageDone();
-        //if (Player1_car.gameObject.activeSelf)
-        //{
-        //    Player1_CircleCounterText.text = Player1_car.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
-        //    Player1_SpeedText.text = Player1_car.GetComponent<Player_Controller>().PlayerSpeedLimit;
-        //}
-        //if (Player1_moto.gameObject.activeSelf)
-        //{
-        //    Player1_CircleCounterText.text = Player1_moto.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
-        //    Player1_SpeedText.text = Player1_moto.GetComponent<Player_Controller>().PlayerSpeedLimit;
-        //}
-        //if (Player2_car.gameObject.activeSelf)
-        //{
-        //    Player2_CircleCounterText.text = Player2_car.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
-        //    Player2_SpeedText.text = Player2_car.GetComponent<Player_Controller>().PlayerSpeedLimit;
-        //}
-        //if (Player2_moto.gameObject.activeSelf)
-        //{
-        //    Player2_CircleCounterText.text = Player2_moto.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
-        //    Player2_SpeedText.text = Player2_moto.GetComponent<Player_Controller>().PlayerSpeedLimit;
-        //}
     }
     // потом уберать говнокод с ифами
     private void DamageDone()
@@ -126,6 +101,51 @@ public class ScorePanel : MonoBehaviour
         {
             Player2_CircleCounterText.text = Player2_moto.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
             Player2_SpeedText.text = Player2_moto.GetComponent<Player_Controller>().PlayerSpeedLimit;
+
+            switch (Player2_moto.GetComponent<Player_Controller>().HowManyDamagePlayerHas)
+            {
+                case 1:
+                    SpeedSticksPlayer2_Moto[0].SetActive(false);
+                    break;
+                case 2:
+                    SpeedSticksPlayer2_Moto[1].SetActive(false);
+                    break;
+                case 3:
+                    SpeedSticksPlayer2_Moto[2].SetActive(false);
+                    break;
+                case 4:
+                    SpeedSticksPlayer2_Moto[3].SetActive(false);
+                    break;
+                case 5:
+                    SpeedSticksPlayer2_Moto[4].SetActive(false);
+                    break;
+                case 6:
+                    SpeedSticksPlayer2_Moto[5].SetActive(false);
+                    break;
+                case 7:
+                    SpeedSticksPlayer2_Moto[6].SetActive(false);
+                    break;
+                default:
+                    break;
+            }
+            switch (Player2_moto.GetComponent<Player_Controller>().crushesCounter)
+            {
+                case 1:
+                    DurabilitySticksPlayer2_Moto[0].SetActive(false);
+                    break;
+                default:
+                    DurabilitySticksPlayer2_Moto[0].SetActive(true);
+                    break;
+
+            }
+            if (Player2_moto.GetComponent<Player_Controller>().PlayerHasGotAnOil)
+            {
+                BarrelPlayer2_Moto_FULL.SetActive(true);
+            }
+            else
+            {
+                BarrelPlayer2_Moto_FULL.SetActive(false);
+            }
         }
     }
 }

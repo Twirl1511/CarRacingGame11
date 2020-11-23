@@ -20,6 +20,11 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject Player1_CarRedGameobject;
     [SerializeField] private GameObject Player1_MotoRedGameobject;
 
+    [SerializeField] private GameObject Player2_CarBluePanel;
+    [SerializeField] private GameObject Player2_MotoBluePanel;
+    [SerializeField] private GameObject Player1_CarRedPanel;
+    [SerializeField] private GameObject Player1_MotoRedPanel;
+
     private bool Player1_Flag = true;
     private bool Player2_Flag = true;
     private bool SoundSwitch = false;
@@ -43,8 +48,18 @@ public class MainMenu : MonoBehaviour
     {
         if (Player1_CarRed.gameObject.activeSelf == true) Player1_CarRedGameobject.SetActive(true);
         if (Player1_MotoRed.gameObject.activeSelf == true) Player1_MotoRedGameobject.SetActive(true);
-        if (Player2_CarBlue.gameObject.activeSelf == true) Player2_CarBlueGameobject.SetActive(true);
-        if (Player2_MotoBlue.gameObject.activeSelf == true) Player2_MotoBlueGameobject.SetActive(true);
+        if (Player2_CarBlue.gameObject.activeSelf == true)
+        {
+            Player2_CarBlueGameobject.SetActive(true);
+            Player2_CarBluePanel.SetActive(true);
+        }
+            
+        if (Player2_MotoBlue.gameObject.activeSelf == true)
+        {
+            Player2_MotoBlueGameobject.SetActive(true);
+            Player2_MotoBluePanel.SetActive(true);
+        }
+            
         gameObject.SetActive(false);
         GamePanel.SetActive(true);
     }
