@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Oil : MonoBehaviour
 {
-    [SerializeField] private int TimeToCleanUpFromOil = 2;
-    [SerializeField] private float AngularDragFactor = 1;
-    [SerializeField] private float LinerDragFactor = 1;
+    [SerializeField] private float TimeToCleanUpFromOil = 2f;
+    [SerializeField] private float AngularDragFactor = 1f;
+    [SerializeField] private float LinerDragFactor = 1f;
     private float DefaultAngularDragFactor;
     private float DefaultLinerDragFactor;
     public bool Flag = true;
-    [SerializeField] private float TimeToDisappear = 2;
+    [SerializeField] private float TimeToDisappear = 2f;
+    [SerializeField] private float TimeBeforeColliderActive = 0.5f;
     private enum PlayerStates
     {
         stayOnOil,
@@ -20,6 +21,7 @@ public class Oil : MonoBehaviour
 
     private void Awake()
     {
+        StartCoroutine(DelayBeforeColliderActive());
         StartCoroutine(DisappearOil());
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -51,6 +53,10 @@ public class Oil : MonoBehaviour
         yield return new WaitForSeconds(3);
         Destroy(gameObject);
     }
+    private IEnumerator DelayBeforeColliderActive()
+    {
+        yield return new WaitForSeconds(TimeBeforeColliderActive);
+        gameObject.GetComponent<Collider2D>().enabled = true;   }
 
 
 
