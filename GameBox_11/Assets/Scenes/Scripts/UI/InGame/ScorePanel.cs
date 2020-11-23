@@ -68,7 +68,7 @@ public class ScorePanel : MonoBehaviour
                 }
                 if (numberOfCircle >= 0 && numberOfCircle < 10)
                 {
-                    ArrowsPlayer1[numberOfCircle].SetActive(true);
+                    ArrowsPlayer2[numberOfCircle].SetActive(true);
                     if (numberOfCircle == 9)
                     {
                         VictoryPanel.SetActive(true);
