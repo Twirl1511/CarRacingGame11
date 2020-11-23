@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeToCleanUpFromOil: 1
-  AngularDragFactor: 1
-  LinerDragFactor: 1
+  AngularDragFactor: 0.5
+  LinerDragFactor: 0.2
   Flag: 1
   TimeToDisappear: 10
 --- !u!68 &1333957036318506712
