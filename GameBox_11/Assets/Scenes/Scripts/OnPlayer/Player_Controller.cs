@@ -12,7 +12,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private float FirstSpeedLimit = 8;
     [SerializeField] private float PlayerSecondSpeed = 80f;
     [SerializeField] private float SecondSpeedLimit = 13;
-    [SerializeField] private float PlayerThirdSpeed = 100f;
+    [SerializeField] public float PlayerThirdSpeed = 100f;
     [SerializeField] private float ThirdSpeedLimit = 22;
 
     [SerializeField] private float PlayerTorgueForce = 45f;
@@ -40,6 +40,8 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private AudioSource OilDriftSound;
     [SerializeField] private AudioSource CrushSound;
     [SerializeField] private AudioSource DamageSound;
+
+    public int HowManyDamagePlayerHas = 0;
 
 
 
@@ -141,7 +143,7 @@ public class Player_Controller : MonoBehaviour
         }
     }
     private bool flagToControlDamageFromPlayers = true;
-    private int crushesCounter = 0;
+    public int crushesCounter = 0;
     
     /// <summary>
     /// демаг и уменьшение третьей скорости от столкновений
@@ -172,7 +174,8 @@ public class Player_Controller : MonoBehaviour
                 {
                     if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
                     if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
-                    crushesCounter = 0;
+                HowManyDamagePlayerHas++;
+                crushesCounter = 0;
                     DamageSound.Play();
                 }
             }
