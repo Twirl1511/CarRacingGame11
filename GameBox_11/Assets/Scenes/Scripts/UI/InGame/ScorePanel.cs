@@ -53,6 +53,21 @@ public class ScorePanel : MonoBehaviour
         #region[blue car 2]
         if (Player2_car.gameObject.activeSelf)
         {
+            int numberOfCircle;
+            for (int i = 0; i < ArrowsPlayer2.Length; i++)
+            {
+                numberOfCircle = Player2_car.GetComponent<CircleCounter>().PlayerCircleCounter - 1;
+
+                for (int j = 0; j < ArrowsPlayer2.Length; j++)
+                {
+                    ArrowsPlayer2[j].SetActive(false);
+                }
+                if (numberOfCircle >= 0 && numberOfCircle < 10)
+                {
+                    ArrowsPlayer2[numberOfCircle].SetActive(true);
+                }
+            }
+
             Player2_CircleCounterText.text = Player2_car.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
             Player2_SpeedText.text = Player2_car.GetComponent<Player_Controller>().PlayerSpeedLimit;
 
@@ -104,6 +119,21 @@ public class ScorePanel : MonoBehaviour
         #region[blue moto 2]
         if (Player2_moto.gameObject.activeSelf)
         {
+            int numberOfCircle;
+            for (int i = 0; i < ArrowsPlayer2.Length; i++)
+            {
+                numberOfCircle = Player2_moto.GetComponent<CircleCounter>().PlayerCircleCounter - 1;
+
+                for (int j = 0; j < ArrowsPlayer2.Length; j++)
+                {
+                    ArrowsPlayer2[j].SetActive(false);
+                }
+                if (numberOfCircle >= 0 && numberOfCircle < 10)
+                {
+                    ArrowsPlayer2[numberOfCircle].SetActive(true);
+                }
+            }
+
             Player2_CircleCounterText.text = Player2_moto.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
             Player2_SpeedText.text = Player2_moto.GetComponent<Player_Controller>().PlayerSpeedLimit;
 
@@ -169,7 +199,6 @@ public class ScorePanel : MonoBehaviour
                 {
                     ArrowsPlayer1[numberOfCircle].SetActive(true);
                 }
-                
             }
 
             Player1_CircleCounterText.text = Player1_car.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
@@ -223,6 +252,22 @@ public class ScorePanel : MonoBehaviour
         #region[red moto 1]
         if (Player1_moto.gameObject.activeSelf)
         {
+            int numberOfCircle;
+            for (int i = 0; i < ArrowsPlayer1.Length; i++)
+            {
+                numberOfCircle = Player1_moto.GetComponent<CircleCounter>().PlayerCircleCounter - 1;
+
+                for (int j = 0; j < ArrowsPlayer1.Length; j++)
+                {
+                    ArrowsPlayer1[j].SetActive(false);
+                }
+                if (numberOfCircle >= 0 && numberOfCircle < 10)
+                {
+                    ArrowsPlayer1[numberOfCircle].SetActive(true);
+                }
+            }
+
+
             Player1_CircleCounterText.text = Player1_moto.GetComponent<CircleCounter>().PlayerCircleCounter.ToString();
             Player1_SpeedText.text = Player1_moto.GetComponent<Player_Controller>().PlayerSpeedLimit;
 
