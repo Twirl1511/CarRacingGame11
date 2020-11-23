@@ -11,7 +11,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button Player1_MotoRed;
     [SerializeField] private GameObject GamePanel;
     [SerializeField] private Button Start;
-    [SerializeField] private Button Music;
+    [SerializeField] private Image MusicOn;
+    [SerializeField] private Image MusicOff;
     [SerializeField] private Button Exit;
 
     [SerializeField] private GameObject Player2_CarBlueGameobject;
@@ -21,6 +22,7 @@ public class MainMenu : MonoBehaviour
 
     private bool Player1_Flag = true;
     private bool Player2_Flag = true;
+    private bool SoundSwitch = false;
     private void Update()
     {
         if (Input.GetButtonDown("P1_horizontal"))
@@ -45,5 +47,19 @@ public class MainMenu : MonoBehaviour
         if (Player2_MotoBlue.gameObject.activeSelf == true) Player2_MotoBlueGameobject.SetActive(true);
         gameObject.SetActive(false);
         GamePanel.SetActive(true);
+    }
+    public void OnExitClick()
+    {
+        
+        Application.Quit();
+        
+    }
+    public void OnSoundClick()
+    {
+        SoundSwitch = !SoundSwitch;
+        MusicOn.gameObject.SetActive(!SoundSwitch);
+        MusicOff.gameObject.SetActive(SoundSwitch);
+        AudioListener.pause = SoundSwitch;
+
     }
 }
