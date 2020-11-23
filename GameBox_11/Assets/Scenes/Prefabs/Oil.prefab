@@ -156,6 +156,7 @@ MonoBehaviour:
   LinerDragFactor: 0.2
   Flag: 1
   TimeToDisappear: 10
+  TimeBeforeColliderActive: 0.7
 --- !u!68 &1333957036318506712
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -163,7 +164,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8698926157362173323}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
