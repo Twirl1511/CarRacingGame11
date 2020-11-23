@@ -56,6 +56,7 @@ public class CircleCounter : MonoBehaviour
             if (PlayerCircleCounter >= HOW_MANY_CIRCLES_TO_WIN)
             {
                 VictorySound.Play();
+                Time.timeScale = 0;
             }
             
             Box1_Flag = false;
