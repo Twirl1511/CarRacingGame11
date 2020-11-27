@@ -19,6 +19,14 @@ public class ForTesting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Speedometers();
+    }
+
+    /// <summary>
+    /// Отображает скорость рэйсеров в формате "#.#"
+    /// </summary>
+    private void Speedometers()
+    {
         if (Player1_BlueCar.activeSelf)
         {
             Player1_BlueTextSpeedMagnitude.text = Player1_BlueCar.GetComponent<Player_Controller>().PlayerSpeedLimit;
@@ -36,4 +44,6 @@ public class ForTesting : MonoBehaviour
             Player2_RedTextSpeedMagnitude.text = Player2_RedMoto.GetComponent<Player_Controller>().PlayerSpeedLimit;
         }
     }
+
+
 }

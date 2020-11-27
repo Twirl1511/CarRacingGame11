@@ -1,53 +1,60 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CircleCounter : MonoBehaviour
 {
-    [SerializeField] private Collider2D Box1_Collider;
-    [SerializeField] private Collider2D Box2_Collider;
-    [SerializeField] private Collider2D Box3_Collider;
-    [SerializeField] private Collider2D Box4_Collider;
+    [SerializeField] private Collider2D BoxCollider1;
+    [SerializeField] private Collider2D BoxCollider2;
+    private float DistanceFor01Bar;
+    private float DistanceFor1Bar;
     [SerializeField] private AudioSource CircleCompleteSound;
     private const int HOW_MANY_CIRCLES_TO_WIN = 10;
     [SerializeField] private AudioSource VictorySound;
     [SerializeField] private AudioSource HearBeatingSound;
-    
+    [SerializeField] private AudioSource GameSound;
 
-    private bool Box1_Flag;
-    private bool Box2_Flag;
-    private bool Box3_Flag;
-    private bool Box4_Flag;
+    [SerializeField] private Image[] BlueLineBars;
+    [SerializeField] private Image[] RedLineBars;
+
+
+    private bool BoxCollider1Flag;
+    private bool BoxCollider2Flag;
+  
 
     [HideInInspector] public int PlayerCircleCounter = 0;
+    
+
+    public float Test = 0;
+    private void Start()
+    {
+        //DistanceFor01Bar = (new Vector2(BoxCollider1.GetComponent<Transform>().position.x, BoxCollider1.GetComponent<Transform>().position.y)
+        //    - new Vector2(BoxCollider2.GetComponent<Transform>().position.x, BoxCollider2.GetComponent<Transform>().position.y)).magnitude/10;
+        DistanceFor1Bar = (new Vector2(BoxCollider1.GetComponent<Transform>().position.x, BoxCollider1.GetComponent<Transform>().position.y)
+            - new Vector2(BoxCollider2.GetComponent<Transform>().position.x, BoxCollider2.GetComponent<Transform>().position.y)).magnitude;
+        Debug.Log(DistanceFor1Bar);
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.Equals(Box1_Collider))
+        if (collision.Equals(BoxCollider1))
         {
             CircleComplete();
-            Box1_Flag = true;
+            BoxCollider1Flag = true;
+            
+
         }
-        if (collision.Equals(Box2_Collider))
+        if (collision.Equals(BoxCollider2))
         {
-            Box2_Flag = true;
+            BoxCollider2Flag = true;
         }
-        if (collision.Equals(Box3_Collider))
-        {
-            Box3_Flag = true;
-        }
-        if (collision.Equals(Box4_Collider))
-        {
-            Box4_Flag = true;
-        }
+        
     }
 
     public void CircleComplete()
     {
-        if(Box1_Flag &&
-           Box2_Flag &&
-           Box3_Flag &&
-           Box4_Flag)
+        if(BoxCollider1Flag && BoxCollider2Flag)
         {
             PlayerCircleCounter++;
             if (PlayerCircleCounter >= HOW_MANY_CIRCLES_TO_WIN - 1)
@@ -57,14 +64,26 @@ public class CircleCounter : MonoBehaviour
             if (PlayerCircleCounter >= HOW_MANY_CIRCLES_TO_WIN)
             {
                 VictorySound.Play();
+                GameSound.Stop();
                 Time.timeScale = 0;
             }
-            
-            Box1_Flag = false;
-            Box2_Flag = false;
-            Box3_Flag = false;
-            Box4_Flag = false;
+
+            BoxCollider1Flag = false;
+            BoxCollider2Flag = false;
             CircleCompleteSound.Play();
+        }
+        
+    }
+    private void Update()
+    {
+
+        float test = (this.GetComponent<Rigidbody2D>().position - new Vector2(BoxCollider1.GetComponent<Transform>().position.x,
+            BoxCollider1.GetComponent<Transform>().position.y)).magnitude;
+        if (BoxCollider1Flag)
+        {
+            
+            BlueLineBars[0].fillAmount = test/ 1350;
+            
         }
         
     }

@@ -43,6 +43,7 @@ public class Player_Controller : MonoBehaviour
 
     public int HowManyDamagePlayerHas = 0;
 
+
     public Players Player;
     public enum Players
     {
