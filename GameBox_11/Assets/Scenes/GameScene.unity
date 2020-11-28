@@ -949,6 +949,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
+      propertyPath: RedLineBars.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
       propertyPath: BoxCollider1
       value: 
       objectReference: {fileID: 1568563183}
@@ -957,6 +962,136 @@ PrefabInstance:
       propertyPath: BoxCollider2
       value: 
       objectReference: {fileID: 486280822}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: BoxCollider1ForBar
+      value: 
+      objectReference: {fileID: 235729364}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: BoxCollider2ForBar
+      value: 
+      objectReference: {fileID: 1250814983}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[0]
+      value: 
+      objectReference: {fileID: 1405093291}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[1]
+      value: 
+      objectReference: {fileID: 471081469}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[2]
+      value: 
+      objectReference: {fileID: 709015244}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[3]
+      value: 
+      objectReference: {fileID: 1957844487}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[4]
+      value: 
+      objectReference: {fileID: 1468514096}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[5]
+      value: 
+      objectReference: {fileID: 440086236}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[6]
+      value: 
+      objectReference: {fileID: 1312330522}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[7]
+      value: 
+      objectReference: {fileID: 1685385087}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[8]
+      value: 
+      objectReference: {fileID: 1499464065}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[9]
+      value: 
+      objectReference: {fileID: 211719784}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[10]
+      value: 
+      objectReference: {fileID: 1417233459}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[11]
+      value: 
+      objectReference: {fileID: 436339682}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[12]
+      value: 
+      objectReference: {fileID: 1608564588}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[13]
+      value: 
+      objectReference: {fileID: 1837281230}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[14]
+      value: 
+      objectReference: {fileID: 95996246}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[15]
+      value: 
+      objectReference: {fileID: 1322667454}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[16]
+      value: 
+      objectReference: {fileID: 2043645339}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[17]
+      value: 
+      objectReference: {fileID: 126508819}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[18]
+      value: 
+      objectReference: {fileID: 1624512165}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[19]
+      value: 
+      objectReference: {fileID: 1637096824}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: HearBeatingSound
+      value: 
+      objectReference: {fileID: 253527878}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: GameSound
+      value: 
+      objectReference: {fileID: 1739297409}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: VictorySound
+      value: 
+      objectReference: {fileID: 889557292}
+    - target: {fileID: 8537154853580734177, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: CircleCompleteSound
+      value: 
+      objectReference: {fileID: 1025916505}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b, type: 3}
 --- !u!1 &64564577
@@ -1301,6 +1436,105 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 79654364}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &95996243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 95996244}
+  - component: {fileID: 95996247}
+  - component: {fileID: 95996246}
+  - component: {fileID: 95996245}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &95996244
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95996243}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 362.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &95996245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95996243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &95996246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95996243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &95996247
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95996243}
+  m_CullTransparentMesh: 0
 --- !u!1 &99984108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,6 +1715,105 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123897021}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &126508816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126508817}
+  - component: {fileID: 126508820}
+  - component: {fileID: 126508819}
+  - component: {fileID: 126508818}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &126508817
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126508816}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 437.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &126508818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126508816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &126508819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126508816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &126508820
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126508816}
+  m_CullTransparentMesh: 0
 --- !u!1 &143101962
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,6 +2447,105 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211056293}
   m_CullTransparentMesh: 0
+--- !u!1 &211719781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 211719782}
+  - component: {fileID: 211719785}
+  - component: {fileID: 211719784}
+  - component: {fileID: 211719783}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &211719782
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211719781}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 237.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &211719783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211719781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &211719784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211719781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &211719785
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211719781}
+  m_CullTransparentMesh: 0
 --- !u!1 &211949135
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,6 +2855,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
+      propertyPath: RedLineBars.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
       propertyPath: Box1_Collider
       value: 
       objectReference: {fileID: 1568563183}
@@ -2436,6 +2873,136 @@ PrefabInstance:
       propertyPath: BoxCollider2
       value: 
       objectReference: {fileID: 486280822}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BoxCollider2ForBar
+      value: 
+      objectReference: {fileID: 1250814983}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BoxCollider1ForBar
+      value: 
+      objectReference: {fileID: 235729364}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[0]
+      value: 
+      objectReference: {fileID: 1405093291}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[1]
+      value: 
+      objectReference: {fileID: 471081469}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[2]
+      value: 
+      objectReference: {fileID: 709015244}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[3]
+      value: 
+      objectReference: {fileID: 1957844487}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[4]
+      value: 
+      objectReference: {fileID: 1468514096}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[5]
+      value: 
+      objectReference: {fileID: 440086236}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[6]
+      value: 
+      objectReference: {fileID: 1312330522}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[7]
+      value: 
+      objectReference: {fileID: 1685385087}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[8]
+      value: 
+      objectReference: {fileID: 1499464065}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[9]
+      value: 
+      objectReference: {fileID: 211719784}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[10]
+      value: 
+      objectReference: {fileID: 1417233459}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[11]
+      value: 
+      objectReference: {fileID: 436339682}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[12]
+      value: 
+      objectReference: {fileID: 1608564588}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[13]
+      value: 
+      objectReference: {fileID: 1837281230}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[14]
+      value: 
+      objectReference: {fileID: 95996246}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[15]
+      value: 
+      objectReference: {fileID: 1322667454}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[16]
+      value: 
+      objectReference: {fileID: 2043645339}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[17]
+      value: 
+      objectReference: {fileID: 126508819}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[18]
+      value: 
+      objectReference: {fileID: 1624512165}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RedLineBars.Array.data[19]
+      value: 
+      objectReference: {fileID: 1637096824}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: HearBeatingSound
+      value: 
+      objectReference: {fileID: 253527878}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: GameSound
+      value: 
+      objectReference: {fileID: 1739297409}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: VictorySound
+      value: 
+      objectReference: {fileID: 889557292}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: CircleCompleteSound
+      value: 
+      objectReference: {fileID: 1025916505}
     - target: {fileID: 2855376886144410236, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_Name
@@ -2444,7 +3011,7 @@ PrefabInstance:
     - target: {fileID: 2855376886144410236, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886923157521, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -2613,6 +3180,7 @@ GameObject:
   - component: {fileID: 231589952}
   - component: {fileID: 231589954}
   - component: {fileID: 231589953}
+  - component: {fileID: 231589955}
   m_Layer: 5
   m_Name: CircleCounterBarPlayer2_red_bar
   m_TagString: Untagged
@@ -2630,14 +3198,34 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1405093289}
+  - {fileID: 471081467}
+  - {fileID: 709015242}
+  - {fileID: 1957844485}
+  - {fileID: 1468514094}
+  - {fileID: 440086234}
+  - {fileID: 1312330520}
+  - {fileID: 1685385085}
+  - {fileID: 1499464063}
+  - {fileID: 211719782}
+  - {fileID: 1417233457}
+  - {fileID: 436339680}
+  - {fileID: 1608564586}
+  - {fileID: 1837281228}
+  - {fileID: 95996244}
+  - {fileID: 1322667452}
+  - {fileID: 2043645337}
+  - {fileID: 126508817}
+  - {fileID: 1624512163}
+  - {fileID: 1637096822}
   m_Father: {fileID: 248422039}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 50}
+  m_AnchoredPosition: {x: -236.8, y: 0}
+  m_SizeDelta: {x: 25, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &231589953
 MonoBehaviour:
@@ -2663,7 +3251,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -2676,6 +3264,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231589951}
   m_CullTransparentMesh: 0
+--- !u!114 &231589955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231589951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
 --- !u!1 &235729362
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,7 +3300,7 @@ GameObject:
   - component: {fileID: 235729365}
   - component: {fileID: 235729364}
   m_Layer: 0
-  m_Name: CircleTriggerBoxRghtForBar
+  m_Name: CircleBarBoxRght
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2952,7 +3564,7 @@ GameObject:
   - component: {fileID: 253527877}
   - component: {fileID: 253527878}
   m_Layer: 0
-  m_Name: Last_Circle
+  m_Name: HeartBeating_Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4615,6 +5227,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &436339679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 436339680}
+  - component: {fileID: 436339683}
+  - component: {fileID: 436339682}
+  - component: {fileID: 436339681}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &436339680
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436339679}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 287.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &436339681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436339679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &436339682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436339679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &436339683
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436339679}
+  m_CullTransparentMesh: 0
 --- !u!1 &437639583
 GameObject:
   m_ObjectHideFlags: 0
@@ -4696,6 +5407,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &440086233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 440086234}
+  - component: {fileID: 440086237}
+  - component: {fileID: 440086236}
+  - component: {fileID: 440086235}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &440086234
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440086233}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 137.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &440086235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440086233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &440086236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440086233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &440086237
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440086233}
+  m_CullTransparentMesh: 0
 --- !u!1 &442147062
 GameObject:
   m_ObjectHideFlags: 0
@@ -5138,6 +5948,105 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463901888}
+  m_CullTransparentMesh: 0
+--- !u!1 &471081466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471081467}
+  - component: {fileID: 471081470}
+  - component: {fileID: 471081469}
+  - component: {fileID: 471081468}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &471081467
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471081466}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 37.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &471081468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471081466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &471081469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471081466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &471081470
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471081466}
   m_CullTransparentMesh: 0
 --- !u!1 &484407423
 GameObject:
@@ -6733,6 +7642,105 @@ RectTransform:
   m_AnchoredPosition: {x: 457, y: -302}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &709015241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 709015242}
+  - component: {fileID: 709015245}
+  - component: {fileID: 709015244}
+  - component: {fileID: 709015243}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &709015242
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709015241}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 62.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &709015243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709015241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &709015244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709015241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &709015245
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709015241}
+  m_CullTransparentMesh: 0
 --- !u!1 &735005374
 GameObject:
   m_ObjectHideFlags: 0
@@ -9869,12 +10877,12 @@ PrefabInstance:
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -602.4
+      value: -557.9
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 322.7
+      value: 203.6
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -9918,6 +10926,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
+      propertyPath: BlueLineBars.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
       propertyPath: BoxCollider1
       value: 
       objectReference: {fileID: 486280822}
@@ -9926,6 +10939,136 @@ PrefabInstance:
       propertyPath: BoxCollider2
       value: 
       objectReference: {fileID: 1568563183}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BoxCollider1ForBar
+      value: 
+      objectReference: {fileID: 1250814983}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BoxCollider2ForBar
+      value: 
+      objectReference: {fileID: 235729364}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[0]
+      value: 
+      objectReference: {fileID: 1053283007}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[1]
+      value: 
+      objectReference: {fileID: 918464139}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[2]
+      value: 
+      objectReference: {fileID: 1809744602}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[3]
+      value: 
+      objectReference: {fileID: 267842987}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[4]
+      value: 
+      objectReference: {fileID: 735005377}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[5]
+      value: 
+      objectReference: {fileID: 442147065}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[6]
+      value: 
+      objectReference: {fileID: 24082128}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[7]
+      value: 
+      objectReference: {fileID: 1745800960}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[8]
+      value: 
+      objectReference: {fileID: 1869666386}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[9]
+      value: 
+      objectReference: {fileID: 945406024}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[10]
+      value: 
+      objectReference: {fileID: 1781037364}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[11]
+      value: 
+      objectReference: {fileID: 903933083}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[12]
+      value: 
+      objectReference: {fileID: 1612019116}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[13]
+      value: 
+      objectReference: {fileID: 1245137521}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[14]
+      value: 
+      objectReference: {fileID: 1365746616}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[15]
+      value: 
+      objectReference: {fileID: 900054668}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[16]
+      value: 
+      objectReference: {fileID: 175490059}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[17]
+      value: 
+      objectReference: {fileID: 1107576677}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[18]
+      value: 
+      objectReference: {fileID: 411433244}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BlueLineBars.Array.data[19]
+      value: 
+      objectReference: {fileID: 961184222}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: HearBeatingSound
+      value: 
+      objectReference: {fileID: 253527878}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: CircleCompleteSound
+      value: 
+      objectReference: {fileID: 1025916505}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: VictorySound
+      value: 
+      objectReference: {fileID: 889557292}
+    - target: {fileID: 2855376886144410234, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: GameSound
+      value: 
+      objectReference: {fileID: 1739297409}
     - target: {fileID: 2855376886144410236, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_Name
@@ -10528,7 +11671,7 @@ GameObject:
   - component: {fileID: 1250814984}
   - component: {fileID: 1250814983}
   m_Layer: 0
-  m_Name: CircleTriggerBoxLeftForBar
+  m_Name: CircleBarBoxLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11010,6 +12153,204 @@ RectTransform:
   m_AnchoredPosition: {x: 450, y: -22}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1312330519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1312330520}
+  - component: {fileID: 1312330523}
+  - component: {fileID: 1312330522}
+  - component: {fileID: 1312330521}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1312330520
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312330519}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 162.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1312330521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312330519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &1312330522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312330519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1312330523
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312330519}
+  m_CullTransparentMesh: 0
+--- !u!1 &1322667451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1322667452}
+  - component: {fileID: 1322667455}
+  - component: {fileID: 1322667454}
+  - component: {fileID: 1322667453}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1322667452
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322667451}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 387.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1322667453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322667451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &1322667454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322667451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1322667455
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322667451}
+  m_CullTransparentMesh: 0
 --- !u!1 &1331179621
 GameObject:
   m_ObjectHideFlags: 0
@@ -11607,6 +12948,204 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1405093288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1405093289}
+  - component: {fileID: 1405093292}
+  - component: {fileID: 1405093291}
+  - component: {fileID: 1405093290}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1405093289
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405093288}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1405093290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405093288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &1405093291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405093288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1405093292
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405093288}
+  m_CullTransparentMesh: 0
+--- !u!1 &1417233456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1417233457}
+  - component: {fileID: 1417233460}
+  - component: {fileID: 1417233459}
+  - component: {fileID: 1417233458}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1417233457
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417233456}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 262.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1417233458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417233456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &1417233459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417233456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1417233460
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417233456}
+  m_CullTransparentMesh: 0
 --- !u!1 &1425068275
 GameObject:
   m_ObjectHideFlags: 0
@@ -12142,12 +13681,12 @@ PrefabInstance:
     - target: {fileID: 7519618563941809420, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -612.1
+      value: -592
       objectReference: {fileID: 0}
     - target: {fileID: 7519618563941809420, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 241.8
+      value: 277
       objectReference: {fileID: 0}
     - target: {fileID: 7519618563941809420, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
@@ -12707,6 +14246,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1468514093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1468514094}
+  - component: {fileID: 1468514097}
+  - component: {fileID: 1468514096}
+  - component: {fileID: 1468514095}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1468514094
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468514093}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 112.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1468514095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468514093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &1468514096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468514093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1468514097
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468514093}
+  m_CullTransparentMesh: 0
 --- !u!224 &1471566169 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5341814509069983229, guid: e3433eebec5ea554dbafb4784d5c1983,
@@ -12800,6 +14438,105 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476181180}
+  m_CullTransparentMesh: 0
+--- !u!1 &1499464062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1499464063}
+  - component: {fileID: 1499464066}
+  - component: {fileID: 1499464065}
+  - component: {fileID: 1499464064}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1499464063
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499464062}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 212.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1499464064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499464062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &1499464065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499464062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1499464066
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499464062}
   m_CullTransparentMesh: 0
 --- !u!1001 &1506812961
 PrefabInstance:
@@ -13799,6 +15536,105 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580142107}
   m_CullTransparentMesh: 0
+--- !u!1 &1608564585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1608564586}
+  - component: {fileID: 1608564589}
+  - component: {fileID: 1608564588}
+  - component: {fileID: 1608564587}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1608564586
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608564585}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 312.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1608564587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608564585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &1608564588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608564585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1608564589
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608564585}
+  m_CullTransparentMesh: 0
 --- !u!1 &1611950439
 GameObject:
   m_ObjectHideFlags: 0
@@ -14050,6 +15886,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1624512162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1624512163}
+  - component: {fileID: 1624512166}
+  - component: {fileID: 1624512165}
+  - component: {fileID: 1624512164}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1624512163
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624512162}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 462.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1624512164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624512162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &1624512165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624512162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1624512166
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624512162}
+  m_CullTransparentMesh: 0
 --- !u!1 &1625325260
 GameObject:
   m_ObjectHideFlags: 0
@@ -14088,6 +16023,105 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -39}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1637096821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1637096822}
+  - component: {fileID: 1637096825}
+  - component: {fileID: 1637096824}
+  - component: {fileID: 1637096823}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1637096822
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637096821}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 487.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1637096823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637096821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &1637096824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637096821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1637096825
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637096821}
+  m_CullTransparentMesh: 0
 --- !u!1 &1643691565
 GameObject:
   m_ObjectHideFlags: 0
@@ -14539,6 +16573,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1685385084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1685385085}
+  - component: {fileID: 1685385088}
+  - component: {fileID: 1685385087}
+  - component: {fileID: 1685385086}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1685385085
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685385084}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 187.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1685385086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685385084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &1685385087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685385084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1685385088
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685385084}
+  m_CullTransparentMesh: 0
 --- !u!1 &1694800896
 GameObject:
   m_ObjectHideFlags: 0
@@ -14879,7 +17012,7 @@ GameObject:
   - component: {fileID: 1739297408}
   - component: {fileID: 1739297409}
   m_Layer: 0
-  m_Name: MusicGame
+  m_Name: GameSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15792,6 +17925,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1837281227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1837281228}
+  - component: {fileID: 1837281231}
+  - component: {fileID: 1837281230}
+  - component: {fileID: 1837281229}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1837281228
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837281227}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 337.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1837281229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837281227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &1837281230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837281227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1837281231
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837281227}
+  m_CullTransparentMesh: 0
 --- !u!1 &1841729739
 GameObject:
   m_ObjectHideFlags: 0
@@ -17100,6 +19332,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1957844484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1957844485}
+  - component: {fileID: 1957844488}
+  - component: {fileID: 1957844487}
+  - component: {fileID: 1957844486}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1957844485
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957844484}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 87.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1957844486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957844484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &1957844487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957844484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1957844488
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957844484}
+  m_CullTransparentMesh: 0
 --- !u!1 &1968413762
 GameObject:
   m_ObjectHideFlags: 0
@@ -17263,7 +19594,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -17624,6 +19955,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2043645336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2043645337}
+  - component: {fileID: 2043645340}
+  - component: {fileID: 2043645339}
+  - component: {fileID: 2043645338}
+  m_Layer: 5
+  m_Name: CircleCounterBarPlayer2_red_bar (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2043645337
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043645336}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 231589952}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 412.5, y: -25}
+  m_SizeDelta: {x: 25, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2043645338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043645336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 25, y: 50}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 20
+--- !u!114 &2043645339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043645336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a1a78508d77b42c4aab0cfc50b05bd7c, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 0
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2043645340
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043645336}
+  m_CullTransparentMesh: 0
 --- !u!1 &2051967221
 GameObject:
   m_ObjectHideFlags: 0
@@ -18272,7 +20702,6 @@ GameObject:
   - component: {fileID: 2087582931}
   - component: {fileID: 2087582930}
   - component: {fileID: 2087582929}
-  - component: {fileID: 2087582932}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -18339,108 +20768,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087582928}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -926}
+  m_LocalPosition: {x: 0, y: 0, z: -935}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &2087582932
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087582928}
-  m_Enabled: 0
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 902c27ea03c89475cb189165d6f50ebb, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 1
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &2093214473
 GameObject:
   m_ObjectHideFlags: 0

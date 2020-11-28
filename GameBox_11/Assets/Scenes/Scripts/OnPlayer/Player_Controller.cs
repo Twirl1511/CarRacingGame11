@@ -48,7 +48,7 @@ public class Player_Controller : MonoBehaviour
     public enum Players
     {
         Player1,
-        Playe2
+        Player2
     }
     private enum Buttons
     {
