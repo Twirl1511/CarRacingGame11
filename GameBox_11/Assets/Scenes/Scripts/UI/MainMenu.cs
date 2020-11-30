@@ -20,10 +20,10 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject Player2_CarRedGameobject;
     [SerializeField] private GameObject Player2_MotoRedGameobject;
 
-    [SerializeField] private GameObject Player1_CarBluePanel;
-    [SerializeField] private GameObject Player1_MotoBluePanel;
-    [SerializeField] private GameObject Player2_CarRedPanel;
-    [SerializeField] private GameObject Player2_MotoRedPanel;
+    //[SerializeField] private GameObject Player1_CarBluePanel;
+    //[SerializeField] private GameObject Player1_MotoBluePanel;
+    //[SerializeField] private GameObject Player2_CarRedPanel;
+    //[SerializeField] private GameObject Player2_MotoRedPanel;
 
     private bool Player1_Flag = true;
     private bool Player2_Flag = true;
@@ -49,25 +49,25 @@ public class MainMenu : MonoBehaviour
         if (Player2_CarRedButton.gameObject.activeSelf == true)
         {
             Player2_CarRedGameobject.SetActive(true);
-            Player2_CarRedPanel.SetActive(true);
+            //Player2_CarRedPanel.SetActive(true);
         }
             
         if (Player2_MotoRedButton.gameObject.activeSelf == true)
         {
             Player2_MotoRedGameobject.SetActive(true);
-            Player2_MotoRedPanel.SetActive(true);
+            //Player2_MotoRedPanel.SetActive(true);
         }
             
         if (Player1_CarBlueButton.gameObject.activeSelf == true)
         {
             Player1_CarBlueGameobject.SetActive(true);
-            Player1_CarBluePanel.SetActive(true);
+            //Player1_CarBluePanel.SetActive(true);
         }
             
         if (Player1_MotoBlueButton.gameObject.activeSelf == true)
         {
             Player1_MotoBlueGameobject.SetActive(true);
-            Player1_MotoBluePanel.SetActive(true);
+            //Player1_MotoBluePanel.SetActive(true);
         }
             
         gameObject.SetActive(false);

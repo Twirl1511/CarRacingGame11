@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class Speedometer : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private GameObject Arrow;
+    [SerializeField] private GameObject Player1_CarBlue;
+    [SerializeField] private GameObject Player1_MotoBlue;
+    [SerializeField] private GameObject Player2_CarRed;
+    [SerializeField] private GameObject Player2_MotoRed;
+    private GameObject Player1_Blue;
+    private GameObject Player2_Red;
+
     void Start()
     {
         

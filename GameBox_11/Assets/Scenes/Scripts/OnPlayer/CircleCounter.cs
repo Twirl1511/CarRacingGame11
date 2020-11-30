@@ -39,7 +39,6 @@ public class CircleCounter : MonoBehaviour
         //    - new Vector2(BoxCollider2.GetComponent<Transform>().position.x, BoxCollider2.GetComponent<Transform>().position.y)).magnitude/10;
         DistanceFor1Bar = (new Vector2(BoxCollider1ForBar.GetComponent<Transform>().position.x, BoxCollider1ForBar.GetComponent<Transform>().position.y)
             - new Vector2(BoxCollider2ForBar.GetComponent<Transform>().position.x, BoxCollider2ForBar.GetComponent<Transform>().position.y)).magnitude * 1.2f;
-        Debug.Log(DistanceFor1Bar);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
