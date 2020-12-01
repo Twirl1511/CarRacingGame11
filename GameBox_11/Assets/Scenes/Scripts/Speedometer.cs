@@ -5,12 +5,14 @@ using UnityEngine;
 public class Speedometer : MonoBehaviour
 {
     [SerializeField] private GameObject Player1_ArrowBlue;
+    [SerializeField] private GameObject Player2_ArrowRed;
     [SerializeField] private GameObject Player1_CarBlue;
     [SerializeField] private GameObject Player1_MotoBlue;
     [SerializeField] private GameObject Player2_CarRed;
     [SerializeField] private GameObject Player2_MotoRed;
     private float Player1_BlueSpeed;
     private float Player2_RedSpeed;
+    public float test;
 
     void Start()
     {
@@ -21,6 +23,7 @@ public class Speedometer : MonoBehaviour
     {
         ShowSpeed();
         BlueArrowMove();
+        RedArrowMove();
     }
 
     private void ShowSpeed()
@@ -44,8 +47,13 @@ public class Speedometer : MonoBehaviour
     }
     private void BlueArrowMove()
     {
-        
-        Player1_ArrowBlue.transform.Rotate(Vector3.back * Player1_BlueSpeed * 0.001f);
+
+        Player1_ArrowBlue.transform.rotation = Quaternion.Euler(0,0,-1 * Player1_BlueSpeed/test);
+    }
+    private void RedArrowMove()
+    {
+
+        Player2_ArrowRed.transform.rotation = Quaternion.Euler(0, 0, -1 * Player2_RedSpeed / test);
     }
 
 }
