@@ -13,7 +13,7 @@ public class CircleCounter : MonoBehaviour
 
     [SerializeField] private float DistanceFor1Bar;
     [SerializeField] private AudioSource CircleCompleteSound;
-    private const int HOW_MANY_CIRCLES_TO_WIN = 10;
+    [HideInInspector] public int HOW_MANY_CIRCLES_TO_WIN = 10;
     [SerializeField] private AudioSource VictorySound;
     [SerializeField] private AudioSource HearBeatingSound;
     [SerializeField] private AudioSource GameSound;
@@ -32,7 +32,7 @@ public class CircleCounter : MonoBehaviour
     [HideInInspector] public int PlayerCircleCounter = 0;
     
 
-    public float Test = 0;
+
     private void Start()
     {
         //DistanceFor01Bar = (new Vector2(BoxCollider1.GetComponent<Transform>().position.x, BoxCollider1.GetComponent<Transform>().position.y)
@@ -79,7 +79,6 @@ public class CircleCounter : MonoBehaviour
         }
         
     }
-    private float distancePlayerMoved = 0f;
     private int barCounter = 0;
     private void Update()
     {
