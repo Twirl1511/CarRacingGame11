@@ -6,25 +6,25 @@ public class OilNew : MonoBehaviour
 {
     [SerializeField] float ForwardForce = 50f;
     [SerializeField] float TorgueForce = 1000f;
+    [SerializeField] float TimeToDisappear = 10;
     void Start()
     {
-        
+        StartCoroutine(DisappearOil());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         float rand = Random.Range(-1,2);
-        
         Vector2 v2 = collision.GetComponent<Rigidbody2D>().velocity;
         collision.GetComponent<Rigidbody2D>().AddForce(v2 * ForwardForce);
         collision.GetComponent<Rigidbody2D>().AddTorque(rand * TorgueForce, ForceMode2D.Impulse);
-        float randTrg = rand * TorgueForce;
-        Debug.Log(randTrg);
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator DisappearOil()
     {
-        
+        yield return new WaitForSeconds(TimeToDisappear);
+        Destroy(gameObject.GetComponent<Collider2D>());
+        yield return new WaitForSeconds(3);
+        Destroy(gameObject);
     }
 }

@@ -193,3 +193,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ForwardForce: 50
   TorgueForce: 3000
+  TimeToDisappear: 10
