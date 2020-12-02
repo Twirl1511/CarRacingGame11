@@ -80,7 +80,7 @@ public class Player_Controller : MonoBehaviour
 
     void FixedUpdate()
     {
-        #region [Player]
+        #region [Player movement]
 
         #region[Основное управление]
         if (Input.GetButton(PlayerForwardButton.ToString()))
