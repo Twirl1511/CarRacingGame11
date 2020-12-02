@@ -146,7 +146,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8698926157362173323}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -194,3 +194,4 @@ MonoBehaviour:
   ForwardForce: 50
   TorgueForce: 3000
   TimeToDisappear: 10
+  TimeBeforeColliderActive: 0.5
