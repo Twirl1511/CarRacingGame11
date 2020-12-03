@@ -56,7 +56,8 @@ public class Oil : MonoBehaviour
     private IEnumerator DelayBeforeColliderActive()
     {
         yield return new WaitForSeconds(TimeBeforeColliderActive);
-        gameObject.GetComponent<Collider2D>().enabled = true;   }
+        gameObject.GetComponent<Collider2D>().enabled = true;   
+    }
 
 
 

@@ -845,6 +845,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6816223341451546169, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: PlayerForwardButton
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7519618563390598916, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3328,6 +3333,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 3756563025567846277, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerForwardButton
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f298ada6d54dfa74095c0fe2077e0545, type: 3}
 --- !u!1 &222260280
