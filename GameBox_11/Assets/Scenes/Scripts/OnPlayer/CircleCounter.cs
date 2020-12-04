@@ -70,14 +70,19 @@ public class CircleCounter : MonoBehaviour
             {
                 VictorySound.Play();
                 GameSound.Stop();
-                Time.timeScale = 0;
+                StartCoroutine(DelayForPauseAfterFinish(1f));
             }
 
             BoxCollider1Flag = false;
             BoxCollider2Flag = false;
             CircleCompleteSound.Play();
         }
-        
+    }
+
+    IEnumerator DelayForPauseAfterFinish(float Seconds)
+    {
+        yield return new WaitForSeconds(Seconds);
+        Time.timeScale = 0;
     }
     private int barCounter = 0;
     private void Update()
