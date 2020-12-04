@@ -208,6 +208,36 @@ MonoBehaviour:
   - {x: -18.065857, y: -38.723984, z: 0}
   - {x: 16.881775, y: -38.27008, z: 0}
   - {x: 17.519836, y: 39.27008, z: 0}
+--- !u!1 &5061321607033420934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5051751899032093325}
+  m_Layer: 0
+  m_Name: SmokePosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5051751899032093325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5061321607033420934}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8, y: -43, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7519618563941809420}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5522202263550394735
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +479,7 @@ GameObject:
   - component: {fileID: 7519618563941809410}
   - component: {fileID: 7519618563941809409}
   - component: {fileID: 6816223341451546169}
+  - component: {fileID: 7829810189898560611}
   m_Layer: 0
   m_Name: Player_car
   m_TagString: Player
@@ -472,6 +503,7 @@ Transform:
   - {fileID: 7338488949414081221}
   - {fileID: 4652730018302649514}
   - {fileID: 8352858412302863437}
+  - {fileID: 5051751899032093325}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -636,6 +668,21 @@ MonoBehaviour:
   BackLightsObject: {fileID: 2743499619393823820}
   PlayerForwardButton: 0
   MagnitudeToTurnOffLights: 10
+--- !u!114 &7829810189898560611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7519618563941809416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfba91e45dc0e624e9b3e65288eb82cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SmokeObj: {fileID: 4387591293968385706, guid: a33311747818046489d74ff3cfda4818,
+    type: 3}
+  SmokePosition: {fileID: 5061321607033420934}
 --- !u!1 &7519618564733744653
 GameObject:
   m_ObjectHideFlags: 0
