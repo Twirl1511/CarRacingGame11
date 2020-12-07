@@ -16,7 +16,7 @@ public class OilNew : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        float rand = Random.Range(-1,2);
+        float rand = RandomDirection();
         Vector2 v2 = collision.GetComponent<Rigidbody2D>().velocity;
         collision.GetComponent<Rigidbody2D>().AddForce(v2 * ForwardForce);
         collision.GetComponent<Rigidbody2D>().AddTorque(rand * TorgueForce, ForceMode2D.Impulse);
@@ -33,5 +33,18 @@ public class OilNew : MonoBehaviour
     {
         yield return new WaitForSeconds(TimeBeforeColliderActive);
         gameObject.GetComponent<Collider2D>().enabled = true;
+    }
+    /// <summary>
+    /// возвращает -1 или 1 для выбора направления заноса
+    /// </summary>
+    /// <returns></returns>
+    private int RandomDirection()
+    {
+        int rand = Random.Range(-1, 2);
+        if(rand == 0)
+        {
+            rand = RandomDirection();
+        }
+        return rand;
     }
 }
