@@ -9,7 +9,7 @@ public class Barrel_controller : MonoBehaviour
     [SerializeField] private GameObject BarrelPrefab;
     private bool BarrelDelayFlag = true;
     private const int MAX_BARRELS_ON_MAP = 2;
-    [HideInInspector] public int CurrentBarrelsOnMap = 2;
+    [HideInInspector] public static int CurrentBarrelsOnMap = 2;
 
     [SerializeField] private Transform TopLeftOuterCorner;
     [SerializeField] private Transform TopRightOuterCorner;

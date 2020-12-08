@@ -20,16 +20,15 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private float PlayerCenterOfMass = 1f;
 
     [HideInInspector] public string PlayerSpeedLimit;
-    [SerializeField] private GameObject OilPrefab;
 
     public bool PlayerHasGotAnOil = true;
     [SerializeField] float SpeedToCollectBarrel = 10;
-    [SerializeField] GameObject OilDropPlaceFrom;
+    public GameObject OilDropPlaceFrom;
 
     [SerializeField] private TypeOfRacer Racer;
     [SerializeField] private Buttons PlayerForwardButton;
     [SerializeField] private Buttons PlayerHorizontalButton;
-    [SerializeField] private Buttons PlayerDropOilButton;
+    public Buttons PlayerDropOilButton;
 
     [SerializeField] private GameObject RaceMap;
     [SerializeField] private float TimeBeforeNextDamageFromPlayers;
@@ -37,7 +36,6 @@ public class Player_Controller : MonoBehaviour
 
     [SerializeField] private AudioSource DropOlidSound;
     [SerializeField] private AudioSource PickUpBarrelSound;
-    [SerializeField] private AudioSource OilDriftSound;
     [SerializeField] private AudioSource CrushSound;
     [SerializeField] private AudioSource DamageSound;
 
@@ -50,7 +48,7 @@ public class Player_Controller : MonoBehaviour
         Player1,
         Player2
     }
-    private enum Buttons
+    public enum Buttons
     {
         P1_forward,
         P2_forward,
@@ -110,29 +108,11 @@ public class Player_Controller : MonoBehaviour
         }
         #endregion
 
-        DropOil(OilPrefab);
+     
 
         #endregion
     }
-    /// <summary>
-    /// выливаем масло
-    /// </summary>
-    /// <param name="Oil">префаб лужи масла</param>
-    private void DropOil(GameObject Oil)
-    {
-        if (Input.GetButton(PlayerDropOilButton.ToString()) && PlayerHasGotAnOil)
-        {
-            DropOlidSound.Play();
-            PlayerHasGotAnOil = false;
-            Vector3 oilPosition = new Vector3(OilDropPlaceFrom.transform.position.x, OilDropPlaceFrom.transform.position.y, 0);
-            Instantiate(Oil, oilPosition, Quaternion.Euler(0,0,0));
-            RaceMap.GetComponent<Barrel_controller>().CurrentBarrelsOnMap--;
-        }
-    }
-    /// <summary>
-    /// Собираем канистры с маслом
-    /// </summary>
-    /// <param name="collision">масло</param>
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Barrel_Oil") && PlayerRigidbody.velocity.magnitude < SpeedToCollectBarrel
@@ -141,10 +121,6 @@ public class Player_Controller : MonoBehaviour
             PlayerHasGotAnOil = true;
             PickUpBarrelSound.Play();
             Destroy(collision.gameObject);
-        }
-        if (collision.gameObject.CompareTag("Oil"))
-        {
-            OilDriftSound.Play();
         }
     }
     private bool flagToControlDamageFromPlayers = true;
@@ -191,10 +167,6 @@ public class Player_Controller : MonoBehaviour
         flagToControlDamageFromPlayers = true;
     }
    
-    private void PlayOildDriftSound()
-    {
-        OilDriftSound.Play();
-    }
 
     #region[Контроль заноса]
     private Vector2 RightVelocity(Transform transform, Rigidbody2D rigidbody)

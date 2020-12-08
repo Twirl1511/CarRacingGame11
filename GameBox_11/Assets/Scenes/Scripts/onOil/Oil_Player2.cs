@@ -2,24 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OilNew : MonoBehaviour
+public class Oil_Player2 : MonoBehaviour
 {
+    [SerializeField] private AudioSource OilDriftSound;
     [SerializeField] float ForwardForce = 50f;
-    [SerializeField] float TorgueForce = 1000f;
+    [SerializeField] float TorgueForce = 3000f;
     [SerializeField] float TimeToDisappear = 10;
-    [SerializeField] private float TimeBeforeColliderActive = 0.5f;
+    [SerializeField] private float TimeBeforeColliderActive = 2f;
+    private bool ActivateColliderFlag = true;
     void Start()
     {
         StartCoroutine(DisappearOil());
-        StartCoroutine(DelayBeforeColliderActive());
+        StartCoroutine(DelayForHostPlayerActive());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        float rand = RandomDirection();
-        Vector2 v2 = collision.GetComponent<Rigidbody2D>().velocity;
-        collision.GetComponent<Rigidbody2D>().AddForce(v2 * ForwardForce);
-        collision.GetComponent<Rigidbody2D>().AddTorque(rand * TorgueForce, ForceMode2D.Impulse);
+        if (ActivateColliderFlag && collision.GetComponent<Player_Controller>().Player.ToString().Equals("Player2"))
+        {
+            
+        }
+        else
+        {
+            Vector2 v2 = collision.GetComponent<Rigidbody2D>().velocity;
+            collision.GetComponent<Rigidbody2D>().AddForce(v2 * ForwardForce);
+            collision.GetComponent<Rigidbody2D>().AddTorque(RandomDirection() * TorgueForce, ForceMode2D.Impulse);
+            OilDriftSound.Play();
+        }
+        
     }
 
     private IEnumerator DisappearOil()
@@ -29,11 +39,12 @@ public class OilNew : MonoBehaviour
         yield return new WaitForSeconds(3);
         Destroy(gameObject);
     }
-    private IEnumerator DelayBeforeColliderActive()
+    private IEnumerator DelayForHostPlayerActive()
     {
         yield return new WaitForSeconds(TimeBeforeColliderActive);
-        gameObject.GetComponent<Collider2D>().enabled = true;
+        ActivateColliderFlag = false;
     }
+
     /// <summary>
     /// возвращает -1 или 1 для выбора направления заноса
     /// </summary>
