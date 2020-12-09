@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button Player1_MotoBlueButton;
     [SerializeField] private Button Player2_CarRedButton;
     [SerializeField] private Button Player2_MotoRedButton;
+
     [SerializeField] private GameObject GamePanel;
     [SerializeField] private Button Start;
     [SerializeField] private Image MusicOn;
@@ -20,29 +21,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject Player2_CarRedGameobject;
     [SerializeField] private GameObject Player2_MotoRedGameobject;
 
-    //[SerializeField] private GameObject Player1_CarBluePanel;
-    //[SerializeField] private GameObject Player1_MotoBluePanel;
-    //[SerializeField] private GameObject Player2_CarRedPanel;
-    //[SerializeField] private GameObject Player2_MotoRedPanel;
-
-    private bool Player1_Flag = true;
-    private bool Player2_Flag = true;
     private bool SoundSwitch = false;
-    private void Update()
-    {
-        if (Input.GetButtonDown("P1_horizontal"))
-        {
-            Player1_Flag = !Player1_Flag;
-            Player1_CarBlueButton.gameObject.SetActive(Player1_Flag);
-            Player1_MotoBlueButton.gameObject.SetActive(!Player1_Flag);
-        }
-        if (Input.GetButtonDown("P2_horizontal"))
-        {
-            Player2_Flag = !Player2_Flag;
-            Player2_CarRedButton.gameObject.SetActive(Player2_Flag);
-            Player2_MotoRedButton.gameObject.SetActive(!Player2_Flag);
-        }
-    }
+   
 
     public void OnStartButtonClick()
     {
@@ -70,6 +50,7 @@ public class MainMenu : MonoBehaviour
             //Player1_MotoBluePanel.SetActive(true);
         }
             
+        /// выключаем эту панель и включаем интерфейс игры
         gameObject.SetActive(false);
         GamePanel.SetActive(true);
     }

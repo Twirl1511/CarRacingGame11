@@ -42,12 +42,24 @@ public class SwitchRacer : MonoBehaviour
 
     public void OnLeftSwitchClickPlayer2_Red()
     {
-
+        Player2_RedRacerNumber--;
+        if (Player2_RedRacerNumber < 0) Player2_RedRacerNumber = 2;
+        for (int i = 0; i < Player2_RacersRed.Length; i++)
+        {
+            Player2_RacersRed[i].SetActive(false);
+        }
+        Player2_RacersRed[Player2_RedRacerNumber].SetActive(true);
     }
 
     public void OnRightSwitchClickPlayer2_Red()
     {
-
+        Player2_RedRacerNumber++;
+        if (Player2_RedRacerNumber > 2) Player2_RedRacerNumber = 0;
+        for (int i = 0; i < Player2_RacersRed.Length; i++)
+        {
+            Player2_RacersRed[i].SetActive(false);
+        }
+        Player2_RacersRed[Player2_RedRacerNumber].SetActive(true);
     }
 
 
