@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private Button Player1_CarBlueButton;
-    [SerializeField] private Button Player1_MotoBlueButton;
-    [SerializeField] private Button Player2_CarRedButton;
-    [SerializeField] private Button Player2_MotoRedButton;
+    [SerializeField] private GameObject Player1_CarBlueButton;
+    [SerializeField] private GameObject Player1_MotoBlueButton;
+    [SerializeField] private GameObject Player2_CarRedButton;
+    [SerializeField] private GameObject Player2_MotoRedButton;
 
     [SerializeField] private GameObject GamePanel;
     [SerializeField] private Button Start;
@@ -58,6 +58,7 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("!!!!!!!!!!");
         Application.Quit();
+        
         
     }
     public void OnSoundClick()

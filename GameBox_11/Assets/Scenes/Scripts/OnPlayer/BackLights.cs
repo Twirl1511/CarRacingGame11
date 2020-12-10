@@ -24,7 +24,6 @@ public class BackLights : MonoBehaviour
         if (Input.GetButtonUp(PlayerForwardButton.ToString()) && PlayerRb.velocity.magnitude > MagnitudeToTurnOffLights)
         {
             BackLightsObject.SetActive(true);
-            Debug.Log("Тормозим");
         }
         if (Input.GetButton(PlayerForwardButton.ToString()) || PlayerRb.velocity.magnitude < MagnitudeToTurnOffLights)
         {
