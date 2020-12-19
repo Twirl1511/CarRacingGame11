@@ -142,8 +142,8 @@ public class Player_Controller : MonoBehaviour
                 {
                     if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
                     if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
-                    crushesCounter = 0;
-                }
+                StartCoroutine(WaitUntillRefreshDurability());
+            }
                 
                 StartCoroutine(DelayBeforeNextDemageFromPlayers(TimeBeforeNextDamageFromPlayers));
             } // если с любым другим объектом
@@ -156,8 +156,8 @@ public class Player_Controller : MonoBehaviour
                     if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
                     if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
                 HowManyDamagePlayerHas++;
-                crushesCounter = 0;
-                    DamageSound.Play();
+                StartCoroutine(WaitUntillRefreshDurability());
+                DamageSound.Play();
                 }
             }
     }
@@ -179,5 +179,9 @@ public class Player_Controller : MonoBehaviour
     }
     #endregion
 
-    
+    private IEnumerator WaitUntillRefreshDurability()
+    {
+        yield return new WaitForSeconds(0.2f);
+        crushesCounter = 0;
+    }
 }

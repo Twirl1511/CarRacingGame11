@@ -48,12 +48,12 @@ public class Speedometer : MonoBehaviour
     private void BlueArrowMove()
     {
 
-        Player1_ArrowBlue.transform.rotation = Quaternion.Euler(0,0,-1 * Player1_BlueSpeed/test);
+        Player1_ArrowBlue.transform.rotation = Quaternion.Euler(0,0,-1 * Player1_BlueSpeed / test + 4);
     }
     private void RedArrowMove()
     {
 
-        Player2_ArrowRed.transform.rotation = Quaternion.Euler(0, 0, -1 * Player2_RedSpeed / test);
+        Player2_ArrowRed.transform.rotation = Quaternion.Euler(0, 0, -1 * Player2_RedSpeed / test + 4);
     }
 
 }
