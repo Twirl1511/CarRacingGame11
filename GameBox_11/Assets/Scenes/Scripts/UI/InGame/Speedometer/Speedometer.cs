@@ -8,8 +8,10 @@ public class Speedometer : MonoBehaviour
     [SerializeField] private GameObject Player2_ArrowRed;
     [SerializeField] private GameObject Player1_CarBlue;
     [SerializeField] private GameObject Player1_MotoBlue;
+    [SerializeField] private GameObject Player1_MonsterBlue;
     [SerializeField] private GameObject Player2_CarRed;
     [SerializeField] private GameObject Player2_MotoRed;
+    [SerializeField] private GameObject Player2_MonsterRed;
     private float Player1_BlueSpeed;
     private float Player2_RedSpeed;
     public float test;
@@ -43,6 +45,10 @@ public class Speedometer : MonoBehaviour
         if (Player2_MotoRed.activeSelf)
         {
             Player2_RedSpeed = Player2_MotoRed.GetComponent<Rigidbody2D>().velocity.magnitude;
+        }
+        if (Player2_MonsterRed.activeSelf)
+        {
+            Player2_RedSpeed = Player2_MonsterRed.GetComponent<Rigidbody2D>().velocity.magnitude;
         }
     }
     private void BlueArrowMove()

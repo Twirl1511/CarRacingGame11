@@ -60,7 +60,8 @@ public class Player_Controller : MonoBehaviour
     public enum TypeOfRacer
     {
         Moto,
-        Car
+        Car,
+        Monster
     }
 
 
@@ -142,6 +143,7 @@ public class Player_Controller : MonoBehaviour
                 {
                     if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
                     if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
+                    if (Racer == TypeOfRacer.Monster) PlayerThirdSpeed -= 15;
                 StartCoroutine(WaitUntillRefreshDurability());
             }
                 
@@ -155,6 +157,7 @@ public class Player_Controller : MonoBehaviour
                 {
                     if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
                     if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
+                    if (Racer == TypeOfRacer.Monster) PlayerThirdSpeed -= 15;
                 HowManyDamagePlayerHas++;
                 StartCoroutine(WaitUntillRefreshDurability());
                 DamageSound.Play();
