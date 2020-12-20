@@ -524,7 +524,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 3
   m_LinearDrag: 1.1
-  m_AngularDrag: 2
+  m_AngularDrag: 2.4
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -652,9 +652,9 @@ MonoBehaviour:
   SecondSpeedLimit: 145
   PlayerThirdSpeed: 1050
   ThirdSpeedLimit: 185
-  PlayerTorgueForce: 20000
-  PlayerDriftFactor: 0.94
-  PlayerCenterOfMass: 0.8
+  PlayerTorgueForce: 12000
+  PlayerDriftFactor: 0.9
+  PlayerCenterOfMass: 0.6
   PlayerSpeedLimit: 
   PlayerHasGotAnOil: 1
   SpeedToCollectBarrel: 2000
