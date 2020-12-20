@@ -40,6 +40,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private AudioSource DamageSound;
 
     public int HowManyDamagePlayerHas = 0;
+    [SerializeField] private float SpeedDegradation;
 
 
     public Players Player;
@@ -133,34 +134,37 @@ public class Player_Controller : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
-            // эффект при коллизии с плеером, можно удариться не чаще определенного времени
-            if (collision.gameObject.CompareTag("Player") && flagToControlDamageFromPlayers == true)
+        // эффект при коллизии с плеером, можно удариться не чаще определенного времени
+        if (collision.gameObject.CompareTag("Player") && flagToControlDamageFromPlayers == true)
+        {
+            CrushSound.Play();
+            crushesCounter++;
+            flagToControlDamageFromPlayers = false;
+            if(crushesCounter >= HowManyCrushesBeforeTakeDamage)
             {
-                CrushSound.Play();
-                crushesCounter++;
-                flagToControlDamageFromPlayers = false;
-                if(crushesCounter >= HowManyCrushesBeforeTakeDamage)
-                {
-                    if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
-                    if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
-                    if (Racer == TypeOfRacer.Monster) PlayerThirdSpeed -= 15;
+                PlayerThirdSpeed -= SpeedDegradation;
+                //if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
+                //if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
+                //if (Racer == TypeOfRacer.Monster) PlayerThirdSpeed -= 15;
                 StartCoroutine(WaitUntillRefreshDurability());
             }
                 
                 StartCoroutine(DelayBeforeNextDemageFromPlayers(TimeBeforeNextDamageFromPlayers));
-            } // если с любым другим объектом
+        } 
+            // если с любым другим объектом
             else if(!collision.gameObject.CompareTag("Player"))
             {
                 crushesCounter++;
                 CrushSound.Play();
-            if (crushesCounter >= HowManyCrushesBeforeTakeDamage)
+                if (crushesCounter >= HowManyCrushesBeforeTakeDamage)
                 {
-                    if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
-                    if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
-                    if (Racer == TypeOfRacer.Monster) PlayerThirdSpeed -= 15;
-                HowManyDamagePlayerHas++;
-                StartCoroutine(WaitUntillRefreshDurability());
-                DamageSound.Play();
+                    PlayerThirdSpeed -= SpeedDegradation;
+                    //if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
+                    //    if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
+                    //    if (Racer == TypeOfRacer.Monster) PlayerThirdSpeed -= 15;
+                    HowManyDamagePlayerHas++;
+                    StartCoroutine(WaitUntillRefreshDurability());
+                    DamageSound.Play();
                 }
             }
     }

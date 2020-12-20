@@ -457,7 +457,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 200, y: 110}
+  m_Size: {x: 136, y: 80}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -544,7 +544,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.24353981, y: -1.5798569}
+  m_Offset: {x: -0.26475143, y: -1.6919785}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -555,7 +555,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 48.398655, y: 136.3955}
+  m_Size: {x: 35.783867, y: 93.96312}
   m_EdgeRadius: 0
 --- !u!114 &8914815831534940278
 MonoBehaviour:
@@ -671,6 +671,7 @@ MonoBehaviour:
   CrushSound: {fileID: 0}
   DamageSound: {fileID: 0}
   HowManyDamagePlayerHas: 0
+  SpeedDegradation: 15
   Player: 1
   crushesCounter: 0
 --- !u!114 &6004934223922151598
@@ -732,7 +733,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15575027, y: -35.437637}
+  m_Offset: {x: -0.051132202, y: -24.885363}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -743,7 +744,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 95.60508, y: 43.775017}
+  m_Size: {x: 69.777084, y: 29.70538}
   m_EdgeRadius: 0
 --- !u!61 &6955525456008738405
 BoxCollider2D:
@@ -758,7 +759,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07624817, y: 42.339725}
+  m_Offset: {x: -0.07382202, y: 28.369911}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -769,7 +770,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 104.18857, y: 42.465508}
+  m_Size: {x: 76.53168, y: 29.432}
   m_EdgeRadius: 0
 --- !u!1 &7320273410471655578
 GameObject:

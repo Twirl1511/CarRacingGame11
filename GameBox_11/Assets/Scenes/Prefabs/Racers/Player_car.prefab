@@ -617,7 +617,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7519618563941809416}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 404918e1153b1a64e9bd8af3b04df57f, type: 3}
   m_Name: 
@@ -633,8 +633,6 @@ MonoBehaviour:
   PlayerDriftFactor: 0.93
   PlayerCenterOfMass: 1
   PlayerSpeedLimit: 
-  OilPrefab: {fileID: 8698926157362173323, guid: c83a8570e3b35bb43b28f614423c9646,
-    type: 3}
   PlayerHasGotAnOil: 1
   SpeedToCollectBarrel: 2000
   OilDropPlaceFrom: {fileID: 7519618564733744653}
@@ -647,10 +645,10 @@ MonoBehaviour:
   HowManyCrushesBeforeTakeDamage: 3
   DropOlidSound: {fileID: 0}
   PickUpBarrelSound: {fileID: 0}
-  OilDriftSound: {fileID: 0}
   CrushSound: {fileID: 0}
   DamageSound: {fileID: 0}
   HowManyDamagePlayerHas: 0
+  SpeedDegradation: 30
   Player: 0
   crushesCounter: 0
 --- !u!114 &6816223341451546169
@@ -683,6 +681,8 @@ MonoBehaviour:
   SmokeObj: {fileID: 4387591293968385706, guid: a33311747818046489d74ff3cfda4818,
     type: 3}
   SmokePosition: {fileID: 5061321607033420934}
+  PlayerForwardButton: 0
+  SmokeParticalSystem: {fileID: 0}
 --- !u!1 &7519618564733744653
 GameObject:
   m_ObjectHideFlags: 0
