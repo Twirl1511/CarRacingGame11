@@ -744,7 +744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &54174455
 Transform:
   m_ObjectHideFlags: 0
@@ -945,12 +945,12 @@ PrefabInstance:
     - target: {fileID: 7519618563941809420, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 597
+      value: -384
       objectReference: {fileID: 0}
     - target: {fileID: 7519618563941809420, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -347.4
+      value: 285
       objectReference: {fileID: 0}
     - target: {fileID: 7519618563941809420, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
@@ -2350,7 +2350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: 0, y: -20000}
+  BounceDirection: {x: 0, y: 0}
 --- !u!1 &161059693
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,7 +2673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: 0, y: 20000}
+  BounceDirection: {x: 0, y: 0}
 --- !u!1 &209332257
 GameObject:
   m_ObjectHideFlags: 0
@@ -3199,12 +3199,12 @@ PrefabInstance:
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 583.00085
+      value: -403
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -351.88504
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -3409,7 +3409,7 @@ PrefabInstance:
     - target: {fileID: 2855376886144410236, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886923157521, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -4877,7 +4877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: -20000, y: 0}
+  BounceDirection: {x: 0, y: 0}
 --- !u!1 &329236403
 GameObject:
   m_ObjectHideFlags: 0
@@ -9005,7 +9005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &668244646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12894,7 +12894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: 20000, y: 0}
+  BounceDirection: {x: 0, y: 0}
 --- !u!1 &1127748892
 GameObject:
   m_ObjectHideFlags: 0
@@ -14653,7 +14653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: 20000, y: 0}
+  BounceDirection: {x: 0, y: 0}
 --- !u!61 &1276417891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14724,7 +14724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: 0, y: 20000}
+  BounceDirection: {x: 0, y: 0}
 --- !u!61 &1280613811
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16718,6 +16718,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 66330439167784914, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: Direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 66330439167784914, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: TaranForce
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 66330439167784914, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: TorgueForce
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 66330439167784914, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: DelayBeforeTorgue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7519618563390598916, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -19033,7 +19053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: -20000, y: 0}
+  BounceDirection: {x: 0, y: 0}
 --- !u!61 &1611950442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21774,7 +21794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDicertion: {x: 0, y: -20000}
+  BounceDirection: {x: 0, y: 0}
 --- !u!61 &1841729742
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25784,12 +25804,12 @@ PrefabInstance:
     - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 595.3892
+      value: -347
       objectReference: {fileID: 0}
     - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -259.8408
+      value: 266
       objectReference: {fileID: 0}
     - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
@@ -25844,7 +25864,7 @@ PrefabInstance:
     - target: {fileID: 7320273410216063903, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8914815831534940278, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}

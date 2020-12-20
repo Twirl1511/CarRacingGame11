@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Bounce_From_Walls : MonoBehaviour
 {
-    [SerializeField] private Vector2 BounceDicertion;
+    [SerializeField] private Vector2 BounceDirection;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.gameObject.GetComponent<Rigidbody2D>().AddForce(BounceDicertion);
+        collision.gameObject.GetComponent<Rigidbody2D>().AddForce(BounceDirection);
     }
 }

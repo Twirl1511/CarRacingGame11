@@ -25,7 +25,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] float SpeedToCollectBarrel = 10;
     public GameObject OilDropPlaceFrom;
 
-    [SerializeField] private TypeOfRacer Racer;
+    [SerializeField] public TypeOfRacer Racer;
     [SerializeField] private Buttons PlayerForwardButton;
     [SerializeField] private Buttons PlayerHorizontalButton;
     public Buttons PlayerDropOilButton;

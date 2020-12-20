@@ -19,9 +19,9 @@ public class RayCast : MonoBehaviour
     {
         Ray2D ray2D = new Ray2D(transform.position, Player1_Blue.transform.position);
         
-        Debug.DrawRay(ray2D.origin, Player1_Blue.transform.position);
+        
 
         float test = Vector2.Angle(Player1_BlueStartPosition.transform.position, Player1_Blue.transform.position);
-        Debug.Log(test);
+
     }
 }
