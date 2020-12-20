@@ -755,8 +755,6 @@ GameObject:
   - component: {fileID: 6004934223922151598}
   - component: {fileID: 7017956485496208116}
   - component: {fileID: 1831759444687288083}
-  - component: {fileID: 303674973712559440}
-  - component: {fileID: 6955525456008738405}
   m_Layer: 0
   m_Name: Player_Monster
   m_TagString: Player
@@ -940,15 +938,16 @@ MonoBehaviour:
   PlayerDropOilButton: 5
   RaceMap: {fileID: 0}
   TimeBeforeNextDamageFromPlayers: 2
-  HowManyCrushesBeforeTakeDamage: 4
   DropOlidSound: {fileID: 0}
   PickUpBarrelSound: {fileID: 0}
   CrushSound: {fileID: 0}
   DamageSound: {fileID: 0}
-  HowManyDamagePlayerHas: 0
   SpeedDegradation: 15
-  Player: 1
   crushesCounter: 0
+  HowManyCrushesBeforeTakeDamage: 4
+  MaxNumberOfDegradations: 0
+  TotalDamagePlayerHas: 0
+  Player: 1
 --- !u!114 &6004934223922151598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,58 +994,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DropOlidSound: {fileID: 0}
   Oil: {fileID: 8698926157362173323, guid: c83a8570e3b35bb43b28f614423c9646, type: 3}
---- !u!61 &303674973712559440
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7320273410216063903}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.051132202, y: -24.885363}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 69.777084, y: 29.70538}
-  m_EdgeRadius: 0
---- !u!61 &6955525456008738405
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7320273410216063903}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.07382202, y: 28.369911}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 76.53168, y: 29.432}
-  m_EdgeRadius: 0
 --- !u!1 &7320273410471655578
 GameObject:
   m_ObjectHideFlags: 0

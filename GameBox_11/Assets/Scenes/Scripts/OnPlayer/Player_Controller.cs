@@ -32,16 +32,35 @@ public class Player_Controller : MonoBehaviour
 
     [SerializeField] private GameObject RaceMap;
     [SerializeField] private float TimeBeforeNextDamageFromPlayers;
-    [SerializeField] private int HowManyCrushesBeforeTakeDamage;
+    
 
     [SerializeField] private AudioSource DropOlidSound;
     [SerializeField] private AudioSource PickUpBarrelSound;
     [SerializeField] private AudioSource CrushSound;
     [SerializeField] private AudioSource DamageSound;
 
-    public int HowManyDamagePlayerHas = 0;
+    ///на сколько уменьшается скорость при уменьшении дюрабилити в ноль 
     [SerializeField] private float SpeedDegradation;
-
+    /// <summary>
+    /// предотвращаем многократное получение демага при врезании в другого игрока
+    /// </summary>
+    private bool flagToControlDamageFromPlayers = true;
+    /// <summary>
+    /// сколько демага получил игрок, когда набирается максимум, счетчик сбрасывается в ноль
+    /// </summary>
+    public int crushesCounter = 0;
+    /// <summary>
+    ///  максимум урона прежде чем уменьшить скорость
+    /// </summary>
+    public int HowManyCrushesBeforeTakeDamage;
+    /// <summary>
+    /// сколько степеней даградации есть у плеера
+    /// </summary>
+    public int MaxNumberOfDegradations;
+    /// <summary>
+    /// сколько степеней деградации уже получил плеер
+    /// </summary>
+    public int TotalDamagePlayerHas;
 
     public Players Player;
     public enum Players
@@ -125,8 +144,7 @@ public class Player_Controller : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-    private bool flagToControlDamageFromPlayers = true;
-    public int crushesCounter = 0;
+    
     
     /// <summary>
     /// демаг и уменьшение третьей скорости от столкновений
@@ -143,6 +161,7 @@ public class Player_Controller : MonoBehaviour
             if(crushesCounter >= HowManyCrushesBeforeTakeDamage)
             {
                 PlayerThirdSpeed -= SpeedDegradation;
+                TotalDamagePlayerHas++;
                 //if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
                 //if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
                 //if (Racer == TypeOfRacer.Monster) PlayerThirdSpeed -= 15;
@@ -151,22 +170,22 @@ public class Player_Controller : MonoBehaviour
                 
                 StartCoroutine(DelayBeforeNextDemageFromPlayers(TimeBeforeNextDamageFromPlayers));
         } 
-            // если с любым другим объектом
-            else if(!collision.gameObject.CompareTag("Player"))
+        // если ударяемся с любым другим объектом
+        else if(!collision.gameObject.CompareTag("Player"))
+        {
+            crushesCounter++;
+            CrushSound.Play();
+            if (crushesCounter >= HowManyCrushesBeforeTakeDamage)
             {
-                crushesCounter++;
-                CrushSound.Play();
-                if (crushesCounter >= HowManyCrushesBeforeTakeDamage)
-                {
-                    PlayerThirdSpeed -= SpeedDegradation;
-                    //if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
-                    //    if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
-                    //    if (Racer == TypeOfRacer.Monster) PlayerThirdSpeed -= 15;
-                    HowManyDamagePlayerHas++;
-                    StartCoroutine(WaitUntillRefreshDurability());
-                    DamageSound.Play();
-                }
+                PlayerThirdSpeed -= SpeedDegradation;
+                TotalDamagePlayerHas++;
+                //if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
+                //    if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
+                //    if (Racer == TypeOfRacer.Monster) PlayerThirdSpeed -= 15;
+                StartCoroutine(WaitUntillRefreshDurability());
+                DamageSound.Play();
             }
+        }
     }
     private IEnumerator DelayBeforeNextDemageFromPlayers(float TimeBeforeNextDamageFromPlayers)
     {

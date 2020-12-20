@@ -70,8 +70,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9967866797a7f9a4d858aca327c6cbbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TorgueForce: 1500
-  TaranForce: 20000
+  TorgueForceForMoto: 1500
+  TorgueForceForCar: 1500
+  TaranForceForMoto: 20000
+  TaranForceForCar: 10000
 --- !u!1 &1018957438896881460
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,8 +144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 046d796714a47bc499333a9a2629b7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TorgueForce: 1500
-  TaranForce: 20000
+  TorgueForceForMoto: 1500
+  TorgueForceForCar: 1500
+  TaranForceForMoto: 20000
+  TaranForceForCar: 10000
 --- !u!1 &1960189247990967414
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,8 +218,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1997413bc05b8bd4b9a7e50a3e5f6af6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TorgueForce: 1500
-  TaranForce: 20000
+  TorgueForceForMoto: 1500
+  TorgueForceForCar: 1500
+  TaranForceForMoto: 20000
+  TaranForceForCar: 10000
 --- !u!1 &2438581207686259003
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +233,7 @@ GameObject:
   - component: {fileID: 7212689183764572394}
   - component: {fileID: 4357666380275546161}
   m_Layer: 0
-  m_Name: Point Light 2D (1)
+  m_Name: RightLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -422,8 +428,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c8ad6cc86343054e86beaaa00b6f1e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TorgueForce: 1500
-  TaranForce: 20000
+  TorgueForceForMoto: 1500
+  TorgueForceForCar: 1500
+  TaranForceForMoto: 20000
+  TaranForceForCar: 10000
 --- !u!1 &4597068439839192403
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,6 +810,7 @@ GameObject:
   - component: {fileID: 7519618563941809409}
   - component: {fileID: 6816223341451546169}
   - component: {fileID: 7829810189898560611}
+  - component: {fileID: 8443046383655906153}
   m_Layer: 0
   m_Name: Player_car
   m_TagString: Player
@@ -965,15 +974,16 @@ MonoBehaviour:
   PlayerDropOilButton: 5
   RaceMap: {fileID: 0}
   TimeBeforeNextDamageFromPlayers: 2
-  HowManyCrushesBeforeTakeDamage: 3
   DropOlidSound: {fileID: 0}
   PickUpBarrelSound: {fileID: 0}
   CrushSound: {fileID: 0}
   DamageSound: {fileID: 0}
-  HowManyDamagePlayerHas: 0
   SpeedDegradation: 30
-  Player: 0
   crushesCounter: 0
+  HowManyCrushesBeforeTakeDamage: 3
+  MaxNumberOfDegradations: 10
+  TotalDamagePlayerHas: 0
+  Player: 0
 --- !u!114 &6816223341451546169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,6 +1016,20 @@ MonoBehaviour:
   SmokePosition: {fileID: 5061321607033420934}
   PlayerForwardButton: 0
   SmokeParticalSystem: {fileID: 0}
+--- !u!114 &8443046383655906153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7519618563941809416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fbeb8d7a88e9b41bd85a3d5b2d2008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftLight: {fileID: 8234442328222810817}
+  RightLight: {fileID: 2438581207686259003}
 --- !u!1 &7519618564733744653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +1071,7 @@ GameObject:
   - component: {fileID: 7603267671331808172}
   - component: {fileID: 1125008186479255684}
   m_Layer: 0
-  m_Name: Point Light 2D
+  m_Name: LeftLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -9,7 +9,7 @@ public class BounceRight : MonoBehaviour
     [SerializeField] private float TaranForceForMoto = 20000f;
     [SerializeField] private float TaranForceForCar = 10000f;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.GetComponent<Player_Controller>().Racer.ToString().Equals("Moto"))
         {

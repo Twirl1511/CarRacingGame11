@@ -475,15 +475,16 @@ MonoBehaviour:
   PlayerDropOilButton: 5
   RaceMap: {fileID: 0}
   TimeBeforeNextDamageFromPlayers: 2
-  HowManyCrushesBeforeTakeDamage: 2
   DropOlidSound: {fileID: 0}
   PickUpBarrelSound: {fileID: 0}
   CrushSound: {fileID: 0}
   DamageSound: {fileID: 0}
-  HowManyDamagePlayerHas: 0
   SpeedDegradation: 50
-  Player: 0
   crushesCounter: 0
+  HowManyCrushesBeforeTakeDamage: 2
+  MaximumDurability: 10
+  TotalDamagePlayerHas: 0
+  Player: 0
 --- !u!114 &3756563025567846277
 MonoBehaviour:
   m_ObjectHideFlags: 0

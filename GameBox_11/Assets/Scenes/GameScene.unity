@@ -2350,7 +2350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDirection: {x: 0, y: 0}
+  BounceDirection: {x: 0, y: -1}
+  Force: 10000
 --- !u!1 &161059693
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,7 +2674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDirection: {x: 0, y: 0}
+  BounceDirection: {x: 0, y: 1}
+  Force: 10000
 --- !u!1 &209332257
 GameObject:
   m_ObjectHideFlags: 0
@@ -3409,7 +3411,7 @@ PrefabInstance:
     - target: {fileID: 2855376886144410236, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886923157521, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -4877,7 +4879,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDirection: {x: 0, y: 0}
+  BounceDirection: {x: -1, y: 0}
+  Force: 10000
 --- !u!1 &329236403
 GameObject:
   m_ObjectHideFlags: 0
@@ -12894,7 +12897,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDirection: {x: 0, y: 0}
+  BounceDirection: {x: 1, y: 0}
+  Force: 10000
 --- !u!1 &1127748892
 GameObject:
   m_ObjectHideFlags: 0
@@ -14653,7 +14657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDirection: {x: 0, y: 0}
+  BounceDirection: {x: 1, y: 0}
+  Force: 10000
 --- !u!61 &1276417891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14724,7 +14729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDirection: {x: 0, y: 0}
+  BounceDirection: {x: 0, y: 1}
+  Force: 10000
 --- !u!61 &1280613811
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19053,7 +19059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDirection: {x: 0, y: 0}
+  BounceDirection: {x: -1, y: 0}
+  Force: 10000
 --- !u!61 &1611950442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21794,7 +21801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e79fc220f0f2c34dbf5395635fa1903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BounceDirection: {x: 0, y: 0}
+  BounceDirection: {x: 0, y: -1}
+  Force: 10000
 --- !u!61 &1841729742
 BoxCollider2D:
   m_ObjectHideFlags: 0
