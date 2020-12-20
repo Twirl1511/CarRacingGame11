@@ -462,7 +462,7 @@ MonoBehaviour:
   SecondSpeedLimit: 190
   PlayerThirdSpeed: 1200
   ThirdSpeedLimit: 250
-  PlayerTorgueForce: 4200
+  PlayerTorgueForce: 3000
   PlayerDriftFactor: 0.91
   PlayerCenterOfMass: -0.6
   PlayerSpeedLimit: 
