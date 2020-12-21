@@ -362,7 +362,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1.15
+  m_Mass: 1.2
   m_LinearDrag: 3
   m_AngularDrag: 4
   m_GravityScale: 0
@@ -455,13 +455,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 404918e1153b1a64e9bd8af3b04df57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentPlayerSpeed: 700
-  PlayerFirstSpeed: 700
-  FirstSpeedLimit: 80
-  PlayerSecondSpeed: 900
-  SecondSpeedLimit: 190
-  PlayerThirdSpeed: 1200
-  ThirdSpeedLimit: 250
+  CurrentPlayerSpeed: 600
+  PlayerFirstSpeed: 600
+  FirstSpeedLimit: 70
+  PlayerSecondSpeed: 950
+  SecondSpeedLimit: 155
+  PlayerThirdSpeed: 1370
+  ThirdSpeedLimit: 240
   PlayerTorgueForce: 3000
   PlayerDriftFactor: 0.91
   PlayerCenterOfMass: -0.6
@@ -479,11 +479,11 @@ MonoBehaviour:
   PickUpBarrelSound: {fileID: 0}
   CrushSound: {fileID: 0}
   DamageSound: {fileID: 0}
-  SpeedDegradation: 50
+  SpeedDegradation: 73
   crushesCounter: 0
   HowManyCrushesBeforeTakeDamage: 2
-  MaximumDurability: 10
-  TotalDamagePlayerHas: 0
+  MaxNumberOfDegradations: 0
+  TotalDamagePlayerHas: 6
   Player: 0
 --- !u!114 &3756563025567846277
 MonoBehaviour:

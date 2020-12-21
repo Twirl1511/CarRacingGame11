@@ -71,9 +71,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TorgueForceForMoto: 1500
-  TorgueForceForCar: 1500
-  TaranForceForMoto: 20000
-  TaranForceForCar: 10000
+  TorgueForceForCar: 500
+  TaranForceForMoto: 10000
+  TaranForceForCar: 7000
 --- !u!1 &1018957438896881460
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,9 +145,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TorgueForceForMoto: 1500
-  TorgueForceForCar: 1500
-  TaranForceForMoto: 20000
-  TaranForceForCar: 10000
+  TorgueForceForCar: 0
+  TaranForceForMoto: 10000
+  TaranForceForCar: 5000
 --- !u!1 &1960189247990967414
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,10 +218,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1997413bc05b8bd4b9a7e50a3e5f6af6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TorgueForceForMoto: 1500
-  TorgueForceForCar: 1500
-  TaranForceForMoto: 20000
-  TaranForceForCar: 10000
+  TorgueForceForMoto: 1000
+  TorgueForceForCar: 700
+  TaranForceForMoto: 10000
+  TaranForceForCar: 6000
 --- !u!1 &2438581207686259003
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,10 +428,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c8ad6cc86343054e86beaaa00b6f1e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TorgueForceForMoto: 1500
-  TorgueForceForCar: 1500
-  TaranForceForMoto: 20000
-  TaranForceForCar: 10000
+  TorgueForceForMoto: 1000
+  TorgueForceForCar: 700
+  TaranForceForMoto: 10000
+  TaranForceForCar: 6000
 --- !u!1 &4597068439839192403
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,10 +959,10 @@ MonoBehaviour:
   FirstSpeedLimit: 135
   PlayerSecondSpeed: 800
   SecondSpeedLimit: 165
-  PlayerThirdSpeed: 950
+  PlayerThirdSpeed: 940
   ThirdSpeedLimit: 210
   PlayerTorgueForce: 7500
-  PlayerDriftFactor: 0.93
+  PlayerDriftFactor: 0.95
   PlayerCenterOfMass: 1
   PlayerSpeedLimit: 
   PlayerHasGotAnOil: 1
@@ -978,11 +978,11 @@ MonoBehaviour:
   PickUpBarrelSound: {fileID: 0}
   CrushSound: {fileID: 0}
   DamageSound: {fileID: 0}
-  SpeedDegradation: 30
+  SpeedDegradation: 48
   crushesCounter: 0
   HowManyCrushesBeforeTakeDamage: 3
   MaxNumberOfDegradations: 10
-  TotalDamagePlayerHas: 0
+  TotalDamagePlayerHas: 5
   Player: 0
 --- !u!114 &6816223341451546169
 MonoBehaviour:
