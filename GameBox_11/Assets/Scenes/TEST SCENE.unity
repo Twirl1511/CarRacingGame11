@@ -3142,6 +3142,36 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerFirstSpeed
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: CurrentPlayerSpeed
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: SecondSpeedLimit
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: FirstSpeedLimit
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerSecondSpeed
+      value: 850
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: ThirdSpeedLimit
+      value: 220
+      objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3410,7 +3440,7 @@ PrefabInstance:
     - target: {fileID: 2855376886144410236, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886923157521, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}

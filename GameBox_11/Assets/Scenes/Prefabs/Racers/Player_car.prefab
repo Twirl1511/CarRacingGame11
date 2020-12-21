@@ -956,11 +956,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPlayerSpeed: 620
   PlayerFirstSpeed: 620
-  FirstSpeedLimit: 135
+  FirstSpeedLimit: 120
   PlayerSecondSpeed: 800
-  SecondSpeedLimit: 165
+  SecondSpeedLimit: 150
   PlayerThirdSpeed: 940
-  ThirdSpeedLimit: 210
+  ThirdSpeedLimit: 190
   PlayerTorgueForce: 7500
   PlayerDriftFactor: 0.95
   PlayerCenterOfMass: 1
