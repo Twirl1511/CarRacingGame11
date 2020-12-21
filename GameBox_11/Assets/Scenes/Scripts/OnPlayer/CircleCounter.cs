@@ -5,41 +5,59 @@ using UnityEngine.UI;
 
 public class CircleCounter : MonoBehaviour
 {
+    private Vector2 CenterVector;
+    [SerializeField] private Text BlueTextForInt;
+    [SerializeField] private Text BlueTextForFloat;
+
     [SerializeField] private Collider2D BoxCollider1;
     [SerializeField] private Collider2D BoxCollider2;
 
-    [SerializeField] private Collider2D BoxCollider1ForBar;
-    [SerializeField] private Collider2D BoxCollider2ForBar;
-
-    [SerializeField] private float DistanceFor1Bar;
     [SerializeField] private AudioSource CircleCompleteSound;
     [HideInInspector] public int HOW_MANY_CIRCLES_TO_WIN = 10;
     [SerializeField] private AudioSource VictorySound;
     [SerializeField] private AudioSource HearBeatingSound;
     [SerializeField] private AudioSource GameSound;
 
-    [SerializeField] private Image[] BlueLineBars;
-    [SerializeField] private Image[] RedLineBars;
-
-
     private bool BoxCollider1Flag;
     private bool BoxCollider2Flag;
 
-    private bool BoxCollider1FlagForBar = true;
-    private bool BoxCollider2FlagForBar = false;
-
 
     [HideInInspector] public int PlayerCircleCounter = 0;
-    
 
-
-    private void Start()
+    private void Awake()
     {
-        //DistanceFor01Bar = (new Vector2(BoxCollider1.GetComponent<Transform>().position.x, BoxCollider1.GetComponent<Transform>().position.y)
-        //    - new Vector2(BoxCollider2.GetComponent<Transform>().position.x, BoxCollider2.GetComponent<Transform>().position.y)).magnitude/10;
-        DistanceFor1Bar = (new Vector2(BoxCollider1ForBar.GetComponent<Transform>().position.x, BoxCollider1ForBar.GetComponent<Transform>().position.y)
-            - new Vector2(BoxCollider2ForBar.GetComponent<Transform>().position.x, BoxCollider2ForBar.GetComponent<Transform>().position.y)).magnitude * 1.2f;
+        CenterVector = BoxCollider1.gameObject.transform.position.normalized;
     }
+    private void Update()
+    {
+        if (BoxCollider1Flag)
+        {
+            CenterVector = BoxCollider1.gameObject.transform.position.normalized;
+            float degrees = Vector2.Angle(CenterVector, transform.position);
+            float floats = degrees / 36;
+            BlueTextForFloat.text = Mathf.Floor(floats).ToString();
+
+        }
+        if(BoxCollider1Flag && BoxCollider2Flag)
+        {
+            CenterVector = BoxCollider2.gameObject.transform.position.normalized;
+            float degrees = Vector2.Angle(CenterVector, transform.position);
+            float floats = (degrees / 36) + 5;
+            BlueTextForFloat.text = Mathf.Floor(floats).ToString();
+        }
+        if (BlueTextForFloat.text.Equals("0"))
+        {
+            BlueTextForFloat.gameObject.SetActive(false);
+            BlueTextForInt.text = PlayerCircleCounter.ToString();
+        }
+        else
+        {
+            BlueTextForFloat.gameObject.SetActive(true);
+            BlueTextForInt.text = PlayerCircleCounter.ToString() + '.'; 
+        }
+        
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -47,13 +65,10 @@ public class CircleCounter : MonoBehaviour
         {
             CircleComplete();
             BoxCollider1Flag = true;
-            //BoxCollider1FlagForBar = true;
-
         }
         if (collision.Equals(BoxCollider2))
         {
             BoxCollider2Flag = true;
-            //BoxCollider2FlagForBar = true;
         }        
     }
 
@@ -84,80 +99,8 @@ public class CircleCounter : MonoBehaviour
         yield return new WaitForSeconds(Seconds);
         Time.timeScale = 0;
     }
-    private int barCounter = 0;
-    private void Update()
-    {
-
-        //if (this.GetComponent<Player_Controller>().Player.ToString().Equals("Player1"))
-        //{   
-        //    if (BoxCollider1FlagForBar)
-        //    {
-        //        float distancePlayerMoved = (this.GetComponent<Rigidbody2D>().position - new Vector2(BoxCollider1ForBar.GetComponent<Transform>().position.x,
-        //        BoxCollider1ForBar.GetComponent<Transform>().position.y)).magnitude;
-        //        BlueLineBars[barCounter].fillAmount = distancePlayerMoved / DistanceFor1Bar;
-        //        if (BlueLineBars[barCounter].fillAmount > 0.9f)
-        //        {
-        //            BlueLineBars[barCounter].fillAmount = 1;
-        //            BoxCollider1FlagForBar = false;
-        //            barCounter++;
-        //            BlueLineBars[barCounter].gameObject.SetActive(true);
-        //            BoxCollider2FlagForBar = true;
-        //        }
-        //    }
-
-        //    if (BoxCollider2FlagForBar)
-        //    {
-        //        float distancePlayerMoved = (this.GetComponent<Rigidbody2D>().position - new Vector2(BoxCollider2ForBar.GetComponent<Transform>().position.x,
-        //        BoxCollider2ForBar.GetComponent<Transform>().position.y)).magnitude;
-        //        BlueLineBars[barCounter].fillAmount = distancePlayerMoved / DistanceFor1Bar;
-        //        if (BlueLineBars[barCounter].fillAmount > 0.9f)
-        //        {
-        //            BlueLineBars[barCounter].fillAmount = 1;
-        //            BoxCollider2FlagForBar = false;
-        //            barCounter++;
-        //            BlueLineBars[barCounter].gameObject.SetActive(true);
-        //            BoxCollider1FlagForBar = true;
-
-
-        //        }
-        //    }
-        //}
-
-        //if (this.GetComponent<Player_Controller>().Player.ToString().Equals("Player2"))
-        //{
-        //    if (BoxCollider1FlagForBar)
-        //    {
-        //        float distancePlayerMoved = (this.GetComponent<Rigidbody2D>().position - new Vector2(BoxCollider1ForBar.GetComponent<Transform>().position.x,
-        //        BoxCollider1ForBar.GetComponent<Transform>().position.y)).magnitude;
-        //        RedLineBars[barCounter].fillAmount = distancePlayerMoved / DistanceFor1Bar;
-        //        if (RedLineBars[barCounter].fillAmount > 0.9f)
-        //        {
-        //            RedLineBars[barCounter].fillAmount = 1;
-        //            BoxCollider1FlagForBar = false;
-        //            barCounter++;
-        //            RedLineBars[barCounter].gameObject.SetActive(true);
-        //            BoxCollider2FlagForBar = true;
-        //        }
-        //    }
-
-        //    if (BoxCollider2FlagForBar)
-        //    {
-        //        float distancePlayerMoved = (this.GetComponent<Rigidbody2D>().position - new Vector2(BoxCollider2ForBar.GetComponent<Transform>().position.x,
-        //        BoxCollider2ForBar.GetComponent<Transform>().position.y)).magnitude;
-        //        RedLineBars[barCounter].fillAmount = distancePlayerMoved / DistanceFor1Bar;
-        //        if (RedLineBars[barCounter].fillAmount > 0.9f)
-        //        {
-        //            RedLineBars[barCounter].fillAmount = 1;
-        //            BoxCollider2FlagForBar = false;
-        //            barCounter++;
-        //            RedLineBars[barCounter].gameObject.SetActive(true);
-        //            BoxCollider1FlagForBar = true;
-
-
-        //        }
-        //    }
-        //}
-    }
+ 
+    
 
 
 

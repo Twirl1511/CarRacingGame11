@@ -84,6 +84,8 @@ public class Player_Controller : MonoBehaviour
         Monster
     }
 
+    private float speedToTorgue = 25f;
+
 
     private void Awake()
     {
@@ -106,8 +108,12 @@ public class Player_Controller : MonoBehaviour
         {
             PlayerRigidbody.AddForce(PlayerTransform.up * CurrentPlayerSpeed);
         }
-
-        PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * PlayerTorgueForce);
+        /// поворот активен если только скорость больше значения
+        if(PlayerRigidbody.velocity.magnitude > speedToTorgue)
+        {
+            PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * PlayerTorgueForce);
+        }
+        
 
         #endregion
 

@@ -9,7 +9,15 @@ public class Oil_Player1 : MonoBehaviour
     [SerializeField] float TorgueForce = 3000f;
     [SerializeField] float TimeToDisappear = 10;
     [SerializeField] private float TimeBeforeColliderActive = 2f;
+    [SerializeField] private float TimeBeforeNextDebuff = 1f;
+    /// <summary>
+    /// флаг чтобы игрок разливший масло сам же на нем на скользил какое-то время
+    /// </summary>
     private bool ActivateColliderFlag = true;
+    /// <summary>
+    /// флаг чтобы у игрока была задержка перед следующим дебафом от лужи
+    /// </summary>
+    private bool NotDebuffedFlag = true;
     void Start()
     {
         StartCoroutine(DisappearOil());
@@ -22,12 +30,14 @@ public class Oil_Player1 : MonoBehaviour
         {
             
         }
-        else
+        else if (NotDebuffedFlag)
         {
             Vector2 v2 = collision.GetComponent<Rigidbody2D>().velocity;
             collision.GetComponent<Rigidbody2D>().AddForce(v2 * ForwardForce);
             collision.GetComponent<Rigidbody2D>().AddTorque(RandomDirection() * TorgueForce, ForceMode2D.Impulse);
             OilDriftSound.Play();
+            NotDebuffedFlag = false;
+            StartCoroutine(DelayForNextDebuffFromOil());
         }
 
     }
@@ -38,6 +48,12 @@ public class Oil_Player1 : MonoBehaviour
         Destroy(gameObject.GetComponent<Collider2D>());
         yield return new WaitForSeconds(3);
         Destroy(gameObject);
+    }
+
+    private IEnumerator DelayForNextDebuffFromOil()
+    {
+        yield return new WaitForSeconds(TimeBeforeNextDebuff);
+        NotDebuffedFlag = true;
     }
     private IEnumerator DelayForHostPlayerActive()
     {
