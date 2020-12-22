@@ -842,38 +842,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6761f8f8f1dce9488d8bf91ab46fda4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextForInt: {fileID: 0}
+  TextForFloat: {fileID: 0}
   BoxCollider1: {fileID: 0}
   BoxCollider2: {fileID: 0}
-  BoxCollider1ForBar: {fileID: 0}
-  BoxCollider2ForBar: {fileID: 0}
-  DistanceFor1Bar: 0
   CircleCompleteSound: {fileID: 0}
   HOW_MANY_CIRCLES_TO_WIN: 10
   VictorySound: {fileID: 0}
   HearBeatingSound: {fileID: 0}
   GameSound: {fileID: 0}
-  BlueLineBars: []
-  RedLineBars:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   PlayerCircleCounter: 0
 --- !u!114 &7320273410216063892
 MonoBehaviour:
@@ -925,6 +902,10 @@ MonoBehaviour:
   SecondSpeedLimit: 145
   PlayerThirdSpeed: 1050
   ThirdSpeedLimit: 185
+  PlayerFourthSpeed: 1050
+  FourthSpeedLimit: 185
+  PlayerFinalSpeed: 1050
+  FinalSpeedLimit: 185
   PlayerTorgueForce: 12000
   PlayerDriftFactor: 0.9
   PlayerCenterOfMass: 0.6
@@ -945,7 +926,7 @@ MonoBehaviour:
   SpeedDegradation: 15
   crushesCounter: 0
   HowManyCrushesBeforeTakeDamage: 4
-  MaxNumberOfDegradations: 0
+  MaxNumberOfDegradations: 5
   TotalDamagePlayerHas: 0
   Player: 1
 --- !u!114 &6004934223922151598

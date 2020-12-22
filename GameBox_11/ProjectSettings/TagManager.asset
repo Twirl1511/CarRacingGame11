@@ -9,6 +9,7 @@ TagManager:
   - Barrel_Oil
   - Player_1
   - Oil
+  - BrokenPieces
   layers:
   - Default
   - TransparentFX
