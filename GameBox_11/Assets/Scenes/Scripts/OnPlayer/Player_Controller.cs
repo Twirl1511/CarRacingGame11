@@ -12,8 +12,12 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private float FirstSpeedLimit = 8;
     [SerializeField] private float PlayerSecondSpeed = 80f;
     [SerializeField] private float SecondSpeedLimit = 13;
-    [SerializeField] public float PlayerThirdSpeed = 100f;
-    [SerializeField] private float ThirdSpeedLimit = 22;
+    [SerializeField] private float PlayerThirdSpeed = 80f;
+    [SerializeField] private float ThirdSpeedLimit = 13;
+    [SerializeField] private float PlayerFourthSpeed = 80f;
+    [SerializeField] private float FourthSpeedLimit = 13;
+    [SerializeField] public float PlayerFinalSpeed = 100f;
+    [SerializeField] private float FinalSpeedLimit = 22;
 
     [SerializeField] private float PlayerTorgueForce = 45f;
     [SerializeField] private float PlayerDriftFactor = 0.93f;
@@ -133,6 +137,16 @@ public class Player_Controller : MonoBehaviour
         {
             CurrentPlayerSpeed = PlayerThirdSpeed;
         }
+        if (PlayerRigidbody.velocity.magnitude > FourthSpeedLimit)
+        {
+            CurrentPlayerSpeed = PlayerFourthSpeed;
+        }
+
+
+        if (PlayerRigidbody.velocity.magnitude > FinalSpeedLimit)
+        {
+            CurrentPlayerSpeed = PlayerFinalSpeed;
+        }
         #endregion
 
      
@@ -166,7 +180,7 @@ public class Player_Controller : MonoBehaviour
             flagToControlDamageFromPlayers = false;
             if(crushesCounter >= HowManyCrushesBeforeTakeDamage)
             {
-                PlayerThirdSpeed -= SpeedDegradation;
+                PlayerFinalSpeed -= SpeedDegradation;
                 TotalDamagePlayerHas++;
                 //if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
                 //if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
@@ -183,7 +197,7 @@ public class Player_Controller : MonoBehaviour
             CrushSound.Play();
             if (crushesCounter >= HowManyCrushesBeforeTakeDamage)
             {
-                PlayerThirdSpeed -= SpeedDegradation;
+                PlayerFinalSpeed -= SpeedDegradation;
                 TotalDamagePlayerHas++;
                 //if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
                 //    if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;

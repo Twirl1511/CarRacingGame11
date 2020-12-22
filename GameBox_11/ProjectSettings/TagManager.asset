@@ -49,3 +49,6 @@ TagManager:
   - name: NoLight
     uniqueID: 3899965663
     locked: 0
+  - name: Center
+    uniqueID: 2652940307
+    locked: 0
