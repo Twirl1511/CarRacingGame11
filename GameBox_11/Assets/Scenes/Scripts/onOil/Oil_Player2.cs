@@ -6,7 +6,9 @@ public class Oil_Player2 : MonoBehaviour
 {
     [SerializeField] private AudioSource OilDriftSound;
     [SerializeField] float ForwardForce = 50f;
-    [SerializeField] float TorgueForce = 3000f;
+    [SerializeField] float TorgueForceForCar = 3000f;
+    [SerializeField] float TorgueForceForMoto = 1500f;
+    [SerializeField] float TorgueForceForMonster = 4000f;
     [SerializeField] float TimeToDisappear = 10;
     [SerializeField] private float TimeBeforeColliderActive = 2f;
     [SerializeField] private float TimeBeforeNextDebuff = 1f;
@@ -32,6 +34,22 @@ public class Oil_Player2 : MonoBehaviour
         }
         else
         {
+            float TorgueForce = 0;
+            switch (collision.GetComponent<Player_Controller>().Racer.ToString())
+            {
+                case "Car":
+                    TorgueForce = TorgueForceForCar;
+                    break;
+                case "Moto":
+                    TorgueForce = TorgueForceForMoto;
+                    break;
+                case "Monster":
+                    TorgueForce = TorgueForceForMonster;
+                    break;
+                default:
+                    break;
+            }
+
             Vector2 v2 = collision.GetComponent<Rigidbody2D>().velocity;
             collision.GetComponent<Rigidbody2D>().AddForce(v2 * ForwardForce);
             collision.GetComponent<Rigidbody2D>().AddTorque(RandomDirection() * TorgueForce, ForceMode2D.Impulse);
