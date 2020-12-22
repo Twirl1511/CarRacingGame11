@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class CircleCounter : MonoBehaviour
 {
     private Vector2 CenterVector;
-    [SerializeField] private Text BlueTextForInt;
-    [SerializeField] private Text BlueTextForFloat;
+    [SerializeField] private Text TextForInt;
+    [SerializeField] private Text TextForFloat;
 
     [SerializeField] private Collider2D BoxCollider1;
     [SerializeField] private Collider2D BoxCollider2;
@@ -35,7 +35,7 @@ public class CircleCounter : MonoBehaviour
             CenterVector = BoxCollider1.gameObject.transform.position.normalized;
             float degrees = Vector2.Angle(CenterVector, transform.position);
             float floats = degrees / 36;
-            BlueTextForFloat.text = Mathf.Floor(floats).ToString();
+            TextForFloat.text = Mathf.Floor(floats).ToString();
 
         }
         if(BoxCollider1Flag && BoxCollider2Flag)
@@ -43,17 +43,17 @@ public class CircleCounter : MonoBehaviour
             CenterVector = BoxCollider2.gameObject.transform.position.normalized;
             float degrees = Vector2.Angle(CenterVector, transform.position);
             float floats = (degrees / 36) + 5;
-            BlueTextForFloat.text = Mathf.Floor(floats).ToString();
+            TextForFloat.text = Mathf.Floor(floats).ToString();
         }
-        if (BlueTextForFloat.text.Equals("0"))
+        if (TextForFloat.text.Equals("0"))
         {
-            BlueTextForFloat.gameObject.SetActive(false);
-            BlueTextForInt.text = PlayerCircleCounter.ToString();
+            TextForFloat.gameObject.SetActive(false);
+            TextForInt.text = PlayerCircleCounter.ToString();
         }
         else
         {
-            BlueTextForFloat.gameObject.SetActive(true);
-            BlueTextForInt.text = PlayerCircleCounter.ToString() + '.'; 
+            TextForFloat.gameObject.SetActive(true);
+            TextForInt.text = PlayerCircleCounter.ToString() + '.'; 
         }
         
     }
