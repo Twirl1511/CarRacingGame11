@@ -454,11 +454,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPlayerSpeed: 400
   PlayerFirstSpeed: 400
-  FirstSpeedLimit: 50
+  FirstSpeedLimit: 70
   PlayerSecondSpeed: 650
-  SecondSpeedLimit: 125
+  SecondSpeedLimit: 95
   PlayerThirdSpeed: 900
-  ThirdSpeedLimit: 180
+  ThirdSpeedLimit: 160
   PlayerFourthSpeed: 1200
   FourthSpeedLimit: 240
   PlayerFinalSpeed: 1370
