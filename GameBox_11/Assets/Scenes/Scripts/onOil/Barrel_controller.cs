@@ -53,7 +53,7 @@ public class Barrel_controller : MonoBehaviour
         }
         
     }
-    // убрать хардкод когда появится карта, брать координаты боксов границ минус 1 или 2 юнита
+   
     private Vector3 FindPosition()
     {
 

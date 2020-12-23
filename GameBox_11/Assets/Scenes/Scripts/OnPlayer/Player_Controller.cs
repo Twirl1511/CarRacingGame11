@@ -117,8 +117,6 @@ public class Player_Controller : MonoBehaviour
         {
             PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * PlayerTorgueForce);
         }
-        
-
         #endregion
 
         // чтобы регулировать занос
@@ -167,7 +165,7 @@ public class Player_Controller : MonoBehaviour
     
     
     /// <summary>
-    /// демаг и уменьшение третьей скорости от столкновений
+    /// демаг и уменьшение финальной скорости от столкновений
     /// </summary>
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
@@ -182,9 +180,6 @@ public class Player_Controller : MonoBehaviour
             {
                 PlayerFinalSpeed -= SpeedDegradation;
                 TotalDamagePlayerHas++;
-                //if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
-                //if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
-                //if (Racer == TypeOfRacer.Monster) PlayerThirdSpeed -= 15;
                 StartCoroutine(WaitUntillRefreshDurability());
             }
                 
@@ -199,9 +194,6 @@ public class Player_Controller : MonoBehaviour
             {
                 PlayerFinalSpeed -= SpeedDegradation;
                 TotalDamagePlayerHas++;
-                //if (Racer == TypeOfRacer.Moto) PlayerThirdSpeed -= 50;
-                //    if (Racer == TypeOfRacer.Car) PlayerThirdSpeed -= 30;
-                //    if (Racer == TypeOfRacer.Monster) PlayerThirdSpeed -= 15;
                 StartCoroutine(WaitUntillRefreshDurability());
                 DamageSound.Play();
             }

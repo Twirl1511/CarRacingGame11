@@ -903,7 +903,6 @@ MonoBehaviour:
   BoxCollider1: {fileID: 0}
   BoxCollider2: {fileID: 0}
   CircleCompleteSound: {fileID: 0}
-  HOW_MANY_CIRCLES_TO_WIN: 10
   VictorySound: {fileID: 0}
   HearBeatingSound: {fileID: 0}
   GameSound: {fileID: 0}

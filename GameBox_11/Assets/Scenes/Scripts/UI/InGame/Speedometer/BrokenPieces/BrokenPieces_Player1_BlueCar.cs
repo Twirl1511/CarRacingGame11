@@ -30,12 +30,48 @@ public class BrokenPieces_Player1_BlueCar : MonoBehaviour
         switch (Player1_BlueCar.GetComponent<Player_Controller>().TotalDamagePlayerHas)
         {
             case 1:
-                if (Player1_BlueCar_180!= null &&
+                if (Player1_BlueCar_180 != null &&
                     Player1_BlueCar_180.GetComponent<Rigidbody2D>().gravityScale == 0)
                 {
                     Player1_BlueCar_180.GetComponent<Rigidbody2D>().gravityScale = GravityScale;
                     Player1_BlueCar_180.GetComponent<Rigidbody2D>().AddForce(RandomDirection() * BrokeForce, ForceMode2D.Impulse);
                     Player1_BlueCar_180.GetComponent<Rigidbody2D>().AddTorque(RandomDirectionForTorgue() * BrokeForce);
+                }
+                break;
+            case 2:
+                if (Player1_BlueCar_170 != null &&
+                    Player1_BlueCar_170.GetComponent<Rigidbody2D>().gravityScale == 0)
+                {
+                    Player1_BlueCar_170.GetComponent<Rigidbody2D>().gravityScale = GravityScale;
+                    Player1_BlueCar_170.GetComponent<Rigidbody2D>().AddForce(RandomDirection() * BrokeForce, ForceMode2D.Impulse);
+                    Player1_BlueCar_170.GetComponent<Rigidbody2D>().AddTorque(RandomDirectionForTorgue() * BrokeForce);
+                }
+                break;
+            case 3:
+                if (Player1_BlueCar_160 != null &&
+                    Player1_BlueCar_160.GetComponent<Rigidbody2D>().gravityScale == 0)
+                {
+                    Player1_BlueCar_160.GetComponent<Rigidbody2D>().gravityScale = GravityScale;
+                    Player1_BlueCar_160.GetComponent<Rigidbody2D>().AddForce(RandomDirection() * BrokeForce, ForceMode2D.Impulse);
+                    Player1_BlueCar_160.GetComponent<Rigidbody2D>().AddTorque(RandomDirectionForTorgue() * BrokeForce);
+                }
+                break;
+            case 4:
+                if (Player1_BlueCar_150 != null &&
+                    Player1_BlueCar_150.GetComponent<Rigidbody2D>().gravityScale == 0)
+                {
+                    Player1_BlueCar_150.GetComponent<Rigidbody2D>().gravityScale = GravityScale;
+                    Player1_BlueCar_150.GetComponent<Rigidbody2D>().AddForce(RandomDirection() * BrokeForce, ForceMode2D.Impulse);
+                    Player1_BlueCar_150.GetComponent<Rigidbody2D>().AddTorque(RandomDirectionForTorgue() * BrokeForce);
+                }
+                break;
+            case 5:
+                if (Player1_BlueCar_140 != null &&
+                    Player1_BlueCar_140.GetComponent<Rigidbody2D>().gravityScale == 0)
+                {
+                    Player1_BlueCar_140.GetComponent<Rigidbody2D>().gravityScale = GravityScale;
+                    Player1_BlueCar_140.GetComponent<Rigidbody2D>().AddForce(RandomDirection() * BrokeForce, ForceMode2D.Impulse);
+                    Player1_BlueCar_140.GetComponent<Rigidbody2D>().AddTorque(RandomDirectionForTorgue() * BrokeForce);
                 }
                 break;
             default:

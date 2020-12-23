@@ -13,7 +13,7 @@ public class CircleCounter : MonoBehaviour
     [SerializeField] private Collider2D BoxCollider2;
 
     [SerializeField] private AudioSource CircleCompleteSound;
-    [HideInInspector] public int HOW_MANY_CIRCLES_TO_WIN = 10;
+    [HideInInspector] public static int HOW_MANY_CIRCLES_TO_WIN = 10;
     [SerializeField] private AudioSource VictorySound;
     [SerializeField] private AudioSource HearBeatingSound;
     [SerializeField] private AudioSource GameSound;
