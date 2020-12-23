@@ -957,7 +957,7 @@ MonoBehaviour:
   PlayerSecondSpeed: 800
   SecondSpeedLimit: 150
   PlayerThirdSpeed: 940
-  ThirdSpeedLimit: 190
+  ThirdSpeedLimit: 180
   PlayerFourthSpeed: 940
   FourthSpeedLimit: 190
   PlayerFinalSpeed: 940

@@ -452,17 +452,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 404918e1153b1a64e9bd8af3b04df57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentPlayerSpeed: 600
-  PlayerFirstSpeed: 600
-  FirstSpeedLimit: 70
-  PlayerSecondSpeed: 950
-  SecondSpeedLimit: 155
-  PlayerThirdSpeed: 1370
-  ThirdSpeedLimit: 240
-  PlayerFourthSpeed: 1370
+  CurrentPlayerSpeed: 400
+  PlayerFirstSpeed: 400
+  FirstSpeedLimit: 50
+  PlayerSecondSpeed: 650
+  SecondSpeedLimit: 125
+  PlayerThirdSpeed: 900
+  ThirdSpeedLimit: 180
+  PlayerFourthSpeed: 1200
   FourthSpeedLimit: 240
   PlayerFinalSpeed: 1370
-  FinalSpeedLimit: 240
+  FinalSpeedLimit: 290
   PlayerTorgueForce: 3000
   PlayerDriftFactor: 0.91
   PlayerCenterOfMass: -0.6

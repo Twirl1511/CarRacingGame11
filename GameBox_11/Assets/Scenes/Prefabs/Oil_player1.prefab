@@ -193,10 +193,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OilDriftSound: {fileID: 4181252923474514311}
-  ForwardForce: 50
-  TorgueForce: 3000
-  TimeToDisappear: 10
+  ForwardForce: 100
+  TorgueForce: 0
+  TimeToDisappear: 12
   TimeBeforeColliderActive: 1
+  TimeBeforeNextDebuff: 1
 --- !u!82 &4181252923474514311
 AudioSource:
   m_ObjectHideFlags: 0
