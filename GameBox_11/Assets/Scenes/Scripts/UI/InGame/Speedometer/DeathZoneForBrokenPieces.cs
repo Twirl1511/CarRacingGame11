@@ -9,7 +9,9 @@ public class DeathZoneForBrokenPieces : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("BrokenPieces"))
         {
-            GameObject.Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
+            collision.GetComponent<Rigidbody2D>().gravityScale = 0;
         }
     }
+
 }

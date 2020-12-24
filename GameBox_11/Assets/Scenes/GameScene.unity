@@ -211,61 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a644133045a9364d805c40b39a0ca9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedSticksPlayer1_Car:
-  - {fileID: 437639583}
-  - {fileID: 1366982577}
-  - {fileID: 1929817038}
-  - {fileID: 834501161}
-  - {fileID: 1116580831}
-  DurabilitySticksPlayer1_Car:
-  - {fileID: 1998448921}
-  - {fileID: 1892755749}
-  SpeedSticksPlayer1_Moto:
-  - {fileID: 1909080226}
-  - {fileID: 2067519760}
-  - {fileID: 1537544462}
-  - {fileID: 1941192888}
-  - {fileID: 1719516352}
-  - {fileID: 2078757699}
-  - {fileID: 1968413762}
-  DurabilitySticksPlayer1_Moto:
-  - {fileID: 64564577}
-  SpeedSticksPlayer2_Car:
-  - {fileID: 1458846156}
-  - {fileID: 429774390}
-  - {fileID: 1849098308}
-  - {fileID: 1433297020}
-  - {fileID: 1236926896}
-  DurabilitySticksPlayer2_Car:
-  - {fileID: 1643691565}
-  - {fileID: 2002807397}
-  SpeedSticksPlayer2_Moto:
-  - {fileID: 490034141}
-  - {fileID: 792386657}
-  - {fileID: 905112689}
-  - {fileID: 746483225}
-  - {fileID: 168274248}
-  - {fileID: 404623676}
-  - {fileID: 1255819356}
-  DurabilitySticksPlayer2_Moto:
-  - {fileID: 1905736582}
-  BarrelPlayer1_BlueCar_FULL: {fileID: 0}
-  BarrelPlayer1_BlueMoto_FULL: {fileID: 0}
-  BarrelPlayer2_RedCar_FULL: {fileID: 0}
-  BarrelPlayer2_RedMoto_FULL: {fileID: 0}
-  Player1_BlueCircleCounterText: {fileID: 0}
-  Player2_RedCircleCounterText: {fileID: 0}
-  Player1_BlueSpeedText: {fileID: 0}
-  Player2_RedSpeedText: {fileID: 0}
-  Player1_BlueCar: {fileID: 0}
-  Player1_BlueMoto: {fileID: 0}
-  Player2_RedCar: {fileID: 0}
-  Player2_RedMoto: {fileID: 0}
-  SpeedometerArrowsPlayer1_Blue: []
-  SpeedometerArrowsPlayer2_Red: []
-  Player1_BlueWinPanel: {fileID: 0}
-  Player2_RedWinPanel: {fileID: 0}
-  VictoryPanel: {fileID: 1940073422}
 --- !u!1 &24987568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,7 +1625,6 @@ GameObject:
   - component: {fileID: 89292130}
   - component: {fileID: 89292133}
   - component: {fileID: 89292132}
-  - component: {fileID: 89292131}
   m_Layer: 0
   m_Name: Speedometers_Blue
   m_TagString: Untagged
@@ -1698,30 +1642,13 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 233671174}
+  - {fileID: 435344800}
+  - {fileID: 847153742}
   m_Father: {fileID: 375591177}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &89292131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89292129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aad0bdf12206164409fa223680fbab4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player1_BlueCar: {fileID: 7519618563039496674}
-  Player1_BlueCar_180: {fileID: 1116629931}
-  Player1_BlueCar_170: {fileID: 859309082}
-  Player1_BlueCar_160: {fileID: 162697293}
-  Player1_BlueCar_150: {fileID: 84454833}
-  Player1_BlueCar_140: {fileID: 1981773739}
-  GravityScale: 50
-  BrokeForce: 50
 --- !u!114 &89292132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3547,6 +3474,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222260280}
   m_CullTransparentMesh: 0
+--- !u!1 &233671173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233671174}
+  - component: {fileID: 233671175}
+  m_Layer: 0
+  m_Name: BrokenPieces_Blue_Car
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233671174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233671173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 89292130}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &233671175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233671173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe30908a4fd8084fb47584aa98c6f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 7519618563039496674}
+  SpeedPieces:
+  - {fileID: 1116629931}
+  - {fileID: 859309082}
+  - {fileID: 162697293}
+  - {fileID: 84454833}
+  - {fileID: 1981773739}
+  GravityScale: 50
+  BrokeForce: 50
 --- !u!1 &236421295
 GameObject:
   m_ObjectHideFlags: 0
@@ -5722,6 +5701,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434614811}
   m_CullTransparentMesh: 0
+--- !u!1 &435344799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 435344800}
+  - component: {fileID: 435344801}
+  m_Layer: 0
+  m_Name: BrokenPieces_Blue_Moto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &435344800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435344799}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 89292130}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &435344801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435344799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe30908a4fd8084fb47584aa98c6f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 2855376885015142948}
+  SpeedPieces:
+  - {fileID: 1285073256}
+  - {fileID: 1630926956}
+  - {fileID: 1661459905}
+  - {fileID: 1508118023}
+  - {fileID: 756237003}
+  - {fileID: 1056301260}
+  GravityScale: 50
+  BrokeForce: 50
 --- !u!1 &437639583
 GameObject:
   m_ObjectHideFlags: 0
@@ -7353,6 +7385,53 @@ SortingGroup:
   m_SortingLayerID: -1642026989
   m_SortingLayer: 2
   m_SortingOrder: 10
+--- !u!1 &576773302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 576773303}
+  - component: {fileID: 576773304}
+  m_Layer: 0
+  m_Name: BrokenPieces_Red_Monster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &576773303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576773302}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 605003827}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &576773304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576773302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe30908a4fd8084fb47584aa98c6f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
+  SpeedPieces: []
+  GravityScale: 0
+  BrokeForce: 0
 --- !u!1 &582849622
 GameObject:
   m_ObjectHideFlags: 0
@@ -7737,7 +7816,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1818234988}
+  - {fileID: 1845778045}
+  - {fileID: 576773303}
   m_Father: {fileID: 375591177}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8932,7 +9014,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 208.4, y: 19}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8943,7 +9025,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 540.35, y: 330.09}
+  m_Size: {x: 102.36, y: 55.6}
   m_EdgeRadius: 0
 --- !u!50 &756237006
 Rigidbody2D:
@@ -9020,7 +9102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &776546695
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9740,6 +9822,53 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &847153741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847153742}
+  - component: {fileID: 847153743}
+  m_Layer: 0
+  m_Name: BrokenPieces_Blue_Monster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &847153742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847153741}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 89292130}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &847153743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847153741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe30908a4fd8084fb47584aa98c6f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
+  SpeedPieces: []
+  GravityScale: 0
+  BrokeForce: 0
 --- !u!1 &850045025
 GameObject:
   m_ObjectHideFlags: 0
@@ -11113,7 +11242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.4, y: 0.7}
+  m_AnchoredPosition: {x: -0.6, y: 0.6}
   m_SizeDelta: {x: 568, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1056301262
@@ -11129,7 +11258,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 183.4, y: 59.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -11140,7 +11269,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 540.35, y: 330.09}
+  m_Size: {x: 102.36, y: 55.6}
   m_EdgeRadius: 0
 --- !u!50 &1056301263
 Rigidbody2D:
@@ -12756,7 +12885,7 @@ PrefabInstance:
     - target: {fileID: 2855376886144410236, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886923157532, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -13123,8 +13252,6 @@ GameObject:
   - component: {fileID: 1183470168}
   - component: {fileID: 1183470172}
   - component: {fileID: 1183470171}
-  - component: {fileID: 1183470170}
-  - component: {fileID: 1183470169}
   m_Layer: 5
   m_Name: 200
   m_TagString: BrokenPieces
@@ -13139,65 +13266,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183470167}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1383750742}
+  m_Father: {fileID: 1285073257}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.7, y: 8.2}
+  m_AnchoredPosition: {x: -244.4, y: 118.10001}
   m_SizeDelta: {x: 568, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &1183470169
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1183470167}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 540.35, y: 330.09}
-  m_EdgeRadius: 0
---- !u!50 &1183470170
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1183470167}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 1
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &1183470171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13969,6 +14049,91 @@ RectTransform:
   m_AnchoredPosition: {x: 450, y: -22}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1285073256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1285073257}
+  - component: {fileID: 1285073258}
+  - component: {fileID: 1285073259}
+  m_Layer: 5
+  m_Name: 200_Parrent
+  m_TagString: BrokenPieces
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1285073257
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285073256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1183470168}
+  m_Father: {fileID: 1383750742}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 241.8, y: -111.2}
+  m_SizeDelta: {x: 63.2, y: 98.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!50 &1285073258
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285073256}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1285073259
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285073256}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.6530762, y: 0.9336548}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 60.993042, y: 95.565796}
+  m_EdgeRadius: 0
 --- !u!1 &1285339329
 GameObject:
   m_ObjectHideFlags: 0
@@ -13986,7 +14151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1285339330
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14868,7 +15033,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1183470168}
+  - {fileID: 1285073257}
   - {fileID: 1630926957}
   - {fileID: 1661459906}
   - {fileID: 1508118024}
@@ -15721,7 +15886,7 @@ PrefabInstance:
     - target: {fileID: 7519618563941809416, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7519618563941809420, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
@@ -16764,7 +16929,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 220.6, y: -16.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -16775,7 +16940,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 540.35, y: 330.09}
+  m_Size: {x: 102.36, y: 55.6}
   m_EdgeRadius: 0
 --- !u!50 &1508118026
 Rigidbody2D:
@@ -18398,7 +18563,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 225.8, y: -95.7}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -18409,7 +18574,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 540.35, y: 330.09}
+  m_Size: {x: 102.36, y: 55.6}
   m_EdgeRadius: 0
 --- !u!50 &1630926959
 Rigidbody2D:
@@ -18678,7 +18843,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 223.6, y: -58.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -18689,7 +18854,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 540.35, y: 330.09}
+  m_Size: {x: 102.36, y: 55.6}
   m_EdgeRadius: 0
 --- !u!50 &1661459908
 Rigidbody2D:
@@ -20216,6 +20381,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800435495}
   m_CullTransparentMesh: 0
+--- !u!1 &1818234987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1818234988}
+  - component: {fileID: 1818234989}
+  m_Layer: 0
+  m_Name: BrokenPieces_Red_Car
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1818234988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818234987}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 605003827}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1818234989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818234987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe30908a4fd8084fb47584aa98c6f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
+  SpeedPieces: []
+  GravityScale: 0
+  BrokeForce: 0
 --- !u!1 &1823831806
 GameObject:
   m_ObjectHideFlags: 0
@@ -20565,6 +20777,53 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1730, y: 22}
   m_EdgeRadius: 0
+--- !u!1 &1845778044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845778045}
+  - component: {fileID: 1845778046}
+  m_Layer: 0
+  m_Name: BrokenPieces_Red_Moto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1845778045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845778044}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 605003827}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1845778046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845778044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe30908a4fd8084fb47584aa98c6f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerObject: {fileID: 0}
+  SpeedPieces: []
+  GravityScale: 0
+  BrokeForce: 0
 --- !u!1 &1849098308
 GameObject:
   m_ObjectHideFlags: 0
