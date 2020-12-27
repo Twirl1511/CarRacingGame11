@@ -937,6 +937,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7519618563941809409, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RepairSound
+      value: 
+      objectReference: {fileID: 1265345458}
     - target: {fileID: 7519618563941809416, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_Name
@@ -3409,6 +3414,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RepairSound
+      value: 
+      objectReference: {fileID: 1265345458}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerFourthSpeed
+      value: 932
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: FourthSpeedLimit
+      value: 160
+      objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5520,7 +5540,7 @@ MonoBehaviour:
   Player2_CarRed: {fileID: 7519618563932143569}
   Player2_MotoRed: {fileID: 2855376886226929565}
   Player2_MonsterRed: {fileID: 8135009662684621152}
-  div: 2.2
+  div: 2.02
 --- !u!1 &376129140
 GameObject:
   m_ObjectHideFlags: 0
@@ -13261,6 +13281,11 @@ PrefabInstance:
       propertyPath: PlayerDropOilButton
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: RepairSound
+      value: 
+      objectReference: {fileID: 1265345458}
     - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14256,6 +14281,26 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerFinalSpeed
       value: 1370
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: MaxNumberOfDegradations
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RepairSound
+      value: 
+      objectReference: {fileID: 1265345458}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerFourthSpeed
+      value: 932
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: FourthSpeedLimit
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -15563,7 +15608,7 @@ GameObject:
   - component: {fileID: 1265345457}
   - component: {fileID: 1265345458}
   m_Layer: 0
-  m_Name: Damage_sound
+  m_Name: Repair_sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18079,6 +18124,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7519618563941809409, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: RepairSound
+      value: 
+      objectReference: {fileID: 1265345458}
     - target: {fileID: 7519618563941809416, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_Name
@@ -28325,6 +28375,11 @@ PrefabInstance:
       propertyPath: HowManyCrushesBeforeTakeDamage
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: RepairSound
+      value: 
+      objectReference: {fileID: 1265345458}
     - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28567,18 +28622,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DropOlidSound: {fileID: 838909034}
   Oil: {fileID: 8698926157362173323, guid: 20cc43eb2eb0d044692be3adb1b0ea92, type: 3}
---- !u!114 &2855376885015142951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2855376885015142948}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c754eae6506e9d541b9f4fa26d37679a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &2855376885015142959 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,

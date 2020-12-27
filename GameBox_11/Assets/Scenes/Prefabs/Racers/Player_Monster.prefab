@@ -847,7 +847,6 @@ MonoBehaviour:
   BoxCollider1: {fileID: 0}
   BoxCollider2: {fileID: 0}
   CircleCompleteSound: {fileID: 0}
-  HOW_MANY_CIRCLES_TO_WIN: 10
   VictorySound: {fileID: 0}
   HearBeatingSound: {fileID: 0}
   GameSound: {fileID: 0}
@@ -926,7 +925,7 @@ MonoBehaviour:
   SpeedDegradation: 15
   crushesCounter: 0
   HowManyCrushesBeforeTakeDamage: 4
-  MaxNumberOfDegradations: 5
+  MaxNumberOfDegradations: 4
   TotalDamagePlayerHas: 0
   Player: 1
 --- !u!114 &6004934223922151598

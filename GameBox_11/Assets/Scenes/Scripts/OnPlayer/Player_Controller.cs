@@ -41,7 +41,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private AudioSource DropOlidSound;
     [SerializeField] private AudioSource PickUpBarrelSound;
     [SerializeField] private AudioSource CrushSound;
-    [SerializeField] private AudioSource DamageSound;
+    [SerializeField] private AudioSource RepairSound;
 
     ///на сколько уменьшается скорость при уменьшении дюрабилити в ноль 
     [SerializeField] private float SpeedDegradation;
@@ -170,17 +170,20 @@ public class Player_Controller : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
         // эффект при коллизии с плеером, можно удариться не чаще определенного времени
         if (collision.gameObject.CompareTag("Player") && flagToControlDamageFromPlayers == true)
         {
             CrushSound.Play();
             crushesCounter++;
             flagToControlDamageFromPlayers = false;
-            if(crushesCounter >= HowManyCrushesBeforeTakeDamage)
+            if(crushesCounter >= HowManyCrushesBeforeTakeDamage &&
+                TotalDamagePlayerHas < MaxNumberOfDegradations)
             {
                 PlayerFinalSpeed -= SpeedDegradation;
                 TotalDamagePlayerHas++;
                 StartCoroutine(WaitUntillRefreshDurability());
+                RepairSound.Play();
             }
                 
                 StartCoroutine(DelayBeforeNextDemageFromPlayers(TimeBeforeNextDamageFromPlayers));
@@ -190,12 +193,13 @@ public class Player_Controller : MonoBehaviour
         {
             crushesCounter++;
             CrushSound.Play();
-            if (crushesCounter >= HowManyCrushesBeforeTakeDamage)
+            if (crushesCounter >= HowManyCrushesBeforeTakeDamage &&
+                TotalDamagePlayerHas < MaxNumberOfDegradations)
             {
                 PlayerFinalSpeed -= SpeedDegradation;
                 TotalDamagePlayerHas++;
                 StartCoroutine(WaitUntillRefreshDurability());
-                DamageSound.Play();
+                RepairSound.Play();
             }
         }
     }
@@ -220,6 +224,7 @@ public class Player_Controller : MonoBehaviour
     private IEnumerator WaitUntillRefreshDurability()
     {
         yield return new WaitForSeconds(0.2f);
+        
         crushesCounter = 0;
     }
 }
