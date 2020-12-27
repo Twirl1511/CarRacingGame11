@@ -21,8 +21,10 @@ public class DamagePlayer1_BlueMonster : MonoBehaviour
     private void DamageDone()
     {
         int crushesCounter = Player1_BlueMonster.GetComponent<Player_Controller>().crushesCounter;
+        int maxNumberOfDegradations = Player1_BlueMonster.GetComponent<Player_Controller>().MaxNumberOfDegradations;
+        int totalDamagePlayerHas = Player1_BlueMonster.GetComponent<Player_Controller>().TotalDamagePlayerHas;
 
-        if(crushesCounter == 0)
+        if (crushesCounter == 0 && totalDamagePlayerHas <= maxNumberOfDegradations)
         {
             Player1_DamageBar1.fillAmount = 1;
             Player1_DamageBar2.fillAmount = 1;

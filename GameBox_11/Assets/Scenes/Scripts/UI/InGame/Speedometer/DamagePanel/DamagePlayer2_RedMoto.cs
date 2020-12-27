@@ -19,8 +19,10 @@ public class DamagePlayer2_RedMoto : MonoBehaviour
     private void DamageDone()
     {
         int crushesCounter = Player2_RedMoto.GetComponent<Player_Controller>().crushesCounter;
+        int maxNumberOfDegradations = Player2_RedMoto.GetComponent<Player_Controller>().MaxNumberOfDegradations;
+        int totalDamagePlayerHas = Player2_RedMoto.GetComponent<Player_Controller>().TotalDamagePlayerHas;
 
-        if (crushesCounter == 0)
+        if (crushesCounter == 0 && totalDamagePlayerHas <= maxNumberOfDegradations)
         {
             Player2_DamageBar1.fillAmount = 1;
             Player2_DamageBar2.fillAmount = 1;

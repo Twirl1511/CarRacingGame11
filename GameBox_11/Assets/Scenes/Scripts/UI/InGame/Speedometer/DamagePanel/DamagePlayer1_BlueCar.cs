@@ -20,8 +20,12 @@ public class DamagePlayer1_BlueCar : MonoBehaviour
     private void DamageDone()
     {
         int crushesCounter = Player1_BlueCar.GetComponent<Player_Controller>().crushesCounter;
+        int maxNumberOfDegradations = Player1_BlueCar.GetComponent<Player_Controller>().MaxNumberOfDegradations;
+        int totalDamagePlayerHas = Player1_BlueCar.GetComponent<Player_Controller>().TotalDamagePlayerHas;
 
-        if(crushesCounter == 0)
+
+
+        if (crushesCounter == 0 && totalDamagePlayerHas <= maxNumberOfDegradations)
         {
             Player1_DamageBar1.fillAmount = 1;
             Player1_DamageBar2.fillAmount = 1;
