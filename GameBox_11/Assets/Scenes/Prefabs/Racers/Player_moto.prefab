@@ -461,7 +461,7 @@ MonoBehaviour:
   PlayerFourthSpeed: 1200
   FourthSpeedLimit: 240
   PlayerFinalSpeed: 1370
-  FinalSpeedLimit: 290
+  FinalSpeedLimit: 270
   PlayerTorgueForce: 4500
   PlayerDriftFactor: 0.91
   PlayerCenterOfMass: -0.6
@@ -478,7 +478,7 @@ MonoBehaviour:
   DropOlidSound: {fileID: 0}
   PickUpBarrelSound: {fileID: 0}
   CrushSound: {fileID: 0}
-  DamageSound: {fileID: 0}
+  BrokenSpeedometerSound: {fileID: 0}
   SpeedDegradation: 73
   crushesCounter: 0
   HowManyCrushesBeforeTakeDamage: 2

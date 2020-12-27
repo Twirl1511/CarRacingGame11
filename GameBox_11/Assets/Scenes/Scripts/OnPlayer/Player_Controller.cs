@@ -41,7 +41,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private AudioSource DropOlidSound;
     [SerializeField] private AudioSource PickUpBarrelSound;
     [SerializeField] private AudioSource CrushSound;
-    [SerializeField] private AudioSource RepairSound;
+    [SerializeField] private AudioSource BrokenSpeedometerSound;
 
     ///на сколько уменьшается скорость при уменьшении дюрабилити в ноль 
     [SerializeField] private float SpeedDegradation;
@@ -196,7 +196,7 @@ public class Player_Controller : MonoBehaviour
                 PlayerFinalSpeed -= SpeedDegradation;
                 TotalDamagePlayerHas++;
                 StartCoroutine(WaitUntillRefreshDurability());
-                RepairSound.Play();
+                BrokenSpeedometerSound.Play();
             }
                 
                 StartCoroutine(DelayBeforeNextDemageFromPlayers(TimeBeforeNextDamageFromPlayers));
@@ -212,7 +212,7 @@ public class Player_Controller : MonoBehaviour
                 PlayerFinalSpeed -= SpeedDegradation;
                 TotalDamagePlayerHas++;
                 StartCoroutine(WaitUntillRefreshDurability());
-                RepairSound.Play();
+                BrokenSpeedometerSound.Play();
             }
         }
     }

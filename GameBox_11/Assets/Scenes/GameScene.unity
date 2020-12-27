@@ -942,6 +942,11 @@ PrefabInstance:
       propertyPath: RepairSound
       value: 
       objectReference: {fileID: 1265345458}
+    - target: {fileID: 7519618563941809409, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: BrokenSpeedometerSound
+      value: 
+      objectReference: {fileID: 1265345458}
     - target: {fileID: 7519618563941809416, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_Name
@@ -3429,6 +3434,11 @@ PrefabInstance:
       propertyPath: FourthSpeedLimit
       value: 160
       objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BrokenSpeedometerSound
+      value: 
+      objectReference: {fileID: 1265345458}
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13286,6 +13296,11 @@ PrefabInstance:
       propertyPath: RepairSound
       value: 
       objectReference: {fileID: 1265345458}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: BrokenSpeedometerSound
+      value: 
+      objectReference: {fileID: 1265345458}
     - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14302,6 +14317,11 @@ PrefabInstance:
       propertyPath: FourthSpeedLimit
       value: 160
       objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: BrokenSpeedometerSound
+      value: 
+      objectReference: {fileID: 1265345458}
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15608,7 +15628,7 @@ GameObject:
   - component: {fileID: 1265345457}
   - component: {fileID: 1265345458}
   m_Layer: 0
-  m_Name: Repair_sound
+  m_Name: BrokenSpeedometer_sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18127,6 +18147,11 @@ PrefabInstance:
     - target: {fileID: 7519618563941809409, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: RepairSound
+      value: 
+      objectReference: {fileID: 1265345458}
+    - target: {fileID: 7519618563941809409, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: BrokenSpeedometerSound
       value: 
       objectReference: {fileID: 1265345458}
     - target: {fileID: 7519618563941809416, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
@@ -28378,6 +28403,11 @@ PrefabInstance:
     - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
       propertyPath: RepairSound
+      value: 
+      objectReference: {fileID: 1265345458}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: BrokenSpeedometerSound
       value: 
       objectReference: {fileID: 1265345458}
     - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
