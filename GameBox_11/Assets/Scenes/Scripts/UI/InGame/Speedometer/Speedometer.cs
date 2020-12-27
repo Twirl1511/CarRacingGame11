@@ -41,6 +41,10 @@ public class Speedometer : MonoBehaviour
         {
             Player1_BlueSpeed = Player1_MotoBlue.GetComponent<Rigidbody2D>().velocity.magnitude;
         }
+        if (Player1_MonsterBlue.activeSelf)
+        {
+            Player1_BlueSpeed = Player1_MonsterBlue.GetComponent<Rigidbody2D>().velocity.magnitude;
+        }
         if (Player2_CarRed.activeSelf)
         {
             Player2_RedSpeed = Player2_CarRed.GetComponent<Rigidbody2D>().velocity.magnitude;
