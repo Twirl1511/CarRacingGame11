@@ -37,7 +37,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private GameObject RaceMap;
     [SerializeField] private float TimeBeforeNextDamageFromPlayers;
     
-
+    // ЗВУКИ
     [SerializeField] private AudioSource DropOlidSound;
     [SerializeField] private AudioSource PickUpBarrelSound;
     [SerializeField] private AudioSource CrushSound;
@@ -162,7 +162,21 @@ public class Player_Controller : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-    
+    /// <summary>
+    /// воспроизводим звук в зависимости от положения игрока по шкале Х
+    /// </summary>
+    /// <param name="gameObject"></param>
+    /// <param name="crushSound"></param>
+    private static void PlaySound(GameObject gameObject, AudioSource crushSound)
+    {
+        float x = gameObject.transform.position.x;
+        Debug.Log("Position X = "+ x);
+        if (x < -550) crushSound.panStereo = -1f;
+        if (x >= -550 && x <= 0) crushSound.panStereo = -0.5f;
+        if (x >= 0 && x <= 550) crushSound.panStereo = 0.5f;
+        if (x > 550) crushSound.panStereo = 1f;
+        crushSound.Play();
+    }
     
     /// <summary>
     /// демаг и уменьшение финальной скорости от столкновений
@@ -170,11 +184,10 @@ public class Player_Controller : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
         // эффект при коллизии с плеером, можно удариться не чаще определенного времени
         if (collision.gameObject.CompareTag("Player") && flagToControlDamageFromPlayers == true)
         {
-            CrushSound.Play();
+            PlaySound(gameObject, CrushSound);
             crushesCounter++;
             flagToControlDamageFromPlayers = false;
             if(crushesCounter >= HowManyCrushesBeforeTakeDamage &&
@@ -192,7 +205,7 @@ public class Player_Controller : MonoBehaviour
         else if(!collision.gameObject.CompareTag("Player"))
         {
             crushesCounter++;
-            CrushSound.Play();
+            PlaySound(gameObject, CrushSound);
             if (crushesCounter >= HowManyCrushesBeforeTakeDamage &&
                 TotalDamagePlayerHas < MaxNumberOfDegradations)
             {
