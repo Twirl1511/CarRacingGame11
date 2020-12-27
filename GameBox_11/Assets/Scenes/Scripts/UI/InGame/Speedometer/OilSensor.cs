@@ -20,7 +20,7 @@ public class OilSensor : MonoBehaviour
 
     void Start()
     {
-        WichPlayerIsActive();
+        WhichPlayerIsActive();
     }
 
     // Update is called once per frame
@@ -29,7 +29,7 @@ public class OilSensor : MonoBehaviour
         OnOffOilSensor();
     }
 
-    private void WichPlayerIsActive()
+    private void WhichPlayerIsActive()
     {
         if (Player1_BlueCar.activeSelf) Player1_Blue = Player1_BlueCar;
         if (Player1_BlueCarMoto.activeSelf) Player1_Blue = Player1_BlueCarMoto;

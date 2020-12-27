@@ -26,6 +26,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Image MusicOn;
     [SerializeField] private Image MusicOff;
     [SerializeField] private Button Exit;
+    [SerializeField] private GameObject OilSensor;
 
     [SerializeField] private GameObject Player1_CarBlue;
     [SerializeField] private GameObject Player1_MotoBlue;
@@ -35,6 +36,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject Player2_MonsterRed;
 
     private bool SoundSwitch = false;
+
    
 
     public void OnStartButtonClick()
@@ -42,6 +44,7 @@ public class MainMenu : MonoBehaviour
         Player1_BlueTurnOn();
         Player2_RedTurnOn();
         gameObject.SetActive(false);
+        OilSensor.SetActive(true);
     }
     public void OnExitClick()
     {

@@ -3083,7 +3083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863861325bf2f3d47ae002fc5f0e7bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainVictoryPanel: {fileID: 0}
+  MainVictoryPanel: {fileID: 1940073422}
   Player1_BlueVictoryPanel: {fileID: 1800435495}
   Player2_RedVictoryPanel: {fileID: 341991105}
   Player1_BlueCar: {fileID: 7519618563039496674}
@@ -17315,7 +17315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1417753120
 Transform:
   m_ObjectHideFlags: 0
@@ -24364,6 +24364,7 @@ MonoBehaviour:
   MusicOn: {fileID: 2107438344}
   MusicOff: {fileID: 99984110}
   Exit: {fileID: 1234773671}
+  OilSensor: {fileID: 1417753119}
   Player1_CarBlue: {fileID: 7519618563039496674}
   Player1_MotoBlue: {fileID: 2855376885015142948}
   Player1_MonsterBlue: {fileID: 1100096007}
