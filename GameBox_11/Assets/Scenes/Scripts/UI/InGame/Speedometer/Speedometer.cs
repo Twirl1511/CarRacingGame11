@@ -6,15 +6,18 @@ public class Speedometer : MonoBehaviour
 {
     [SerializeField] private GameObject Player1_ArrowBlue;
     [SerializeField] private GameObject Player2_ArrowRed;
+
     [SerializeField] private GameObject Player1_CarBlue;
     [SerializeField] private GameObject Player1_MotoBlue;
     [SerializeField] private GameObject Player1_MonsterBlue;
+
     [SerializeField] private GameObject Player2_CarRed;
     [SerializeField] private GameObject Player2_MotoRed;
     [SerializeField] private GameObject Player2_MonsterRed;
+
     private float Player1_BlueSpeed;
     private float Player2_RedSpeed;
-    public float test;
+    public float div;
 
     void Start()
     {
@@ -54,12 +57,12 @@ public class Speedometer : MonoBehaviour
     private void BlueArrowMove()
     {
 
-        Player1_ArrowBlue.transform.rotation = Quaternion.Euler(0,0,-1 * Player1_BlueSpeed / test + 4);
+        Player1_ArrowBlue.transform.rotation = Quaternion.Euler(0,0,-1 * Player1_BlueSpeed / div + 4);
     }
     private void RedArrowMove()
     {
 
-        Player2_ArrowRed.transform.rotation = Quaternion.Euler(0, 0, -1 * Player2_RedSpeed / test + 4);
+        Player2_ArrowRed.transform.rotation = Quaternion.Euler(0, 0, -1 * Player2_RedSpeed / div + 4);
     }
 
 }

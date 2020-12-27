@@ -3687,7 +3687,7 @@ PrefabInstance:
     - target: {fileID: 2855376886144410236, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886923157521, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -3749,7 +3749,7 @@ GameObject:
   - component: {fileID: 222260284}
   - component: {fileID: 222260283}
   m_Layer: 5
-  m_Name: Player1_carBLUE_Icon
+  m_Name: Player1_carBLUE_choose_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3823,7 +3823,7 @@ GameObject:
   - component: {fileID: 228373299}
   - component: {fileID: 228373298}
   m_Layer: 5
-  m_Name: Tablo Red Player2 Car
+  m_Name: Speedometer Red Player2 Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5520,7 +5520,7 @@ MonoBehaviour:
   Player2_CarRed: {fileID: 7519618563932143569}
   Player2_MotoRed: {fileID: 2855376886226929565}
   Player2_MonsterRed: {fileID: 8135009662684621152}
-  test: 2.02
+  div: 2.2
 --- !u!1 &376129140
 GameObject:
   m_ObjectHideFlags: 0
@@ -6781,7 +6781,7 @@ GameObject:
   - component: {fileID: 463901891}
   - component: {fileID: 463901890}
   m_Layer: 5
-  m_Name: Player1_motoBLUE_Icon
+  m_Name: Player1_motoBLUE_choose_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10155,7 +10155,7 @@ GameObject:
   - component: {fileID: 776546697}
   - component: {fileID: 776546696}
   m_Layer: 5
-  m_Name: Tablo Blue Player1 Moto
+  m_Name: Speedometer Blue Player1 Moto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12516,7 +12516,7 @@ GameObject:
   - component: {fileID: 1030966892}
   - component: {fileID: 1030966891}
   m_Layer: 5
-  m_Name: Tablo Red Player2 Monster
+  m_Name: Speedometer Red Player2 Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12667,7 +12667,7 @@ GameObject:
   - component: {fileID: 1043952164}
   - component: {fileID: 1043952163}
   m_Layer: 5
-  m_Name: Player2_monstrRED_choose_button (1)
+  m_Name: Player2_monstrRED_choose_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12754,7 +12754,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c052af8c069d551498e42fd3fb5c933c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eecb62b9d9a204848aa69145121cbe65, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12784,7 +12784,7 @@ GameObject:
   - component: {fileID: 1052483038}
   - component: {fileID: 1052483037}
   m_Layer: 5
-  m_Name: Tablo Red Player2 Moto
+  m_Name: Speedometer Red Player2 Moto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14255,7 +14255,7 @@ PrefabInstance:
     - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerFinalSpeed
-      value: 240
+      value: 1370
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -14525,7 +14525,7 @@ PrefabInstance:
     - target: {fileID: 2855376886144410236, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886923157532, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -16030,7 +16030,7 @@ GameObject:
   - component: {fileID: 1285339332}
   - component: {fileID: 1285339331}
   m_Layer: 5
-  m_Name: Tablo Blue Player1 Car
+  m_Name: Speedometer Blue Player1 Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16374,7 +16374,7 @@ GameObject:
   - component: {fileID: 1327425732}
   - component: {fileID: 1327425731}
   m_Layer: 5
-  m_Name: Player1_monsterBLUE_Icon
+  m_Name: Player1_monsterBLUE_choose_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16461,7 +16461,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 40a3aaf67c603a54d880ee9d4ab6547d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1a44347efec162c4d9c9637334811b6d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21354,7 +21354,7 @@ GameObject:
   - component: {fileID: 1650755053}
   - component: {fileID: 1650755052}
   m_Layer: 5
-  m_Name: Tablo Blue Player1 Monster
+  m_Name: Speedometer Blue Player1 Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24273,7 +24273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1894778760
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24350,17 +24350,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player1_CarBlueButton: {fileID: 222260280}
   Player1_MotoBlueButton: {fileID: 463901888}
+  Player1_MonsterBlueButton: {fileID: 1327425729}
+  SpeedometerPlayer1_BlueCar: {fileID: 1285339329}
+  SpeedometerPlayer1_BlueMoto: {fileID: 776546694}
+  SpeedometerPlayer1_BlueMonster: {fileID: 1650755050}
   Player2_CarRedButton: {fileID: 376129140}
   Player2_MotoRedButton: {fileID: 1936767727}
-  GamePanel: {fileID: 1738038181}
+  Player2_MonsterRedButton: {fileID: 1043952161}
+  SpeedometerPlayer2_RedCar: {fileID: 228373296}
+  SpeedometerPlayer2_RedMoto: {fileID: 1052483035}
+  SpeedometerPlayer2_RedMonster: {fileID: 1030966889}
   Start: {fileID: 1471566170}
   MusicOn: {fileID: 2107438344}
   MusicOff: {fileID: 99984110}
   Exit: {fileID: 1234773671}
-  Player1_CarBlueGameobject: {fileID: 7519618563039496674}
-  Player1_MotoBlueGameobject: {fileID: 2855376885015142948}
-  Player2_CarRedGameobject: {fileID: 7519618563932143569}
-  Player2_MotoRedGameobject: {fileID: 2855376886226929565}
+  Player1_CarBlue: {fileID: 7519618563039496674}
+  Player1_MotoBlue: {fileID: 2855376885015142948}
+  Player1_MonsterBlue: {fileID: 1100096007}
+  Player2_CarRed: {fileID: 7519618563932143569}
+  Player2_MotoRed: {fileID: 2855376886226929565}
+  Player2_MonsterRed: {fileID: 8135009662684621152}
 --- !u!1 &1900300697
 GameObject:
   m_ObjectHideFlags: 0
