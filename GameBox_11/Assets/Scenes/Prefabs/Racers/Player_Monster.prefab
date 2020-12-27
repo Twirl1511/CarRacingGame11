@@ -905,7 +905,7 @@ MonoBehaviour:
   FourthSpeedLimit: 185
   PlayerFinalSpeed: 1050
   FinalSpeedLimit: 185
-  PlayerTorgueForce: 12000
+  PlayerTorgueForce: 10000
   PlayerDriftFactor: 0.9
   PlayerCenterOfMass: 0.6
   PlayerSpeedLimit: 
