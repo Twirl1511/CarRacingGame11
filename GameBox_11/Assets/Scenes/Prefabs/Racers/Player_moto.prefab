@@ -456,12 +456,12 @@ MonoBehaviour:
   FirstSpeedLimit: 70
   PlayerSecondSpeed: 650
   SecondSpeedLimit: 95
-  PlayerThirdSpeed: 900
+  PlayerThirdSpeed: 800
   ThirdSpeedLimit: 160
-  PlayerFourthSpeed: 1200
-  FourthSpeedLimit: 240
+  PlayerFourthSpeed: 1100
+  FourthSpeedLimit: 160
   PlayerFinalSpeed: 1370
-  FinalSpeedLimit: 270
+  FinalSpeedLimit: 250
   PlayerTorgueForce: 4500
   PlayerDriftFactor: 0.91
   PlayerCenterOfMass: -0.6

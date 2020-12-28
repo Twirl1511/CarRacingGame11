@@ -3427,7 +3427,7 @@ PrefabInstance:
     - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerFourthSpeed
-      value: 932
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -14310,7 +14310,7 @@ PrefabInstance:
     - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerFourthSpeed
-      value: 932
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
@@ -14322,6 +14322,16 @@ PrefabInstance:
       propertyPath: BrokenSpeedometerSound
       value: 
       objectReference: {fileID: 1265345458}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerThirdSpeed
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: FinalSpeedLimit
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15658,9 +15668,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1cb11c45116d344d3b65f019e5a67561, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 30edf5b029ff64e2281502ee69fd7a5c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.87
+  m_Volume: 0.72
   m_Pitch: 1
   Loop: 0
   Mute: 0
