@@ -171,10 +171,10 @@ public class Player_Controller : MonoBehaviour
     {
         float x = gameObject.transform.position.x;
         Debug.Log("Position X = "+ x);
-        if (x < -550) crushSound.panStereo = -1f;
+        if (x < -550) crushSound.panStereo = -0.9f;
         if (x >= -550 && x <= 0) crushSound.panStereo = -0.5f;
         if (x >= 0 && x <= 550) crushSound.panStereo = 0.5f;
-        if (x > 550) crushSound.panStereo = 1f;
+        if (x > 550) crushSound.panStereo = 0.9f;
         crushSound.Play();
     }
     
@@ -196,7 +196,7 @@ public class Player_Controller : MonoBehaviour
                 PlayerFinalSpeed -= SpeedDegradation;
                 TotalDamagePlayerHas++;
                 StartCoroutine(WaitUntillRefreshDurability());
-                BrokenSpeedometerSound.Play();
+                PlayStereoSound(BrokenSpeedometerSound);
             }
                 
                 StartCoroutine(DelayBeforeNextDemageFromPlayers(TimeBeforeNextDamageFromPlayers));
@@ -212,9 +212,21 @@ public class Player_Controller : MonoBehaviour
                 PlayerFinalSpeed -= SpeedDegradation;
                 TotalDamagePlayerHas++;
                 StartCoroutine(WaitUntillRefreshDurability());
-                BrokenSpeedometerSound.Play();
+                PlayStereoSound(BrokenSpeedometerSound);
             }
         }
+    }
+    private void PlayStereoSound(AudioSource audioSource)
+    {
+        if (Player.Equals("Player1"))
+        {
+            audioSource.panStereo = -1f;
+        }
+        else
+        {
+            audioSource.panStereo = 1f;
+        }
+        audioSource.Play();
     }
     private IEnumerator DelayBeforeNextDemageFromPlayers(float TimeBeforeNextDamageFromPlayers)
     {

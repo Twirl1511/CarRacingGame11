@@ -14242,6 +14242,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 105959657}
     m_Modifications:
+    - target: {fileID: 2855376886082863266, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886144410214, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: RaceMap
@@ -14600,6 +14610,11 @@ PrefabInstance:
     - target: {fileID: 2855376886144410236, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855376886660717449, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2855376886923157532, guid: f298ada6d54dfa74095c0fe2077e0545,
@@ -28782,7 +28797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75bbf329bb083974182c2afc8633c55b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DropOlidSound: {fileID: 838909034}
+  DropOlidSound: {fileID: 640873528}
   Oil: {fileID: 8698926157362173323, guid: 20cc43eb2eb0d044692be3adb1b0ea92, type: 3}
 --- !u!224 &2855376885015142959 stripped
 RectTransform:
