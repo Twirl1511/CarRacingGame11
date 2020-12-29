@@ -17,7 +17,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private float PlayerFourthSpeed = 80f;
     [SerializeField] private float FourthSpeedLimit = 13;
     [SerializeField] public float PlayerFinalSpeed = 100f;
-    [SerializeField] private float FinalSpeedLimit = 22;
+    [SerializeField] public float FinalSpeedLimit = 22;
 
     [SerializeField] private float PlayerTorgueForce = 45f;
     [SerializeField] private float PlayerDriftFactor = 0.93f;
@@ -31,7 +31,7 @@ public class Player_Controller : MonoBehaviour
 
     [SerializeField] public TypeOfRacer Racer;
     [SerializeField] private Buttons PlayerForwardButton;
-    [SerializeField] private Buttons PlayerHorizontalButton;
+    [SerializeField] public Buttons PlayerHorizontalButton;
     public Buttons PlayerDropOilButton;
 
     [SerializeField] private GameObject RaceMap;

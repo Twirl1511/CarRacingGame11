@@ -21007,6 +21007,123 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591234437}
   m_CullTransparentMesh: 0
+--- !u!1 &1605660597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1605660598}
+  - component: {fileID: 1605660601}
+  - component: {fileID: 1605660600}
+  - component: {fileID: 1605660599}
+  m_Layer: 0
+  m_Name: MonsterSkeletonAnimation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1605660598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605660597}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071058, w: 0.70710784}
+  m_LocalPosition: {x: -43.4, y: -62.7, z: 0}
+  m_LocalScale: {x: 4.8057766, y: 5.0076475, z: 5.0076475}
+  m_Children: []
+  m_Father: {fileID: 8135009662684621162}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
+--- !u!114 &1605660599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605660597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonDataAsset: {fileID: 11400000, guid: 62af59d0f048d5e49af25b68370af41b, type: 2}
+  initialSkinName: 
+  initialFlipX: 0
+  initialFlipY: 0
+  updateWhenInvisible: 3
+  separatorSlotNames: []
+  zSpacing: 0
+  useClipping: 1
+  immutableTriangles: 0
+  pmaVertexColors: 1
+  clearStateOnDisable: 0
+  tintBlack: 0
+  singleSubmesh: 0
+  fixDrawOrder: 0
+  addNormals: 0
+  calculateTangents: 0
+  maskInteraction: 0
+  maskMaterials:
+    materialsMaskDisabled: []
+    materialsInsideMask: []
+    materialsOutsideMask: []
+  disableRenderingOnOverride: 1
+  _animationName: 
+  loop: 0
+  timeScale: 1
+--- !u!23 &1605660600
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605660597}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 410f3ede04e07d44996463c6a51d22b4, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 17
+--- !u!33 &1605660601
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605660597}
+  m_Mesh: {fileID: 0}
 --- !u!1 &1611950439
 GameObject:
   m_ObjectHideFlags: 0
@@ -28380,6 +28497,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7320273409664950674, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
       propertyPath: RaceMap
@@ -29002,6 +29124,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1545730615880817407}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8135009662684621153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8135009662684621152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed10141fcc6690b46b3c80ff5073e5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkeletonAnimation: {fileID: 1605660599}
+  idle: {fileID: 11400000, guid: 07cdf33aa13f4f446b9efb394e6776dd, type: 2}
+  left: {fileID: 11400000, guid: 6831ba0ef0790ef4d919617617cc251b, type: 2}
+  left_idle: {fileID: 11400000, guid: 95eea77eccc15d849aedc80f23a22733, type: 2}
+  right: {fileID: 11400000, guid: 9ad69060a5dc1ff4aa9ab5ef1e853701, type: 2}
+  right_idle: {fileID: 11400000, guid: 2029efebff3569e4f80bde1b416a1962, type: 2}
 --- !u!4 &8135009662684621162 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
