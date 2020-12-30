@@ -27,7 +27,6 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Image MusicOff;
     [SerializeField] private Button Exit;
     [SerializeField] private GameObject OilSensor;
-    [SerializeField] private GameObject RacersLightController;
 
     [SerializeField] private GameObject Player1_CarBlue;
     [SerializeField] private GameObject Player1_MotoBlue;
