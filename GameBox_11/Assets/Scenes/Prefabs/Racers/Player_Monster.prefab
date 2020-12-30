@@ -89,7 +89,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3177936529449316268}
   m_LocalRotation: {x: -0, y: -0, z: -0.0007516003, w: 0.99999976}
-  m_LocalPosition: {x: 19.3, y: 37, z: 0}
+  m_LocalPosition: {x: 9, y: 17.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7501400548939267154}
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.35
-  m_Color: {r: 0.7924528, g: 0.78285086, b: 0.2728729, a: 1}
+  m_Color: {r: 0.65882355, g: 0.6627451, b: 0.37254903, a: 1}
   m_Intensity: 2
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 19
   m_PointLightOuterAngle: 43
   m_PointLightInnerRadius: 9.19
-  m_PointLightOuterRadius: 800
+  m_PointLightOuterRadius: 600
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -943,7 +943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BackLightsObject: {fileID: 3161252617441913563}
   PlayerForwardButton: 1
-  MagnitudeToTurnOffLights: 10
+  MagnitudeToTurnOffLights: 30
 --- !u!114 &7017956485496208116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1133,7 +1133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9190515833354062934}
   m_LocalRotation: {x: -0, y: -0, z: -0.0007516961, w: 0.99999976}
-  m_LocalPosition: {x: -18.8, y: 37, z: 0}
+  m_LocalPosition: {x: -12, y: 17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7501400548939267154}
@@ -1154,7 +1154,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.35
-  m_Color: {r: 0.7924528, g: 0.78285086, b: 0.2728729, a: 1}
+  m_Color: {r: 0.65882355, g: 0.6627451, b: 0.37254903, a: 1}
   m_Intensity: 2
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 19
   m_PointLightOuterAngle: 43
   m_PointLightInnerRadius: 9.19
-  m_PointLightOuterRadius: 800
+  m_PointLightOuterRadius: 600
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
