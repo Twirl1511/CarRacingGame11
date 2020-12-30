@@ -16,11 +16,11 @@ public class Smoke : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetButtonDown(PlayerForwardButton.ToString()))
+        if (Input.GetButton(PlayerForwardButton.ToString()))
         {
             SmokeParticalSystem.Play();
         }
-        if (Input.GetButtonUp(PlayerForwardButton.ToString()))
+        else
         {
             SmokeParticalSystem.Stop();
         }

@@ -45,7 +45,6 @@ public class MainMenu : MonoBehaviour
         Player2_RedTurnOn();
         gameObject.SetActive(false);
         OilSensor.SetActive(true);
-        RacersLightController.SetActive(true);
     }
     public void OnExitClick()
     {
