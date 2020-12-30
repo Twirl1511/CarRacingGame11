@@ -10,8 +10,10 @@ public class VictoryManager : MonoBehaviour
 
     [SerializeField] private GameObject Player1_BlueCar;
     [SerializeField] private GameObject Player1_BlueMoto;
+    [SerializeField] private GameObject Player1_BlueMonster;
     [SerializeField] private GameObject Player2_RedCar;
     [SerializeField] private GameObject Player2_RedMoto;
+    [SerializeField] private GameObject Player2_RedMonster;
 
 
     private void Update()
@@ -36,6 +38,15 @@ public class VictoryManager : MonoBehaviour
                 Player1_BlueVictoryPanel.SetActive(true);
             }
         }
+        if (Player1_BlueMonster.activeSelf == true)
+        {
+            if (Player1_BlueMonster.GetComponent<CircleCounter>().PlayerCircleCounter >= CircleCounter.HOW_MANY_CIRCLES_TO_WIN)
+            {
+                MainVictoryPanel.SetActive(true);
+                Player1_BlueVictoryPanel.SetActive(true);
+            }
+        }
+
         if (Player2_RedCar.activeSelf == true)
         {
             if (Player2_RedCar.GetComponent<CircleCounter>().PlayerCircleCounter >= CircleCounter.HOW_MANY_CIRCLES_TO_WIN)
@@ -47,6 +58,14 @@ public class VictoryManager : MonoBehaviour
         if (Player2_RedMoto.activeSelf == true)
         {
             if (Player2_RedMoto.GetComponent<CircleCounter>().PlayerCircleCounter >= CircleCounter.HOW_MANY_CIRCLES_TO_WIN)
+            {
+                MainVictoryPanel.SetActive(true);
+                Player2_RedVictoryPanel.SetActive(true);
+            }
+        }
+        if (Player2_RedMonster.activeSelf == true)
+        {
+            if (Player2_RedMonster.GetComponent<CircleCounter>().PlayerCircleCounter >= CircleCounter.HOW_MANY_CIRCLES_TO_WIN)
             {
                 MainVictoryPanel.SetActive(true);
                 Player2_RedVictoryPanel.SetActive(true);

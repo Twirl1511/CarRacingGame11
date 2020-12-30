@@ -27,6 +27,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Image MusicOff;
     [SerializeField] private Button Exit;
     [SerializeField] private GameObject OilSensor;
+    [SerializeField] private GameObject RacersLightController;
 
     [SerializeField] private GameObject Player1_CarBlue;
     [SerializeField] private GameObject Player1_MotoBlue;
@@ -45,6 +46,7 @@ public class MainMenu : MonoBehaviour
         Player2_RedTurnOn();
         gameObject.SetActive(false);
         OilSensor.SetActive(true);
+        RacersLightController.SetActive(true);
     }
     public void OnExitClick()
     {

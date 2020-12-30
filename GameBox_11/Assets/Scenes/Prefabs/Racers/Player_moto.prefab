@@ -317,6 +317,7 @@ GameObject:
   - component: {fileID: 2855376886144410237}
   - component: {fileID: 2855376886144410215}
   - component: {fileID: 3756563025567846277}
+  - component: {fileID: 8061201719510755426}
   m_Layer: 0
   m_Name: Player_moto
   m_TagString: Player
@@ -500,6 +501,27 @@ MonoBehaviour:
   BackLightsObject: {fileID: 2244267403223332779}
   PlayerForwardButton: 0
   MagnitudeToTurnOffLights: 10
+--- !u!114 &8061201719510755426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2855376886144410236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fbeb8d7a88e9b41bd85a3d5b2d2008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftLight: {fileID: 437204539232679268}
+  RightLight: {fileID: 437204539232679268}
+  FirstDegradation: 0.9
+  SecondDegradation: 0.8
+  ThirdDegradation: 0.7
+  FourthDegradation: 0.5
+  FifthDegradation: 0.4
+  SixthDegradation: 0.3
+  CrushesToTurnOffLight: 99
 --- !u!1 &2855376886660717451
 GameObject:
   m_ObjectHideFlags: 0

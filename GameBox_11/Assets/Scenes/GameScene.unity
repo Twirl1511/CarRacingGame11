@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 11285740}
   m_Layer: 5
   m_Name: 160
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2012,7 +2012,7 @@ GameObject:
   - component: {fileID: 115326375}
   m_Layer: 5
   m_Name: Player1MonsterDamage3
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2297,7 +2297,7 @@ GameObject:
   - component: {fileID: 131047679}
   m_Layer: 5
   m_Name: 170
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3098,8 +3098,10 @@ MonoBehaviour:
   Player2_RedVictoryPanel: {fileID: 341991105}
   Player1_BlueCar: {fileID: 7519618563039496674}
   Player1_BlueMoto: {fileID: 2855376885015142948}
+  Player1_BlueMonster: {fileID: 0}
   Player2_RedCar: {fileID: 7519618563932143569}
   Player2_RedMoto: {fileID: 2855376886226929565}
+  Player2_RedMonster: {fileID: 0}
 --- !u!1 &211949135
 GameObject:
   m_ObjectHideFlags: 0
@@ -4296,7 +4298,7 @@ GameObject:
   - component: {fileID: 260234150}
   m_Layer: 5
   m_Name: 160
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4398,7 +4400,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1580142108}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5121,7 +5123,7 @@ GameObject:
   - component: {fileID: 321991572}
   m_Layer: 5
   m_Name: 160
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5803,7 +5805,7 @@ GameObject:
   - component: {fileID: 388092400}
   m_Layer: 5
   m_Name: 140
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7535,7 +7537,7 @@ GameObject:
   - component: {fileID: 526353028}
   m_Layer: 5
   m_Name: 160
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7620,7 +7622,7 @@ GameObject:
   - component: {fileID: 531677889}
   m_Layer: 5
   m_Name: 140
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8481,84 +8483,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600559071}
   m_CullTransparentMesh: 0
---- !u!1 &600856138
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 600856139}
-  - component: {fileID: 600856141}
-  - component: {fileID: 600856140}
-  m_Layer: 5
-  m_Name: Player2_Red_speedometer_TEXT
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &600856139
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600856138}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2093169902}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 163.3, y: 78.5}
-  m_SizeDelta: {x: 300, y: 60}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &600856140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600856138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.06142913, b: 0.023584902, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 90
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u0442\u0435\u0441\u0442 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438"
---- !u!222 &600856141
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600856138}
-  m_CullTransparentMesh: 0
 --- !u!1 &604845122
 GameObject:
   m_ObjectHideFlags: 0
@@ -8730,7 +8654,7 @@ GameObject:
   - component: {fileID: 605165469}
   m_Layer: 5
   m_Name: 180
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8989,7 +8913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633213170}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -936.3}
+  m_LocalPosition: {x: 0, y: 0, z: -1995.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2087582931}
@@ -9809,7 +9733,7 @@ GameObject:
   - component: {fileID: 726687570}
   m_Layer: 5
   m_Name: Player1MonsterDamage2
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9859,7 +9783,7 @@ MonoBehaviour:
   m_FillMethod: 3
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 3
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &726687571
@@ -11431,7 +11355,7 @@ GameObject:
   - component: {fileID: 895425356}
   m_Layer: 5
   m_Name: 180
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11991,7 +11915,7 @@ GameObject:
   - component: {fileID: 982134314}
   m_Layer: 5
   m_Name: 150
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13670,7 +13594,7 @@ GameObject:
   - component: {fileID: 1121552912}
   m_Layer: 5
   m_Name: 170
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15404,7 +15328,7 @@ GameObject:
   - component: {fileID: 1244864442}
   m_Layer: 5
   m_Name: 170
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15570,7 +15494,7 @@ GameObject:
   - component: {fileID: 1260545869}
   m_Layer: 5
   m_Name: 170
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16305,7 +16229,7 @@ GameObject:
   - component: {fileID: 1301248896}
   m_Layer: 5
   m_Name: 150
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18883,6 +18807,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1497240890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1497240891}
+  - component: {fileID: 1497240892}
+  m_Layer: 0
+  m_Name: RacersLightController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1497240891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497240890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2030723336}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1497240892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497240890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6356d21046fd5245b9c180f03b4512c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player1_BlueCar: {fileID: 0}
+  Player1_BlueCarMoto: {fileID: 0}
+  Player1_BlueMonster: {fileID: 0}
+  Player2_RedCar: {fileID: 0}
+  Player2_RedMoto: {fileID: 0}
+  Player2_RedMonster: {fileID: 0}
 --- !u!1001 &1506812961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19410,7 +19383,7 @@ GameObject:
   - component: {fileID: 1515127430}
   m_Layer: 5
   m_Name: 150
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20318,7 +20291,7 @@ GameObject:
   - component: {fileID: 1550366890}
   m_Layer: 5
   m_Name: 150
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20569,7 +20542,7 @@ GameObject:
   - component: {fileID: 1554483798}
   m_Layer: 5
   m_Name: 140
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20930,7 +20903,6 @@ RectTransform:
   - {fileID: 1650755051}
   - {fileID: 68683884}
   - {fileID: 782321211}
-  - {fileID: 1754938809}
   - {fileID: 269611838}
   m_Father: {fileID: 1144114554}
   m_RootOrder: 0
@@ -21896,7 +21868,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2093169902}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -22481,7 +22453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a37d4d53d99ed0c4795decc946113ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player1_BlueTextSpeedMagnitude: {fileID: 1754938811}
+  Player1_BlueTextSpeedMagnitude: {fileID: 0}
   Player2_RedTextSpeedMagnitude: {fileID: 0}
   Player1_BlueCar: {fileID: 7519618563039496674}
   Player1_BlueMoto: {fileID: 2855376885015142948}
@@ -22781,84 +22753,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753690476}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1754938808
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1754938809}
-  - component: {fileID: 1754938810}
-  - component: {fileID: 1754938811}
-  m_Layer: 5
-  m_Name: Player1_blue_speedometer_TEXT
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1754938809
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754938808}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1580142108}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 163.3, y: 78.5}
-  m_SizeDelta: {x: 300, y: 60}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1754938810
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754938808}
-  m_CullTransparentMesh: 0
---- !u!114 &1754938811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754938808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.12409544, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 90
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u0442\u0435\u0441\u0442 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438"
 --- !u!1 &1762047505
 GameObject:
   m_ObjectHideFlags: 0
@@ -22910,7 +22804,7 @@ GameObject:
   - component: {fileID: 1774217303}
   m_Layer: 5
   m_Name: 160
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23342,7 +23236,7 @@ GameObject:
   - component: {fileID: 1820459782}
   m_Layer: 5
   m_Name: 170
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24009,7 +23903,7 @@ GameObject:
   - component: {fileID: 1866965848}
   m_Layer: 5
   m_Name: Player1MonsterDamage4
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24582,6 +24476,7 @@ MonoBehaviour:
   MusicOff: {fileID: 99984110}
   Exit: {fileID: 1234773671}
   OilSensor: {fileID: 1417753119}
+  RacersLightController: {fileID: 1497240890}
   Player1_CarBlue: {fileID: 7519618563039496674}
   Player1_MotoBlue: {fileID: 2855376885015142948}
   Player1_MonsterBlue: {fileID: 1100096007}
@@ -24754,7 +24649,7 @@ GameObject:
   - component: {fileID: 1907211122}
   m_Layer: 5
   m_Name: 180
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25081,7 +24976,7 @@ GameObject:
   - component: {fileID: 1926562806}
   m_Layer: 5
   m_Name: Player1MonsterDamage1
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25131,7 +25026,7 @@ MonoBehaviour:
   m_FillMethod: 2
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 3
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1926562807
@@ -25155,7 +25050,7 @@ GameObject:
   - component: {fileID: 1927751403}
   m_Layer: 5
   m_Name: 190
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25788,7 +25683,7 @@ GameObject:
   - component: {fileID: 1962017515}
   m_Layer: 5
   m_Name: 190
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26118,7 +26013,7 @@ RectTransform:
   m_Children:
   - {fileID: 1435668793}
   m_Father: {fileID: 2093169902}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26573,7 +26468,7 @@ GameObject:
   - component: {fileID: 2008953878}
   m_Layer: 5
   m_Name: 150
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26751,6 +26646,7 @@ Transform:
   - {fileID: 209332258}
   - {fileID: 401250647}
   - {fileID: 803044866}
+  - {fileID: 1497240891}
   m_Father: {fileID: 126589369}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27913,7 +27809,6 @@ RectTransform:
   - {fileID: 1052483036}
   - {fileID: 1030966890}
   - {fileID: 2029628949}
-  - {fileID: 600856139}
   - {fileID: 1676591141}
   - {fileID: 1987619184}
   m_Father: {fileID: 1144114554}
@@ -28423,7 +28318,7 @@ GameObject:
   - component: {fileID: 2145304674}
   m_Layer: 5
   m_Name: 180
-  m_TagString: Untagged
+  m_TagString: BrokenPieces
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

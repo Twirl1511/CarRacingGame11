@@ -977,7 +977,7 @@ MonoBehaviour:
   DropOlidSound: {fileID: 0}
   PickUpBarrelSound: {fileID: 0}
   CrushSound: {fileID: 0}
-  DamageSound: {fileID: 0}
+  BrokenSpeedometerSound: {fileID: 0}
   SpeedDegradation: 48
   crushesCounter: 0
   HowManyCrushesBeforeTakeDamage: 3
@@ -1030,6 +1030,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeftLight: {fileID: 8234442328222810817}
   RightLight: {fileID: 2438581207686259003}
+  FirstDegradation: 0.9
+  SecondDegradation: 0.8
+  ThirdDegradation: 0.7
+  FourthDegradation: 0.5
+  FifthDegradation: 0.4
+  SixthDegradation: 0.3
+  CrushesToTurnOffLight: 3
 --- !u!1 &7519618564733744653
 GameObject:
   m_ObjectHideFlags: 0
