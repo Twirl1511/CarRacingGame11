@@ -170,7 +170,6 @@ public class Player_Controller : MonoBehaviour
     private static void PlaySound(GameObject gameObject, AudioSource crushSound)
     {
         float x = gameObject.transform.position.x;
-        Debug.Log("Position X = "+ x);
         if (x < -550) crushSound.panStereo = -0.9f;
         if (x >= -550 && x <= 0) crushSound.panStereo = -0.5f;
         if (x >= 0 && x <= 550) crushSound.panStereo = 0.5f;
@@ -196,9 +195,8 @@ public class Player_Controller : MonoBehaviour
                 PlayerFinalSpeed -= SpeedDegradation;
                 TotalDamagePlayerHas++;
                 StartCoroutine(WaitUntillRefreshDurability());
-                PlayStereoSound(BrokenSpeedometerSound);
+                PlaySound(gameObject, BrokenSpeedometerSound);
             }
-                
                 StartCoroutine(DelayBeforeNextDemageFromPlayers(TimeBeforeNextDamageFromPlayers));
         } 
         // если ударяемся с любым другим объектом
@@ -212,29 +210,15 @@ public class Player_Controller : MonoBehaviour
                 PlayerFinalSpeed -= SpeedDegradation;
                 TotalDamagePlayerHas++;
                 StartCoroutine(WaitUntillRefreshDurability());
-                PlayStereoSound(BrokenSpeedometerSound);
+                PlaySound(gameObject, BrokenSpeedometerSound);
             }
         }
-    }
-    private void PlayStereoSound(AudioSource audioSource)
-    {
-        if (Player.Equals("Player1"))
-        {
-            audioSource.panStereo = -1f;
-        }
-        else
-        {
-            audioSource.panStereo = 1f;
-        }
-        audioSource.Play();
     }
     private IEnumerator DelayBeforeNextDemageFromPlayers(float TimeBeforeNextDamageFromPlayers)
     {
         yield return new WaitForSeconds(TimeBeforeNextDamageFromPlayers);
         flagToControlDamageFromPlayers = true;
     }
-   
-
     #region[Контроль заноса]
     private Vector2 RightVelocity(Transform transform, Rigidbody2D rigidbody)
     {
@@ -245,7 +229,6 @@ public class Player_Controller : MonoBehaviour
         return transform.up * Vector2.Dot(rigidbody.velocity, transform.up);
     }
     #endregion
-
     private IEnumerator WaitUntillRefreshDurability()
     {
         yield return new WaitForSeconds(0.2f);

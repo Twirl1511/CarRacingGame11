@@ -36,9 +36,6 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject Player2_MonsterRed;
 
     private bool SoundSwitch = false;
-
-   
-
     public void OnStartButtonClick()
     {
         Player1_BlueTurnOn();

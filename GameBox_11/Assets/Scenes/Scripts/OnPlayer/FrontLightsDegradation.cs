@@ -16,6 +16,8 @@ public class FrontLightsDegradation : MonoBehaviour
     [SerializeField] private float FifthDegradation = 0.4f;
     [SerializeField] private float SixthDegradation = 0.3f;
     [SerializeField] private int CrushesToTurnOffLight = 3;
+
+    private bool _flagForBlinkOnce = true;
     private void Start()
     {
         _defaultPointLightOuterRadius = LeftLight.GetComponent<Light2D>().pointLightOuterRadius;
@@ -38,21 +40,27 @@ public class FrontLightsDegradation : MonoBehaviour
         {
             case 1:
                 LightsDegradation(FirstDegradation);
+                BlinkOnce();
                 break;
             case 2:
                 LightsDegradation(SecondDegradation);
+                BlinkOnce();
                 break;
             case 3:
                 LightsDegradation(ThirdDegradation);
+                BlinkOnce();
                 break;
             case 4:
                 LightsDegradation(FourthDegradation);
+                BlinkOnce();
                 break;
             case 5:
                 LightsDegradation(FifthDegradation);
+                BlinkOnce();
                 break;
             case 6:
                 LightsDegradation(SixthDegradation);
+                BlinkOnce();
                 break;
             default:
                 break;
@@ -102,5 +110,24 @@ public class FrontLightsDegradation : MonoBehaviour
         yield return new WaitForSeconds((float)Random.Range(0, 30) / 100);
         light.GetComponent<Light2D>().intensity = randIntesity;
         _flag = true;
+    }
+    private void BlinkOnce()
+    {
+        if (_flagForBlinkOnce)
+        {
+            if (_flag)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    StartCoroutine(FlickeringLightWait(_lightToTurnOff));
+                    
+                }
+                _flag = false;
+            }
+            
+            _flagForBlinkOnce = false;
+            _lightToTurnOff.GetComponent<Light2D>().intensity = 2f;
+        }
+        
     }
 }
