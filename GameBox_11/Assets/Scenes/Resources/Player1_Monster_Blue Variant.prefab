@@ -1,0 +1,240 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1750926917586824398
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1831759444687288083, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: DropOlidSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140390496705705019, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140390496705705019, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: viewIdField
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140390496705705019, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: ObservedComponents.Array.data[0]
+      value: 
+      objectReference: {fileID: 817130563215152518}
+    - target: {fileID: 7017956485496208116, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: SmokeObj
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017956485496208116, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: SmokeParticalSystem
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017956485496208116, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273409664950764, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1a44347efec162c4d9c9637334811b6d,
+        type: 3}
+    - target: {fileID: 7320273410216063892, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063893, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: Player
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: DropOlidSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: PickUpBarrelSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: CrushSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: DamageSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: RaceMap
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: PlayerForwardButton
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: PlayerHorizontalButton
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: PlayerDropOilButton
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: RepairSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: BrokenSpeedometerSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -586
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 282.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.70710474
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710886
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063903, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Player1_Monster_Blue Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063903, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914815831534940278, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: TextForInt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914815831534940278, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: TextForFloat
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914815831534940278, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: BoxCollider1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914815831534940278, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: BoxCollider2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914815831534940278, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: CircleCompleteSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914815831534940278, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: VictorySound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914815831534940278, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: HearBeatingSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914815831534940278, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: GameSound
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7320273410216063893, guid: 5c802fbc0915f1446846a5249b4a43e7, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 5c802fbc0915f1446846a5249b4a43e7, type: 3}
+--- !u!114 &817130563215152518 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1376849330369165640, guid: 5c802fbc0915f1446846a5249b4a43e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1750926917586824398}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

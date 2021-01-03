@@ -1,8 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Photon.Pun;
+using System.Collections;
 using UnityEngine;
 
-public class Player_Controller : MonoBehaviour
+public class Player_Controller : MonoBehaviourPun
 {
     private Rigidbody2D PlayerRigidbody;
     private Transform PlayerTransform;
@@ -96,60 +96,56 @@ public class Player_Controller : MonoBehaviour
         PlayerRigidbody = GetComponent<Rigidbody2D>();
         PlayerTransform = GetComponent<Transform>();
     }
-    private void Update()
-    {
-        PlayerRigidbody.GetComponent<ShowCenterOfMass>().CenterOfMass.y = PlayerCenterOfMass;
-        PlayerSpeedLimit = PlayerRigidbody.velocity.magnitude.ToString("0.0");
-        
-    }
+
 
     void FixedUpdate()
     {
-        #region [Player movement]
-
-        #region[Основное управление]
-        if (Input.GetButton(PlayerForwardButton.ToString()))
+        if (photonView.IsMine)
         {
-            PlayerRigidbody.AddForce(PlayerTransform.up * CurrentPlayerSpeed);
-        }
-        /// поворот активен если только скорость больше значения
-        if(PlayerRigidbody.velocity.magnitude > speedToTorgue)
-        {
-            PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * PlayerTorgueForce);
-        }
-        #endregion
+            #region [Player movement]
 
-        // чтобы регулировать занос
-        PlayerRigidbody.velocity = ForwardVelocity(PlayerTransform, PlayerRigidbody) + RightVelocity(PlayerTransform, PlayerRigidbody) * PlayerDriftFactor;
+            #region[Основное управление]
+            if (Input.GetButton(PlayerForwardButton.ToString()))
+            {
+                PlayerRigidbody.AddForce(PlayerTransform.up * CurrentPlayerSpeed);
+            }
+            /// поворот активен если только скорость больше значения
+            if (PlayerRigidbody.velocity.magnitude > speedToTorgue)
+            {
+                PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * PlayerTorgueForce);
+            }
+            #endregion
 
-        #region[Логика разгона и ускорения]
-        if (PlayerRigidbody.velocity.magnitude > FirstSpeedLimit)
-        {
-            CurrentPlayerSpeed = PlayerFirstSpeed;
-        }
-        if (PlayerRigidbody.velocity.magnitude > SecondSpeedLimit)
-        {
-            CurrentPlayerSpeed = PlayerSecondSpeed;
-        }
-        if (PlayerRigidbody.velocity.magnitude > ThirdSpeedLimit)
-        {
-            CurrentPlayerSpeed = PlayerThirdSpeed;
-        }
-        if (PlayerRigidbody.velocity.magnitude > FourthSpeedLimit)
-        {
-            CurrentPlayerSpeed = PlayerFourthSpeed;
-        }
+            // чтобы регулировать занос
+            PlayerRigidbody.velocity = ForwardVelocity(PlayerTransform, PlayerRigidbody) + RightVelocity(PlayerTransform, PlayerRigidbody) * PlayerDriftFactor;
+
+            #region[Логика разгона и ускорения]
+            if (PlayerRigidbody.velocity.magnitude > FirstSpeedLimit)
+            {
+                CurrentPlayerSpeed = PlayerFirstSpeed;
+            }
+            if (PlayerRigidbody.velocity.magnitude > SecondSpeedLimit)
+            {
+                CurrentPlayerSpeed = PlayerSecondSpeed;
+            }
+            if (PlayerRigidbody.velocity.magnitude > ThirdSpeedLimit)
+            {
+                CurrentPlayerSpeed = PlayerThirdSpeed;
+            }
+            if (PlayerRigidbody.velocity.magnitude > FourthSpeedLimit)
+            {
+                CurrentPlayerSpeed = PlayerFourthSpeed;
+            }
 
 
-        if (PlayerRigidbody.velocity.magnitude > FinalSpeedLimit)
-        {
-            CurrentPlayerSpeed = PlayerFinalSpeed;
+            if (PlayerRigidbody.velocity.magnitude > FinalSpeedLimit)
+            {
+                CurrentPlayerSpeed = PlayerFinalSpeed;
+            }
+            #endregion
+
+            #endregion
         }
-        #endregion
-
-     
-
-        #endregion
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
