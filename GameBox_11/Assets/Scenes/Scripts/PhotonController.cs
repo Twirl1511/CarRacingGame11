@@ -7,10 +7,13 @@ public class PhotonController : MonoBehaviourPun
     [SerializeField] private Transform Player2_RedPosition;
     private string PlayerPrefabName;
     private Transform PlayerPosition;
+    private Quaternion quaternion;
+    public Quaternion Player1Quaternion;
+    public Quaternion Player2Quaternion;
     private void Awake()
     {
         ChooseRacer();
-        PhotonNetwork.Instantiate(PlayerPrefabName, PlayerPosition.position, Quaternion.identity);
+        PhotonNetwork.Instantiate(PlayerPrefabName, PlayerPosition.position, quaternion);
     }
 
     public void ChooseRacer()
@@ -18,6 +21,7 @@ public class PhotonController : MonoBehaviourPun
         int i = PhotonNetwork.CurrentRoom.PlayerCount;
         if( i == 1)
         {
+            quaternion = Player1Quaternion;
             PlayerPosition = Player1_BluePosition;
             switch (LoopBackMenu.pointer)
             {
@@ -36,6 +40,7 @@ public class PhotonController : MonoBehaviourPun
         }
         if (i == 2)
         {
+            quaternion = Player2Quaternion;
             PlayerPosition = Player2_RedPosition;
             switch (LoopBackMenu.pointer)
             {
