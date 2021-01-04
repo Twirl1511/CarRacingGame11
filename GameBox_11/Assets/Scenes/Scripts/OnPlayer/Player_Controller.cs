@@ -33,8 +33,7 @@ public class Player_Controller : MonoBehaviourPun
     [SerializeField] private Buttons PlayerForwardButton;
     [SerializeField] public Buttons PlayerHorizontalButton;
     public Buttons PlayerDropOilButton;
-
-    [SerializeField] private GameObject RaceMap;
+    
     [SerializeField] private float TimeBeforeNextDamageFromPlayers;
     
     // ЗВУКИ
@@ -179,36 +178,41 @@ public class Player_Controller : MonoBehaviourPun
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // эффект при коллизии с плеером, можно удариться не чаще определенного времени
-        if (collision.gameObject.CompareTag("Player") && flagToControlDamageFromPlayers == true)
-        {
-            PlaySound(gameObject, CrushSound);
-            crushesCounter++;
-            flagToControlDamageFromPlayers = false;
-            if(crushesCounter >= HowManyCrushesBeforeTakeDamage &&
-                TotalDamagePlayerHas < MaxNumberOfDegradations)
+        
+            if (collision.gameObject.CompareTag("Player") && flagToControlDamageFromPlayers == true)
             {
-                PlayerFinalSpeed -= SpeedDegradation;
-                TotalDamagePlayerHas++;
-                StartCoroutine(WaitUntillRefreshDurability());
-                PlaySound(gameObject, BrokenSpeedometerSound);
-            }
+                PlaySound(gameObject, CrushSound);
+                crushesCounter++;
+                flagToControlDamageFromPlayers = false;
+                if (crushesCounter >= HowManyCrushesBeforeTakeDamage &&
+                    TotalDamagePlayerHas < MaxNumberOfDegradations)
+                {
+                    PlayerFinalSpeed -= SpeedDegradation;
+                    TotalDamagePlayerHas++;
+                    StartCoroutine(WaitUntillRefreshDurability());
+                    PlaySound(gameObject, BrokenSpeedometerSound);
+                }
                 StartCoroutine(DelayBeforeNextDemageFromPlayers(TimeBeforeNextDamageFromPlayers));
-        } 
-        // если ударяемся с любым другим объектом
-        else if(!collision.gameObject.CompareTag("Player"))
-        {
-            crushesCounter++;
-            PlaySound(gameObject, CrushSound);
-            if (crushesCounter >= HowManyCrushesBeforeTakeDamage &&
-                TotalDamagePlayerHas < MaxNumberOfDegradations)
-            {
-                PlayerFinalSpeed -= SpeedDegradation;
-                TotalDamagePlayerHas++;
-                StartCoroutine(WaitUntillRefreshDurability());
-                PlaySound(gameObject, BrokenSpeedometerSound);
             }
-        }
+            // если ударяемся с любым другим объектом
+            else if (!collision.gameObject.CompareTag("Player"))
+            {
+                crushesCounter++;
+                
+                PlaySound(gameObject, CrushSound);
+                
+                if (crushesCounter >= HowManyCrushesBeforeTakeDamage &&
+                    TotalDamagePlayerHas < MaxNumberOfDegradations)
+                {
+                    PlayerFinalSpeed -= SpeedDegradation;
+                    TotalDamagePlayerHas++;
+                    StartCoroutine(WaitUntillRefreshDurability());
+                    PlaySound(gameObject, BrokenSpeedometerSound);
+                }
+            }
+        
+            // эффект при коллизии с плеером, можно удариться не чаще определенного времени
+            
     }
     private IEnumerator DelayBeforeNextDemageFromPlayers(float TimeBeforeNextDamageFromPlayers)
     {

@@ -27,7 +27,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75bbf329bb083974182c2afc8633c55b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DropOlidSound: {fileID: 0}
+  DropOlidSound: {fileID: 5416130302288944605, guid: 0aaacea9be828d1439c2fab3c1038235,
+    type: 3}
   Oil: {fileID: 8698926157362173323, guid: 20cc43eb2eb0d044692be3adb1b0ea92, type: 3}
 --- !u!1001 &6116043398974926454
 PrefabInstance:
@@ -70,12 +71,14 @@ PrefabInstance:
         type: 3}
       propertyPath: DropOlidSound
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5416130302288944605, guid: 0aaacea9be828d1439c2fab3c1038235,
+        type: 3}
     - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PickUpBarrelSound
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5832971201188608837, guid: 9cd84e2a46e1a174d9929ab4bcafca3a,
+        type: 3}
     - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: OilDriftSound
@@ -85,7 +88,8 @@ PrefabInstance:
         type: 3}
       propertyPath: CrushSound
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6035214141157948223, guid: 372fb7d476a0df4408578c54be4f6e80,
+        type: 3}
     - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: DamageSound
@@ -140,7 +144,8 @@ PrefabInstance:
         type: 3}
       propertyPath: BrokenSpeedometerSound
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4971276214560087442, guid: 561806c14d85b0e4e8b37ef4387693dc,
+        type: 3}
     - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: PlayerThirdSpeed
