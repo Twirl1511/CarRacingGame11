@@ -906,7 +906,8 @@ MonoBehaviour:
   FourthSpeedLimit: 185
   PlayerFinalSpeed: 1050
   FinalSpeedLimit: 185
-  PlayerTorgueForce: 10000
+  PlayerTorgueForceFinal: 7500
+  PlayerTorgueForceLowSpeed: 2500
   PlayerDriftFactor: 0.9
   PlayerCenterOfMass: 0.6
   PlayerSpeedLimit: 
@@ -917,7 +918,6 @@ MonoBehaviour:
   PlayerForwardButton: 1
   PlayerHorizontalButton: 3
   PlayerDropOilButton: 5
-  RaceMap: {fileID: 0}
   TimeBeforeNextDamageFromPlayers: 2
   DropOlidSound: {fileID: 0}
   PickUpBarrelSound: {fileID: 0}
@@ -929,6 +929,10 @@ MonoBehaviour:
   MaxNumberOfDegradations: 4
   TotalDamagePlayerHas: 0
   Player: 1
+  speedToTorgue: 25
+  speedToTorgueSecond: 50
+  CurrentPlayerTorgueForce: 0
+  HowFastToGainTorgueSpeed: 100
 --- !u!114 &6004934223922151598
 MonoBehaviour:
   m_ObjectHideFlags: 0
