@@ -43,8 +43,9 @@ public class MainMenu : MonoBehaviour
     {
         Player1_BlueTurnOn();
         Player2_RedTurnOn();
-        gameObject.SetActive(false);
         OilSensor.SetActive(true);
+        gameObject.SetActive(false);
+        
     }
     public void OnExitClick()
     {

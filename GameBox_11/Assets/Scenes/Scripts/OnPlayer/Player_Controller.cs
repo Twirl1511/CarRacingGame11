@@ -19,7 +19,8 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] public float PlayerFinalSpeed = 100f;
     [SerializeField] public float FinalSpeedLimit = 22;
 
-    [SerializeField] private float PlayerTorgueForce = 45f;
+    [SerializeField] private float PlayerTorgueForceFinal = 45f;
+    [SerializeField] private float PlayerTorgueForceLowSpeed = 45f;
     [SerializeField] private float PlayerDriftFactor = 0.93f;
     [SerializeField] private float PlayerCenterOfMass = 1f;
 
@@ -88,8 +89,7 @@ public class Player_Controller : MonoBehaviour
     }
 
     [SerializeField] private float speedToTorgue = 25f;
-    [SerializeField] private float TorguePower = 1;
-    private float z;
+    [SerializeField] private float speedToTorgueSecond = 25f;
     private void Awake()
     {
         PlayerRigidbody = GetComponent<Rigidbody2D>();
@@ -97,18 +97,40 @@ public class Player_Controller : MonoBehaviour
     }
     private void Start()
     {
-        if (Player.ToString().Equals("Player1")) z = -90;
-        if (Player.ToString().Equals("Player2")) z = 90;
+
     }
     private void Update()
     {
-        PlayerRigidbody.GetComponent<ShowCenterOfMass>().CenterOfMass.y = PlayerCenterOfMass;
-        PlayerSpeedLimit = PlayerRigidbody.velocity.magnitude.ToString("0.0");
         
     }
-    
+    [SerializeField] private float CurrentPlayerTorgueForce;
+    [SerializeField] private float HowFastToGainTorgueSpeed = 100;
+    private void TorgueUpFromSpeed()
+    {
+
+        if (PlayerRigidbody.velocity.magnitude < speedToTorgue)
+        {
+            CurrentPlayerTorgueForce = 0;
+        }
+        if (PlayerRigidbody.velocity.magnitude >= speedToTorgue 
+            && PlayerRigidbody.velocity.magnitude <= speedToTorgueSecond)
+        {
+            CurrentPlayerTorgueForce = PlayerTorgueForceLowSpeed;
+        }
+        if (PlayerRigidbody.velocity.magnitude > speedToTorgueSecond)
+        {
+            if(CurrentPlayerTorgueForce < PlayerTorgueForceFinal)
+            {
+                CurrentPlayerTorgueForce += PlayerTorgueForceFinal / HowFastToGainTorgueSpeed;
+            }
+            
+        }
+
+
+    }
     void FixedUpdate()
     {
+        TorgueUpFromSpeed();
         #region [Player movement]
 
         #region[Основное управление]
@@ -117,14 +139,12 @@ public class Player_Controller : MonoBehaviour
             PlayerRigidbody.AddForce(PlayerTransform.up * CurrentPlayerSpeed);
         }
         /// поворот активен если только скорость больше значения
-        if (PlayerRigidbody.velocity.magnitude > speedToTorgue)
-        {
-            
-            z += Input.GetAxis(PlayerHorizontalButton.ToString()) * TorguePower;
-            
-            transform.rotation = Quaternion.Euler(0, 0, z);
-            //PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * PlayerTorgueForce);
-        }
+        /// 
+        
+        PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * CurrentPlayerTorgueForce);
+        
+        
+
         #endregion
 
         // чтобы регулировать занос
