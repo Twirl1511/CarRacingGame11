@@ -962,7 +962,7 @@ MonoBehaviour:
   PlayerFinalSpeed: 940
   FinalSpeedLimit: 190
   PlayerTorgueForceFinal: 7500
-  PlayerTorgueForceLowSpeed: 2500
+  PlayerTorgueForceLowSpeed: 2000
   PlayerDriftFactor: 0.95
   PlayerCenterOfMass: 1
   PlayerSpeedLimit: 
@@ -984,8 +984,10 @@ MonoBehaviour:
   MaxNumberOfDegradations: 5
   TotalDamagePlayerHas: 0
   Player: 0
-  speedToTorgue: 25
+  speedToTorgue: 20
   speedToTorgueSecond: 80
+  CurrentPlayerTorgueForce: 0
+  HowFastToGainTorgueSpeed: 150
 --- !u!114 &6816223341451546169
 MonoBehaviour:
   m_ObjectHideFlags: 0

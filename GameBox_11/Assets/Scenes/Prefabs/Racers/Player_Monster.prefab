@@ -895,21 +895,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 404918e1153b1a64e9bd8af3b04df57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentPlayerSpeed: 620
-  PlayerFirstSpeed: 620
-  FirstSpeedLimit: 120
-  PlayerSecondSpeed: 800
-  SecondSpeedLimit: 145
+  CurrentPlayerSpeed: 650
+  PlayerFirstSpeed: 650
+  FirstSpeedLimit: 140
+  PlayerSecondSpeed: 900
+  SecondSpeedLimit: 160
   PlayerThirdSpeed: 1050
-  ThirdSpeedLimit: 185
+  ThirdSpeedLimit: 180
   PlayerFourthSpeed: 1050
-  FourthSpeedLimit: 185
+  FourthSpeedLimit: 180
   PlayerFinalSpeed: 1050
-  FinalSpeedLimit: 185
-  PlayerTorgueForceFinal: 7500
-  PlayerTorgueForceLowSpeed: 2500
+  FinalSpeedLimit: 180
+  PlayerTorgueForceFinal: 8500
+  PlayerTorgueForceLowSpeed: 3000
   PlayerDriftFactor: 0.9
-  PlayerCenterOfMass: 0.6
+  PlayerCenterOfMass: 1
   PlayerSpeedLimit: 
   PlayerHasGotAnOil: 1
   SpeedToCollectBarrel: 2000
@@ -930,9 +930,9 @@ MonoBehaviour:
   TotalDamagePlayerHas: 0
   Player: 1
   speedToTorgue: 25
-  speedToTorgueSecond: 50
+  speedToTorgueSecond: 70
   CurrentPlayerTorgueForce: 0
-  HowFastToGainTorgueSpeed: 100
+  HowFastToGainTorgueSpeed: 140
 --- !u!114 &6004934223922151598
 MonoBehaviour:
   m_ObjectHideFlags: 0

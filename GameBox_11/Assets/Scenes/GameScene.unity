@@ -9640,6 +9640,36 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: SpeedDegradation
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: ThirdSpeedLimit
+      value: 185
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: FourthSpeedLimit
+      value: 185
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: FinalSpeedLimit
+      value: 185
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: SecondSpeedLimit
+      value: 155
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: FirstSpeedLimit
+      value: 130
+      objectReference: {fileID: 0}
     - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13475,6 +13505,26 @@ PrefabInstance:
       propertyPath: BrokenSpeedometerSound
       value: 
       objectReference: {fileID: 1265345458}
+    - target: {fileID: 7519618563941809409, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: speedToTorgue
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7519618563941809409, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: speedToTorgueSecond
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7519618563941809409, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: HowFastToGainTorgueSpeed
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7519618563941809409, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
+        type: 3}
+      propertyPath: PlayerTorgueForceLowSpeed
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 7519618563941809410, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
         type: 3}
       propertyPath: m_Enabled
@@ -20985,6 +21035,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: speedToTorgue
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: speedToTorgueSecond
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: PlayerTorgueForceLowSpeed
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: HowFastToGainTorgueSpeed
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: PlayerTorgueForceFinal
+      value: 8500
       objectReference: {fileID: 0}
     - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
