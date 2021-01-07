@@ -63,9 +63,9 @@ public class PlayerAnimation : MonoBehaviour
     private void AnimationSpeedAdjust()
     {
         if (SkeletonAnimation.AnimationName != null &&
-            SkeletonAnimation.AnimationName.Equals("idle") ||
-            SkeletonAnimation.AnimationName.Equals("right_idle") ||
-            SkeletonAnimation.AnimationName.Equals("left_idle"))
+            SkeletonAnimation.AnimationName.ToLower().Equals("idle") ||
+            SkeletonAnimation.AnimationName.ToLower().Equals("right_idle") ||
+            SkeletonAnimation.AnimationName.ToLower().Equals("left_idle"))
         {
             SkeletonAnimation.GetComponent<SkeletonAnimation>().timeScale = SpeedAnimation();
         }
@@ -76,13 +76,13 @@ public class PlayerAnimation : MonoBehaviour
         {
             case 1:
                 if (SkeletonAnimation.AnimationName != null &&
-                    SkeletonAnimation.AnimationName.Equals("left") ||
-                    SkeletonAnimation.AnimationName.Equals("left_idle"))
+                    SkeletonAnimation.AnimationName.ToLower().Equals("left") ||
+                    SkeletonAnimation.AnimationName.ToLower().Equals("left_idle"))
                 {
                     _leftTimer += Time.deltaTime;
                     if (_leftTimer >= 0.2667f)
                     {
-                        if (SkeletonAnimation.AnimationName != null && SkeletonAnimation.AnimationName.Equals("left_idle"))
+                        if (SkeletonAnimation.AnimationName != null && SkeletonAnimation.AnimationName.ToLower().Equals("left_idle"))
                         {
                             break;
                         }
@@ -95,13 +95,13 @@ public class PlayerAnimation : MonoBehaviour
                 break;
             case -1:
                 if (SkeletonAnimation.AnimationName != null &&
-                    SkeletonAnimation.AnimationName.Equals("right") ||
-                    SkeletonAnimation.AnimationName.Equals("right_idle"))
+                    SkeletonAnimation.AnimationName.ToLower().Equals("right") ||
+                    SkeletonAnimation.AnimationName.ToLower().Equals("right_idle"))
                 {
                     _rightTimer += Time.deltaTime;
                     if (_rightTimer >= 0.2667f)
                     {
-                        if (SkeletonAnimation.AnimationName != null && SkeletonAnimation.AnimationName.Equals("right_idle"))
+                        if (SkeletonAnimation.AnimationName != null && SkeletonAnimation.AnimationName.ToLower().Equals("right_idle"))
                         {
                             break;
                         }
@@ -115,7 +115,7 @@ public class PlayerAnimation : MonoBehaviour
             default:
                 _rightTimer = 0;
                 _leftTimer = 0;
-                if (SkeletonAnimation.AnimationName != null && SkeletonAnimation.AnimationName.Equals("idle"))
+                if (SkeletonAnimation.AnimationName != null && SkeletonAnimation.AnimationName.ToLower().Equals("idle"))
                 {
                     return;
                 }
