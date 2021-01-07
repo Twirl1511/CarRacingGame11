@@ -37,6 +37,7 @@ public class MainMenu : MonoBehaviour
 
     private bool SoundSwitch = false;
 
+    [SerializeField] private GameObject DevelopersPanel;
    
 
     public void OnStartButtonClick()
@@ -93,5 +94,16 @@ public class MainMenu : MonoBehaviour
             Player2_MonsterRed.SetActive(true);
             SpeedometerPlayer2_RedMonster.SetActive(true);
         }
+    }
+
+
+    
+    public void ShowDevelopersButton()
+    {
+        DevelopersPanel.SetActive(true);
+    }
+    public void ShowDevelopersBackButton()
+    {
+        DevelopersPanel.SetActive(false);
     }
 }
