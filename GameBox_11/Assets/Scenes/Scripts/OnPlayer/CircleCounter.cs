@@ -85,6 +85,7 @@ public class CircleCounter : MonoBehaviour
             {
                 VictorySound.Play();
                 GameSound.Stop();
+                HearBeatingSound.Stop();
                 StartCoroutine(DelayForPauseAfterFinish(1f));
             }
 

@@ -22,10 +22,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject SpeedometerPlayer2_RedMoto;
     [SerializeField] private GameObject SpeedometerPlayer2_RedMonster;
 
-    [SerializeField] private Button Start;
     [SerializeField] private Image MusicOn;
     [SerializeField] private Image MusicOff;
-    [SerializeField] private Button Exit;
     [SerializeField] private GameObject OilSensor;
 
     [SerializeField] private GameObject Player1_CarBlue;
@@ -50,8 +48,8 @@ public class MainMenu : MonoBehaviour
     }
     public void OnExitClick()
     {
-        Debug.Log("!!!!!!!!!!");
         Application.Quit();
+        Debug.Log("!!!!!!!!!!");
     }
     public void OnSoundClick()
     {

@@ -6776,7 +6776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &668244646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9406,7 +9406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1052483036
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11291,18 +11291,6 @@ Transform:
   m_Father: {fileID: 38035888}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1234773671 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5341814509069983230, guid: e3433eebec5ea554dbafb4784d5c1983,
-    type: 3}
-  m_PrefabInstance: {fileID: 79654364}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1244864440
 GameObject:
   m_ObjectHideFlags: 0
@@ -11772,7 +11760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280613808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: -416, z: 0}
+  m_LocalPosition: {x: -3, y: -413, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 486545903}
@@ -14317,18 +14305,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5341814508221533348}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1471566170 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5341814509069983230, guid: e3433eebec5ea554dbafb4784d5c1983,
-    type: 3}
-  m_PrefabInstance: {fileID: 5341814508221533348}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1474449581
 GameObject:
   m_ObjectHideFlags: 0
@@ -16581,7 +16557,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611950439}
   m_LocalRotation: {x: -0, y: -0, z: 0.70710707, w: 0.70710653}
-  m_LocalPosition: {x: 869, y: -5, z: 0}
+  m_LocalPosition: {x: 855, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 486545903}
@@ -17955,7 +17931,7 @@ GameObject:
   - component: {fileID: 1791930312}
   - component: {fileID: 1791930316}
   m_Layer: 5
-  m_Name: MainCanvas
+  m_Name: MainCanvas (StartAndFinish script)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18523,7 +18499,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841729739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.4, y: 411.5, z: 0}
+  m_LocalPosition: {x: 5.4, y: 415, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 486545903}
@@ -18954,10 +18930,8 @@ MonoBehaviour:
   SpeedometerPlayer2_RedCar: {fileID: 228373296}
   SpeedometerPlayer2_RedMoto: {fileID: 1052483035}
   SpeedometerPlayer2_RedMonster: {fileID: 1030966889}
-  Start: {fileID: 1471566170}
   MusicOn: {fileID: 2107438344}
   MusicOff: {fileID: 99984110}
-  Exit: {fileID: 1234773671}
   OilSensor: {fileID: 1417753119}
   Player1_CarBlue: {fileID: 7519618563039496674}
   Player1_MotoBlue: {fileID: 2855376885015142948}
@@ -19809,7 +19783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
