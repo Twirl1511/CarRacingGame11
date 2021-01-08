@@ -195,7 +195,7 @@ public class Player_Controller : MonoBehaviour
     /// </summary>
     /// <param name="gameObject"></param>
     /// <param name="crushSound"></param>
-    private static void PlaySound(GameObject gameObject, AudioSource crushSound)
+    public static void PlaySound(GameObject gameObject, AudioSource crushSound)
     {
         float x = gameObject.transform.position.x;
         if (x < -550) crushSound.panStereo = -0.9f;

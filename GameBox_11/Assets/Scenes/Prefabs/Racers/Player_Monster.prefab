@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 6174605749528224791}
   - component: {fileID: 1413859602818580969}
   - component: {fileID: 6314428657436334470}
+  - component: {fileID: 1605135450354537502}
   m_Layer: 0
   m_Name: Right
   m_TagString: Player
@@ -213,6 +214,19 @@ EdgeCollider2D:
   - {x: 10.499844, y: -38.088886}
   - {x: 1.0774784, y: -37.15987}
   - {x: -11.45746, y: 7.1176014}
+--- !u!114 &1605135450354537502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3188437787927934425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea9e31e6b1ce0b46a390b3ab44aa89f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WheelSound: {fileID: 0}
 --- !u!1 &3603382987510741956
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +412,7 @@ GameObject:
   - component: {fileID: 1349423614773020216}
   - component: {fileID: 4115869841921581261}
   - component: {fileID: 1446037739802063339}
+  - component: {fileID: 5693061500939638330}
   m_Layer: 0
   m_Name: Back
   m_TagString: Player
@@ -451,11 +466,11 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.9669877, y: -1.8095665}
-  - {x: -0.6859513, y: -1.8107262}
-  - {x: 16.949884, y: -1.8384361}
-  - {x: 18.40014, y: -1.8409996}
-  - {x: 18.690382, y: 5.081669}
+  - {x: 1.4480554, y: 2.081417}
+  - {x: 3.2049832, y: 3.1536217}
+  - {x: 10.912183, y: 4.0650597}
+  - {x: 14.643354, y: 3.7941818}
+  - {x: 16.81198, y: 6.691704}
   - {x: 21.207884, y: 7.7197304}
   - {x: 27.283905, y: 7.0342445}
   - {x: 34.31009, y: 7.606022}
@@ -465,9 +480,23 @@ EdgeCollider2D:
   - {x: -34.989418, y: 8.570023}
   - {x: -31.712135, y: 6.600662}
   - {x: -19.995092, y: 7.3819695}
-  - {x: -18.349646, y: 4.818615}
-  - {x: -18.30311, y: -1.6659508}
-  - {x: -0.9500505, y: -1.8124962}
+  - {x: -13.921972, y: 6.562805}
+  - {x: -11.460362, y: 3.5667076}
+  - {x: -1.7526591, y: 2.5335655}
+  - {x: 1.5992091, y: 2.2126427}
+--- !u!114 &5693061500939638330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6570234742323748193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea9e31e6b1ce0b46a390b3ab44aa89f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WheelSound: {fileID: 0}
 --- !u!1 &6695390322159076564
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +580,7 @@ GameObject:
   - component: {fileID: 3853475807719520638}
   - component: {fileID: 3139835621642438361}
   - component: {fileID: 1889400387596492975}
+  - component: {fileID: 5227016273038548817}
   m_Layer: 0
   m_Name: Left
   m_TagString: Player
@@ -622,6 +652,19 @@ EdgeCollider2D:
   - {x: -3.5093002, y: 17.114496}
   - {x: -2.5395927, y: 44.922237}
   - {x: 24.059242, y: 26.438591}
+--- !u!114 &5227016273038548817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6749155370232923409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea9e31e6b1ce0b46a390b3ab44aa89f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WheelSound: {fileID: 0}
 --- !u!1 &6767623705075874902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,6 +1084,7 @@ GameObject:
   - component: {fileID: 4162709316349975067}
   - component: {fileID: 8794791945557021429}
   - component: {fileID: 5612486129017581331}
+  - component: {fileID: 6178413070213807672}
   m_Layer: 0
   m_Name: Front
   m_TagString: Player
@@ -1094,24 +1138,38 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -1.1037011, y: 2.4147606}
-  - {x: 11.917252, y: 0.89577484}
-  - {x: 17.676788, y: -1.7609024}
+  - {x: 4.306837, y: -4.7542076}
+  - {x: 12.0525055, y: -4.7852783}
+  - {x: 17.406265, y: -5.6835938}
   - {x: 22.861237, y: -1.6291885}
   - {x: 25.99904, y: -0.8169365}
   - {x: 29.609835, y: -0.6335869}
   - {x: 33.53984, y: -0.7360039}
   - {x: 37.5961, y: -1.5253105}
   - {x: 37.60472, y: -4.376507}
+  - {x: -0.25119245, y: -15.606564}
   - {x: -38.193153, y: -3.8355408}
   - {x: -38.19538, y: -1.6026917}
   - {x: -35.7526, y: -0.507843}
   - {x: -23.802402, y: -1.0155945}
   - {x: -22.574406, y: -2.2309875}
-  - {x: -18.268803, y: -2.290863}
-  - {x: -16.381077, y: -0.22445679}
-  - {x: -9.051425, y: 2.0042992}
-  - {x: -1.058413, y: 2.430996}
+  - {x: -18.404057, y: -5.13134}
+  - {x: -12.1879, y: -4.6881065}
+  - {x: -4.046664, y: -4.3530846}
+  - {x: 4.4874096, y: -4.6027794}
+--- !u!114 &6178413070213807672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8941258584352691543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea9e31e6b1ce0b46a390b3ab44aa89f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WheelSound: {fileID: 0}
 --- !u!1 &9190515833354062934
 GameObject:
   m_ObjectHideFlags: 0
