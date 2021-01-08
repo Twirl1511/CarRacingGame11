@@ -10,4 +10,8 @@ public class Bounce_From_Walls : MonoBehaviour
     {
         collision.gameObject.GetComponent<Rigidbody2D>().AddForce(BounceDirection * Force);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        collision.GetComponentInParent<Rigidbody2D>().AddForce(BounceDirection * Force);
+    }
 }
