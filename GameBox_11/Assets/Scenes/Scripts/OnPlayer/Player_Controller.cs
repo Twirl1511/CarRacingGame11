@@ -31,8 +31,8 @@ public class Player_Controller : MonoBehaviour
     public GameObject OilDropPlaceFrom;
 
     [SerializeField] public TypeOfRacer Racer;
-    [SerializeField] private Buttons PlayerForwardButton;
-    [SerializeField] public Buttons PlayerHorizontalButton;
+    public Buttons PlayerForwardButton;
+    public Buttons PlayerHorizontalButton;
     public Buttons PlayerDropOilButton;
 
     [SerializeField] private float TimeBeforeNextDamageFromPlayers;

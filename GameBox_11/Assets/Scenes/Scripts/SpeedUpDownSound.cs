@@ -14,6 +14,11 @@ public class SpeedUpDownSound : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        PlaySpeedUpDownSounds();
+    }
+
+    private void PlaySpeedUpDownSounds()
+    {
         if (Input.GetButton(_speedUpButton))
         {
             if (SpeedUpSound.isPlaying)
