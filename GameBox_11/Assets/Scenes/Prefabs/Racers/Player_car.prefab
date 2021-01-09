@@ -811,6 +811,7 @@ GameObject:
   - component: {fileID: 6816223341451546169}
   - component: {fileID: 7829810189898560611}
   - component: {fileID: 8443046383655906153}
+  - component: {fileID: 2640873907824487834}
   m_Layer: 0
   m_Name: Player_car
   m_TagString: Player
@@ -1041,6 +1042,18 @@ MonoBehaviour:
   FifthDegradation: 0.4
   SixthDegradation: 0.3
   CrushesToTurnOffLight: 3
+--- !u!114 &2640873907824487834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7519618563941809416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a467e114eeac950449bede3e03453185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7519618564733744653
 GameObject:
   m_ObjectHideFlags: 0

@@ -318,6 +318,7 @@ GameObject:
   - component: {fileID: 2855376886144410215}
   - component: {fileID: 3756563025567846277}
   - component: {fileID: 8061201719510755426}
+  - component: {fileID: 2891485930461357929}
   m_Layer: 0
   m_Name: Player_moto
   m_TagString: Player
@@ -526,6 +527,20 @@ MonoBehaviour:
   FifthDegradation: 0.7
   SixthDegradation: 0.65
   CrushesToTurnOffLight: 99
+--- !u!114 &2891485930461357929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2855376886144410236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a467e114eeac950449bede3e03453185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedUpSound: {fileID: 0}
+  SpeedDownSound: {fileID: 0}
 --- !u!1 &2855376886660717451
 GameObject:
   m_ObjectHideFlags: 0

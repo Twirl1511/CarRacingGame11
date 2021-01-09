@@ -799,6 +799,7 @@ GameObject:
   - component: {fileID: 7017956485496208116}
   - component: {fileID: 1831759444687288083}
   - component: {fileID: 712565772465901544}
+  - component: {fileID: -3026279593385774792}
   m_Layer: 0
   m_Name: Player_Monster
   m_TagString: Player
@@ -1043,6 +1044,20 @@ MonoBehaviour:
   FifthDegradation: 0.4
   SixthDegradation: 0.3
   CrushesToTurnOffLight: 4
+--- !u!114 &-3026279593385774792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7320273410216063903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a467e114eeac950449bede3e03453185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedUpSound: {fileID: 0}
+  SpeedDownSound: {fileID: 0}
 --- !u!1 &7320273410471655578
 GameObject:
   m_ObjectHideFlags: 0
