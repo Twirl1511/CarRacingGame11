@@ -11,13 +11,13 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private float PlayerFirstSpeed = 50f;
     [SerializeField] private float FirstSpeedLimit = 8;
     [SerializeField] private float PlayerSecondSpeed = 80f;
-    [SerializeField] private float SecondSpeedLimit = 13;
+    public float SecondSpeedLimit = 13;
     [SerializeField] private float PlayerThirdSpeed = 80f;
-    [SerializeField] private float ThirdSpeedLimit = 13;
+    public float ThirdSpeedLimit = 13;
     [SerializeField] private float PlayerFourthSpeed = 80f;
-    [SerializeField] private float FourthSpeedLimit = 13;
+    public float FourthSpeedLimit = 13;
     [SerializeField] public float PlayerFinalSpeed = 100f;
-    [SerializeField] public float FinalSpeedLimit = 22;
+    public float FinalSpeedLimit = 22;
 
     [SerializeField] private float PlayerTorgueForceFinal = 45f;
     [SerializeField] private float PlayerTorgueForceLowSpeed = 45f;
@@ -199,12 +199,23 @@ public class Player_Controller : MonoBehaviour
     {
         float x = gameObject.transform.position.x;
         if (x < -550) crushSound.panStereo = -0.9f;
-        if (x >= -550 && x <= 0) crushSound.panStereo = -0.5f;
-        if (x >= 0 && x <= 550) crushSound.panStereo = 0.5f;
+        if (x >= -550 && x <= 550) crushSound.panStereo = x / 610;
         if (x > 550) crushSound.panStereo = 0.9f;
         crushSound.Play();
     }
-    
+    public static void PlaySoundLerp(GameObject gameObject, AudioSource crushSound)
+    {
+        float x = gameObject.transform.position.x;
+        if (x < -550) crushSound.panStereo = -0.9f;
+        if (x >= -550 && x <= 550) crushSound.panStereo = x / 610;
+        if (x > 550) crushSound.panStereo = 0.9f;
+        if (crushSound.isPlaying)
+        {
+            return;
+        }
+        crushSound.Play();
+    }
+
     /// <summary>
     /// демаг и уменьшение финальной скорости от столкновений
     /// </summary>
