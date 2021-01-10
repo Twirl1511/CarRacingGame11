@@ -6,17 +6,17 @@ public class Player_Controller : MonoBehaviour
 {
     private Rigidbody2D PlayerRigidbody;
     private Transform PlayerTransform;
-    
-    [SerializeField] private float CurrentPlayerSpeed = 30f;
+
+    public float CurrentPlayerSpeed = 30f;
     [SerializeField] private float PlayerFirstSpeed = 50f;
     [SerializeField] private float FirstSpeedLimit = 8;
-    [SerializeField] private float PlayerSecondSpeed = 80f;
+    public float PlayerSecondSpeed = 80f;
     public float SecondSpeedLimit = 13;
-    [SerializeField] private float PlayerThirdSpeed = 80f;
+    public float PlayerThirdSpeed = 80f;
     public float ThirdSpeedLimit = 13;
-    [SerializeField] private float PlayerFourthSpeed = 80f;
+    public float PlayerFourthSpeed = 80f;
     public float FourthSpeedLimit = 13;
-    [SerializeField] public float PlayerFinalSpeed = 100f;
+    public float PlayerFinalSpeed = 100f;
     public float FinalSpeedLimit = 22;
 
     [SerializeField] private float PlayerTorgueForceFinal = 45f;

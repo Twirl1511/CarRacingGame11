@@ -8,24 +8,16 @@ public class SpeedUpDownSound : MonoBehaviour
     [SerializeField] private AudioSource SpeedDownSound;
 
     private string _speedUpButton;
-    private float _secondSpeedLimit;
-    private float _thirdSpeedLimit;
-    private float _fourthSpeedLimit;
-    private float _finalSpeedLimit;
     private void Start()
     {
         _speedUpButton = gameObject.GetComponent<Player_Controller>().PlayerForwardButton.ToString();
-        _secondSpeedLimit = gameObject.GetComponent<Player_Controller>().SecondSpeedLimit;
-        _thirdSpeedLimit = gameObject.GetComponent<Player_Controller>().ThirdSpeedLimit;
-        _fourthSpeedLimit = gameObject.GetComponent<Player_Controller>().FourthSpeedLimit;
-        _finalSpeedLimit = gameObject.GetComponent<Player_Controller>().FinalSpeedLimit;
     }
     private void Update()
     {
-        PlaySpeedUpDownSounds();
+        PlaySpeedUpSound();
+        PlaySpeedDownSound();
     }
-
-    private void PlaySpeedUpDownSounds()
+    private void PlaySpeedUpSound()
     {
         if (Input.GetButton(_speedUpButton))
         {
@@ -39,16 +31,18 @@ public class SpeedUpDownSound : MonoBehaviour
         {
             SpeedUpSound.Stop();
         }
-
+    }
+    private void PlaySpeedDownSound()
+    {
         if (Input.GetButtonUp(_speedUpButton))
         {
-            if (SpeedDownSound.isPlaying)
-            {
-                return;
-            }
             if (SpeedUpSound.isPlaying)
             {
                 SpeedUpSound.Stop();
+            }
+            if (SpeedDownSound.isPlaying)
+            {
+                return;
             }
             Player_Controller.PlaySoundLerp(gameObject, SpeedDownSound);
         }
