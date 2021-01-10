@@ -972,12 +972,14 @@ MonoBehaviour:
   OilDropPlaceFrom: {fileID: 7519618564733744653}
   Racer: 1
   PlayerForwardButton: 1
+  PlayerBackButton: 4
   PlayerHorizontalButton: 3
   PlayerDropOilButton: 5
   TimeBeforeNextDamageFromPlayers: 2
   DropOlidSound: {fileID: 0}
   PickUpBarrelSound: {fileID: 0}
   CrushSound: {fileID: 0}
+  CarCrushSound: {fileID: 0}
   BrokenSpeedometerSound: {fileID: 0}
   SpeedDegradation: 48
   crushesCounter: 0
@@ -1054,6 +1056,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a467e114eeac950449bede3e03453185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpeedUpSound: {fileID: 0}
+  SpeedDownSound: {fileID: 0}
 --- !u!1 &7519618564733744653
 GameObject:
   m_ObjectHideFlags: 0

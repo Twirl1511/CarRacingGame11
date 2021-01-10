@@ -32,6 +32,7 @@ public class Player_Controller : MonoBehaviour
 
     [SerializeField] public TypeOfRacer Racer;
     public Buttons PlayerForwardButton;
+    public Buttons PlayerBackButton;
     public Buttons PlayerHorizontalButton;
     public Buttons PlayerDropOilButton;
 
@@ -41,6 +42,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private AudioSource DropOlidSound;
     [SerializeField] private AudioSource PickUpBarrelSound;
     [SerializeField] private AudioSource CrushSound;
+    [SerializeField] private AudioSource CarCrushSound;
     [SerializeField] private AudioSource BrokenSpeedometerSound;
 
     ///на сколько уменьшается скорость при уменьшении дюрабилити в ноль 
@@ -79,7 +81,9 @@ public class Player_Controller : MonoBehaviour
         P1_horizontal,
         P2_horizontal,
         P1_back,
-        P2_back
+        P2_back,
+        P1_dropOil,
+        P2_dropOil
     }
     public enum TypeOfRacer
     {
@@ -95,19 +99,14 @@ public class Player_Controller : MonoBehaviour
         PlayerRigidbody = GetComponent<Rigidbody2D>();
         PlayerTransform = GetComponent<Transform>();
     }
-    private void Start()
-    {
 
-    }
-    private void Update()
-    {
-        
-    }
     [SerializeField] private float CurrentPlayerTorgueForce;
     [SerializeField] private float HowFastToGainTorgueSpeed = 100;
+    /// <summary>
+    /// увеличение силы поворота в зависимости от скорости
+    /// </summary>
     private void TorgueUpFromSpeed()
     {
-
         if (PlayerRigidbody.velocity.magnitude < speedToTorgue)
         {
             CurrentPlayerTorgueForce = 0;
@@ -123,10 +122,7 @@ public class Player_Controller : MonoBehaviour
             {
                 CurrentPlayerTorgueForce += PlayerTorgueForceFinal / HowFastToGainTorgueSpeed;
             }
-            
         }
-
-
     }
     void FixedUpdate()
     {
@@ -138,9 +134,11 @@ public class Player_Controller : MonoBehaviour
         {
             PlayerRigidbody.AddForce(PlayerTransform.up * CurrentPlayerSpeed);
         }
+        if (Input.GetButton(PlayerBackButton.ToString()))
+        {
+            PlayerRigidbody.AddForce(PlayerTransform.up * -CurrentPlayerSpeed/5f);
+        }
         /// поворот активен если только скорость больше значения
-        /// 
-        
         PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * CurrentPlayerTorgueForce);
         
         
@@ -225,7 +223,7 @@ public class Player_Controller : MonoBehaviour
         // эффект при коллизии с плеером, можно удариться не чаще определенного времени
         if (collision.gameObject.CompareTag("Player") && flagToControlDamageFromPlayers == true)
         {
-            PlaySound(gameObject, CrushSound);
+            PlaySound(gameObject, CarCrushSound);
             crushesCounter++;
             flagToControlDamageFromPlayers = false;
             if(crushesCounter >= HowManyCrushesBeforeTakeDamage &&
