@@ -23563,6 +23563,12 @@ PrefabInstance:
       propertyPath: DropOlidSound
       value: 
       objectReference: {fileID: 640873528}
+    - target: {fileID: 1831759444687288083, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: Oil
+      value: 
+      objectReference: {fileID: 7966425636889251922, guid: c83a8570e3b35bb43b28f614423c9646,
+        type: 3}
     - target: {fileID: 5227016273038548817, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
       propertyPath: WheelSound
@@ -24191,7 +24197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DropOlidSound: {fileID: 640873528}
-  Oil: {fileID: 8698926157362173323, guid: c83a8570e3b35bb43b28f614423c9646, type: 3}
+  Oil: {fileID: 7966425636889251922, guid: c83a8570e3b35bb43b28f614423c9646, type: 3}
 --- !u!114 &2855376886226929567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24511,7 +24517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DropOlidSound: {fileID: 640873528}
-  Oil: {fileID: 8698926157362173323, guid: c83a8570e3b35bb43b28f614423c9646, type: 3}
+  Oil: {fileID: 7966425636889251922, guid: c83a8570e3b35bb43b28f614423c9646, type: 3}
 --- !u!4 &7519618563932143580 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7519618563941809420, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b,
