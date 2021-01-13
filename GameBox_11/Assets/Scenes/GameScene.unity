@@ -10722,6 +10722,11 @@ PrefabInstance:
       propertyPath: CarCrushSound
       value: 
       objectReference: {fileID: 849369707}
+    - target: {fileID: 7320273410216063894, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: PlayerBackButton
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7320273410216063899, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11387,6 +11392,11 @@ PrefabInstance:
       propertyPath: CarCrushSound
       value: 
       objectReference: {fileID: 849369707}
+    - target: {fileID: 2855376886144410215, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: PlayerBackButton
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2855376886144410232, guid: f298ada6d54dfa74095c0fe2077e0545,
         type: 3}
       propertyPath: m_LocalPosition.x
