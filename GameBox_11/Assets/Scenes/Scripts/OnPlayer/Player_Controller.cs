@@ -124,9 +124,17 @@ public class Player_Controller : MonoBehaviour
             }
         }
     }
+    private void TorgueReverseIfBackMove()
+    {
+        if (Input.GetButton(PlayerBackButton.ToString()))
+        {
+            CurrentPlayerTorgueForce = 0;
+        }
+        
+    }
     void FixedUpdate()
     {
-        TorgueUpFromSpeed();
+        
         #region [Player movement]
 
         #region[Основное управление]
@@ -139,7 +147,16 @@ public class Player_Controller : MonoBehaviour
             PlayerRigidbody.AddForce(PlayerTransform.up * -CurrentPlayerSpeed/5f);
         }
         /// поворот активен если только скорость больше значения
-        PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * CurrentPlayerTorgueForce);
+        TorgueUpFromSpeed();
+        if (Input.GetButton(PlayerBackButton.ToString()))
+        {
+            PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * -CurrentPlayerTorgueForce);
+        }
+        else
+        {
+            PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * CurrentPlayerTorgueForce);
+        }
+        
         
         
 
