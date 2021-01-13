@@ -148,6 +148,7 @@ public class Player_Controller : MonoBehaviour
         }
         /// поворот активен если только скорость больше значения
         TorgueUpFromSpeed();
+        /// если двигаемся назад идет инверсия поворота
         if (Input.GetButton(PlayerBackButton.ToString()))
         {
             PlayerRigidbody.AddTorque(Input.GetAxis(PlayerHorizontalButton.ToString()) * -CurrentPlayerTorgueForce);
