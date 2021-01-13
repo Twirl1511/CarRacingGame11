@@ -55,6 +55,8 @@ public class MainMenu : MonoBehaviour
     {
         SoundSwitch = !SoundSwitch;
         AudioListener.pause = SoundSwitch;
+        MusicOn.gameObject.SetActive(!SoundSwitch);
+        MusicOff.gameObject.SetActive(SoundSwitch);
     }
 
     private void Player1_BlueTurnOn()
