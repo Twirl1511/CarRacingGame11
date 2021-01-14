@@ -4104,6 +4104,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceDirection: {x: -1, y: 0}
   Force: 10000
+--- !u!1 &317030895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 437204539232679268, guid: f298ada6d54dfa74095c0fe2077e0545,
+    type: 3}
+  m_PrefabInstance: {fileID: 1162854488}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &320607236
 GameObject:
   m_ObjectHideFlags: 0
@@ -11669,7 +11675,9 @@ PrefabInstance:
       propertyPath: GameSound
       value: 
       objectReference: {fileID: 1739297409}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7320273410216063892, guid: 5c802fbc0915f1446846a5249b4a43e7, type: 3}
+    - {fileID: 7320273410216063893, guid: 5c802fbc0915f1446846a5249b4a43e7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5c802fbc0915f1446846a5249b4a43e7, type: 3}
 --- !u!4 &1100096006 stripped
 Transform:
@@ -11701,6 +11709,21 @@ MonoBehaviour:
   left_idle: {fileID: 11400000, guid: ef7f7292893fec24db4ba4fa92239c1d, type: 2}
   right: {fileID: 11400000, guid: f7918bfd19a7f254b80cad2900e01024, type: 2}
   right_idle: {fileID: 11400000, guid: 11f8dd4ebd4d0e84981469b046dffeee, type: 2}
+--- !u!114 &1100096015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100096007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd66e9f30f8d9940ac1a16c6d5091c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyShaker: {fileID: 2087582932}
+  ShakePreset: {fileID: 11400000, guid: 818f95bf240e11340a0526ce62ad5026, type: 2}
+  CameraShakeDelay: 2
 --- !u!1 &1108379914
 GameObject:
   m_ObjectHideFlags: 0
@@ -12787,7 +12810,19 @@ PrefabInstance:
       propertyPath: SpeedDownSound
       value: 
       objectReference: {fileID: 811167926}
-    m_RemovedComponents: []
+    - target: {fileID: 8061201719510755426, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: CrushesToTurnOffLight
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061201719510755426, guid: f298ada6d54dfa74095c0fe2077e0545,
+        type: 3}
+      propertyPath: RightLight
+      value: 
+      objectReference: {fileID: 317030895}
+    m_RemovedComponents:
+    - {fileID: 2855376886144410233, guid: f298ada6d54dfa74095c0fe2077e0545, type: 3}
+    - {fileID: 2855376886144410214, guid: f298ada6d54dfa74095c0fe2077e0545, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f298ada6d54dfa74095c0fe2077e0545, type: 3}
 --- !u!1 &1173616373
 GameObject:
@@ -16269,7 +16304,9 @@ PrefabInstance:
       propertyPath: EmissionModule.enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7519618563941809411, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b, type: 3}
+    - {fileID: 7519618563941809410, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 711c8d9423c4c0f47b3a9bcc6b4dde3b, type: 3}
 --- !u!1 &1457688254
 GameObject:
