@@ -36,15 +36,15 @@ public class MainMenu : MonoBehaviour
     private bool SoundSwitch = false;
 
     [SerializeField] private GameObject DevelopersPanel;
-   
+    [SerializeField] private GameObject CountDownAnimation;
 
     public void OnStartButtonClick()
     {
+        CountDownAnimation.SetActive(true);
         Player1_BlueTurnOn();
         Player2_RedTurnOn();
         OilSensor.SetActive(true);
         gameObject.SetActive(false);
-        
     }
     public void OnExitClick()
     {
