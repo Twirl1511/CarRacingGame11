@@ -320,7 +320,6 @@ GameObject:
   m_Component:
   - component: {fileID: 38035888}
   - component: {fileID: 38035889}
-  - component: {fileID: 38035890}
   m_Layer: 0
   m_Name: Race_map
   m_TagString: Untagged
@@ -371,22 +370,6 @@ MonoBehaviour:
   TopLeftInnerCorner: {fileID: 460764848}
   TopRightInnerCorner: {fileID: 329236404}
   DownLeftInnerCorner: {fileID: 1371418537}
---- !u!114 &38035890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 38035887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cb90a339eec58f42b55d05e174807c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PauseUI: {fileID: 0}
-  MainMenuUI: {fileID: 0}
-  CountdownSound: {fileID: 0}
-  GameSound: {fileID: 0}
 --- !u!1 &39327818
 GameObject:
   m_ObjectHideFlags: 0
@@ -3285,7 +3268,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: 0}
+  m_AnchoredPosition: {x: -4, y: 0}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &222260283
@@ -3463,7 +3446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 236421296}
   m_Layer: 0
-  m_Name: SMOKE????
+  m_Name: SMOKE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4766,7 +4749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: 0}
+  m_AnchoredPosition: {x: -6, y: 0}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &376129142
@@ -8845,7 +8828,7 @@ RectTransform:
   - {fileID: 2017400039}
   - {fileID: 1915058933}
   m_Father: {fileID: 1791930315}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11773,6 +11756,12 @@ PrefabInstance:
       propertyPath: DropOlidSound
       value: 
       objectReference: {fileID: 640873528}
+    - target: {fileID: 1831759444687288083, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: Oil
+      value: 
+      objectReference: {fileID: 8698926157362173323, guid: 20cc43eb2eb0d044692be3adb1b0ea92,
+        type: 3}
     - target: {fileID: 5227016273038548817, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
       propertyPath: WheelSound
@@ -11988,6 +11977,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410471655579, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320273410471655579, guid: 5c802fbc0915f1446846a5249b4a43e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -70.6
       objectReference: {fileID: 0}
     - target: {fileID: 8914815831534940278, guid: 5c802fbc0915f1446846a5249b4a43e7,
         type: 3}
@@ -14527,7 +14526,7 @@ RectTransform:
   - {fileID: 91332803}
   - {fileID: 532673828}
   m_Father: {fileID: 1791930315}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21416,8 +21415,8 @@ RectTransform:
   - {fileID: 1940073423}
   - {fileID: 1894778760}
   - {fileID: 1921199090}
-  - {fileID: 787406085}
   - {fileID: 1295944972}
+  - {fileID: 787406085}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27534,7 +27533,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 3e8cd266f2e0cc54890d7b72e0b25913, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

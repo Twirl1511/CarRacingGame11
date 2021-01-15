@@ -960,12 +960,14 @@ MonoBehaviour:
   OilDropPlaceFrom: {fileID: 7320273410471655578}
   Racer: 2
   PlayerForwardButton: 1
+  PlayerBackButton: 0
   PlayerHorizontalButton: 3
   PlayerDropOilButton: 5
   TimeBeforeNextDamageFromPlayers: 2
   DropOlidSound: {fileID: 0}
   PickUpBarrelSound: {fileID: 0}
   CrushSound: {fileID: 0}
+  CarCrushSound: {fileID: 0}
   BrokenSpeedometerSound: {fileID: 0}
   SpeedDegradation: 15
   crushesCounter: 0
@@ -1082,7 +1084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7320273410471655578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -105.7, z: 0}
+  m_LocalPosition: {x: 0, y: -65.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7320273410216063899}
