@@ -11,6 +11,7 @@ public class BounceFront : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        if (collision.GetComponent<Player_Controller>() == null) return;
         if (collision.GetComponent<Player_Controller>().Racer.ToString().Equals("Moto"))
         {
             collision.GetComponent<Rigidbody2D>().AddForce(transform.up * TaranForceForMoto);

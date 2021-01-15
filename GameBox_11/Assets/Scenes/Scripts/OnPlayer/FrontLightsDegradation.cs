@@ -71,12 +71,10 @@ public class FrontLightsDegradation : MonoBehaviour
         if (Random.Range(0,2) == 0)
         {
             _lightToTurnOff = LeftLight;
-            Debug.Log("left");
         }
         else
         {
             _lightToTurnOff = RightLight;
-            Debug.Log("right");
         }
         
     }

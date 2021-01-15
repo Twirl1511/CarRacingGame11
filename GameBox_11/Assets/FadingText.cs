@@ -33,6 +33,7 @@ public class FadingText : MonoBehaviour
             {
                 PressKeyToFropOil.fillAmount = 0;
                 _player = null;
+                return;
             }
             _distanse = (_player.transform.position - PlayerFinish.transform.position).magnitude;
             PressKeyToFropOil.fillAmount = _distanse / _totalLength;
